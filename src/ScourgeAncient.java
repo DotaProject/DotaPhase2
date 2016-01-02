@@ -1,5 +1,5 @@
 /**
  * Created by Minam on 1/2/16.
  */
-public class ScourgeAncient {
+public class ScourgeAncient extends Ancient {
 }

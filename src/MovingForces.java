@@ -1,5 +1,3 @@
-/**
- * Created by Minam on 1/2/16.
- */
-public interface MovingForces {
+
+public interface MovingForces extends GameComponents {
 }

@@ -1,5 +1,5 @@
 /**
  * Created by Minam on 1/2/16.
  */
-public class Lane {
+public class Lane implements BoardComponents {
 }

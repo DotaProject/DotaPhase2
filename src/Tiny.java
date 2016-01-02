@@ -1,5 +1,5 @@
 /**
  * Created by Minam on 1/2/16.
  */
-public class Tiny {
+public class Tiny extends Hero {
 }
