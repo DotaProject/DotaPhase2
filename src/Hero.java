@@ -1,5 +1,4 @@
-/**
- * Created by Minam on 1/2/16.
- */
-public class Hero implements MovingForces {
+
+public class Hero extends MovingForces {
+    //TODO NASIM
 }

@@ -1,16 +1,14 @@
-
+package common;
 
 public class Cell {
-
     private int row;
     private int column;
 
-    //getter and setter
     public int getRow() {
         return row;
     }
 
-    public void setRow(int row) {
+    public void setRow(int row)  {
         this.row = row;
     }
 

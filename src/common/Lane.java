@@ -1,3 +1,5 @@
+package common;
+
 import java.util.ArrayList;
 
 public class Lane extends BoardComponents {
@@ -8,4 +10,5 @@ public class Lane extends BoardComponents {
             cells.add(cell.get(i));
         }
     }
+
 }
