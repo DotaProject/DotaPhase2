@@ -2,36 +2,13 @@ package common;
 
 import java.util.ArrayList;
 
-public class GameComponents {
+public class GameComponents implements Components {
 
     protected ArrayList<Cell> cells = new ArrayList<>();
     protected int health;
-    protected boolean isAlive;
     protected int teamID;
+    protected boolean isAlive;
 
-    public boolean isAlive() {
-        return isAlive;
-    }
-
-    public void setAlive(boolean alive) {
-        isAlive = alive;
-    }
-
-    public int getTeamID() {
-        return teamID;
-    }
-
-    public void setTeamID(int teamID) {
-        this.teamID = teamID;
-    }
-
-    public boolean getIsAlive() {
-        return isAlive;
-    }
-
-    public void setIsAlive(boolean isAlive) {
-        this.isAlive = isAlive;
-    }
 
     public ArrayList<Cell> getCells() {
         return cells;
@@ -47,5 +24,13 @@ public class GameComponents {
 
     public void setHealth(int health) {
         this.health = health;
+    }
+
+    public boolean isAlive() {
+        return isAlive;
+    }
+
+    public void setAlive(boolean alive) {
+        isAlive = alive;
     }
 }

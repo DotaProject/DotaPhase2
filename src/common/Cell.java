@@ -1,14 +1,20 @@
 package common;
 
+import java.util.ArrayList;
+
 public class Cell {
+
     private int row;
     private int column;
 
+    private ArrayList<Components> components = new ArrayList<>();
+
+    //getter and setter
     public int getRow() {
         return row;
     }
 
-    public void setRow(int row)  {
+    public void setRow(int row) {
         this.row = row;
     }
 
@@ -18,5 +24,22 @@ public class Cell {
 
     public void setColumn(int column) {
         this.column = column;
+    }
+
+    public ArrayList<Components> getComponents() {
+        return components;
+    }
+
+    public void setComponents(ArrayList<Components> components) {
+        this.components = components;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        final Cell other = (Cell) obj;
+        if(other.getRow() != this.getRow() || other.getColumn() != this.getColumn()){
+            return false;
+        }
+        return true;
     }
 }

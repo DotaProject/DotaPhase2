@@ -2,17 +2,20 @@ package common;
 
 public class Barraks extends GameComponents {
 
-    private Path path;
-
     {
+        isAlive = true;
+
         health = 5000;
     }
+
+    public Path path;
 
     //constructor
     public Barraks(int teamID, Cell[][] cell, Path path) {
 
         this.path = path;
         this.teamID = teamID;
+
         for (int i = 0; i < cell.length; i++) {
             for (int j = 0; j < cell[0].length; j++) {
                 cells.add(cell[i][j]);
@@ -20,7 +23,7 @@ public class Barraks extends GameComponents {
         }
     }
 
-    //getter and setter
+    //getters and setters
     public Path getPath() {
         return path;
     }

@@ -1,4 +1,5 @@
 package common;
 
-public interface MovingForces extends GameComponents {
+public class MovingForces extends GameComponents {
+    //TODO NASIM
 }
