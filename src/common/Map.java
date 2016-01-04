@@ -49,23 +49,11 @@ public class Map {
         }
 
         //newing Lanes
-        path1Lanes[0] = new Lane(path1.get(0));
-        path1Lanes[1] = new Lane(path1.get(1));
-        path1Lanes[2] = new Lane(path1.get(2));
-        path1Lanes[3] = new Lane(path1.get(3));
-        path1Lanes[4] = new Lane(path1.get(4));
-
-        path2Lanes[0] = new Lane(path2.get(0));
-        path2Lanes[1] = new Lane(path2.get(1));
-        path2Lanes[2] = new Lane(path2.get(2));
-        path2Lanes[3] = new Lane(path2.get(3));
-
-        path3Lanes[0] = new Lane(path3.get(0));
-        path3Lanes[1] = new Lane(path3.get(1));
-        path3Lanes[2] = new Lane(path3.get(2));
-        path3Lanes[3] = new Lane(path3.get(3));
-        path3Lanes[4] = new Lane(path3.get(4));
-
+        for (int i = 0; i < 5; i++) {
+            path1Lanes[i] = new Lane(path1.get(i));
+            path2Lanes[i] = new Lane(path2.get(i));
+            path3Lanes[i] = new Lane(path3.get(i));
+        }
         initializingLanes(path1Lanes, path1);
         initializingLanes(path2Lanes, path2);
         initializingLanes(path3Lanes, path3);
@@ -80,9 +68,11 @@ public class Map {
         this.ancient2[0] = new Ancient(1, ancient2);
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
-                gameBoardComponents.get(ancient1[i][j]).add(this.ancient1[0]);
+                gameBoardComponents.get(ancient2[i][j]).add(this.ancient2[0]);
             }
         }
+
+
         this.barraks1[0] = new Barraks(0, barraks1.get(0),this.path1);
         this.barraks1[1] = new Barraks(0, barraks1.get(1),this.path2);
         this.barraks1[2] = new Barraks(0, barraks1.get(2),this.path3);

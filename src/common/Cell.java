@@ -7,8 +7,6 @@ public class Cell {
     private int row;
     private int column;
 
-    private ArrayList<Components> components = new ArrayList<>();
-
     //getter and setter
     public int getRow() {
         return row;
@@ -24,14 +22,6 @@ public class Cell {
 
     public void setColumn(int column) {
         this.column = column;
-    }
-
-    public ArrayList<Components> getComponents() {
-        return components;
-    }
-
-    public void setComponents(ArrayList<Components> components) {
-        this.components = components;
     }
 
     @Override
