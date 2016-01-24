@@ -5,11 +5,12 @@ import java.util.ArrayList;
 public class GameComponents implements Components {
 
     protected ArrayList<Cell> cells = new ArrayList<>();
-    protected int health;
+    protected int health = 0;
     protected int teamID;
     protected boolean isAlive;
 
 
+    //getters and setters
     public ArrayList<Cell> getCells() {
         return cells;
     }

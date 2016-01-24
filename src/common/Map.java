@@ -10,15 +10,11 @@ public class Map {
     private Path path1;
     private Path path2;
     private Path path3;
-    private ArrayList<GoldMine> goldMines;//manabe tala
+    private ArrayList<GoldMine> goldMines;
     private int numberOfGoldMines;
 
     private Cell[][] gameBoard;
     private HashMap<Cell, ArrayList<Components>> gameBoardComponents = new HashMap<>();
-
-    private Lane[] path1Lanes = new Lane[5];
-    private Lane[] path2Lanes = new Lane[5];
-    private Lane[] path3Lanes = new Lane[5];
 
     private Ancient[] ancient1 = new Ancient[1];
     private Ancient[] ancient2 = new Ancient[1];
@@ -28,44 +24,36 @@ public class Map {
 
     //constructor
     public Map(int row, int column, ArrayList<ArrayList<Cell>> path1, ArrayList<ArrayList<Cell>> path2,
-               ArrayList<ArrayList<Cell>> path3, Cell[][] ancient1, Cell[][] ancient2, ArrayList<Cell[][]>
-                       barraks1, ArrayList<Cell[][]> barraks2,
-               ArrayList<Cell> goldMines) {
+               ArrayList<ArrayList<Cell>> path3, Cell[][] ancient1, Cell[][] ancient2, ArrayList<Cell[][]> barraks1,
+               ArrayList<Cell[][]> barraks2, ArrayList<Cell> goldMines) {
+
+        gameBoard = new Cell[row][column];
+
         this.row = row;
         this.column = column;
 
-        this.path1 = new Path(path1);
-        this.path2 = new Path(path2);
-        this.path3 = new Path(path3);
+        this.path1 = new Path(path1, this);
+        this.path2 = new Path(path2, this);
+        this.path3 = new Path(path3, this);
 
         numberOfGoldMines = goldMines.size();
 
-        gameBoard = new Cell[row][column];
-        ArrayList<Components> componets = new ArrayList<>();
+        ArrayList<Components> components = new ArrayList<>();
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < column; j++) {
-                gameBoardComponents.put(gameBoard[i][j], componets);
+                gameBoardComponents.put(gameBoard[i][j], components);
             }
         }
 
-        //newing Lanes
-        for (int i = 0; i < 5; i++) {
-            path1Lanes[i] = new Lane(path1.get(i));
-            path2Lanes[i] = new Lane(path2.get(i));
-            path3Lanes[i] = new Lane(path3.get(i));
-        }
-        initializingLanes(path1Lanes, path1);
-        initializingLanes(path2Lanes, path2);
-        initializingLanes(path3Lanes, path3);
-
         //newing Ancients
-        this.ancient1[0] = new Ancient(0, ancient1);
+        this.ancient1[0] = new Ancient(0, ancient1, this);
+
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
                 gameBoardComponents.get(ancient1[i][j]).add(this.ancient1[0]);
             }
         }
-        this.ancient2[0] = new Ancient(1, ancient2);
+        this.ancient2[0] = new Ancient(1, ancient2, this);
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
                 gameBoardComponents.get(ancient2[i][j]).add(this.ancient2[0]);
@@ -73,24 +61,24 @@ public class Map {
         }
 
 
-        this.barraks1[0] = new Barraks(0, barraks1.get(0),this.path1);
-        this.barraks1[1] = new Barraks(0, barraks1.get(1),this.path2);
-        this.barraks1[2] = new Barraks(0, barraks1.get(2),this.path3);
+        this.barraks1[0] = new Barraks(0, barraks1.get(0), this.path1, this);
+        this.barraks1[1] = new Barraks(0, barraks1.get(1), this.path2, this);
+        this.barraks1[2] = new Barraks(0, barraks1.get(2), this.path3, this);
 
         initializingBarraks(this.barraks1[0]);
         initializingBarraks(this.barraks1[1]);
         initializingBarraks(this.barraks1[2]);
 
-        this.barraks2[0] = new Barraks(0, barraks2.get(0),this.path1);
-        this.barraks2[1] = new Barraks(0, barraks2.get(1),this.path2);
-        this.barraks2[2] = new Barraks(0, barraks2.get(2),this.path3);
+        this.barraks2[0] = new Barraks(1, barraks2.get(0), this.path1, this);
+        this.barraks2[1] = new Barraks(1, barraks2.get(1), this.path2, this);
+        this.barraks2[2] = new Barraks(1, barraks2.get(2), this.path3, this);
 
         initializingBarraks(this.barraks2[0]);
         initializingBarraks(this.barraks2[1]);
         initializingBarraks(this.barraks2[2]);
 
         for (int i = 0; i < goldMines.size(); i++) {
-            this.goldMines.add(new GoldMine(goldMines.get(i)));
+            this.goldMines.add(new GoldMine(goldMines.get(i),this));
             gameBoardComponents.get(goldMines.get(i)).add(this.goldMines.get(i));
         }
     }
@@ -103,18 +91,7 @@ public class Map {
 
     }
 
-    public void initializingLanes(Lane[] pathLanes, ArrayList<ArrayList<Cell>> path) {
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < path.get(i).size(); j++) {
-                gameBoardComponents.get(path.get(i).get(j)).add(pathLanes[i]);
-            }
-        }
-
-    }
-
     //getters and setters
-
-
     public int getRow() {
         return row;
     }
@@ -185,30 +162,6 @@ public class Map {
 
     public void setGameBoardComponents(HashMap<Cell, ArrayList<Components>> gameBoardComponents) {
         this.gameBoardComponents = gameBoardComponents;
-    }
-
-    public Lane[] getPath1Lanes() {
-        return path1Lanes;
-    }
-
-    public void setPath1Lanes(Lane[] path1Lanes) {
-        this.path1Lanes = path1Lanes;
-    }
-
-    public Lane[] getPath2Lanes() {
-        return path2Lanes;
-    }
-
-    public void setPath2Lanes(Lane[] path2Lanes) {
-        this.path2Lanes = path2Lanes;
-    }
-
-    public Lane[] getPath3Lanes() {
-        return path3Lanes;
-    }
-
-    public void setPath3Lanes(Lane[] path3Lanes) {
-        this.path3Lanes = path3Lanes;
     }
 
     public Ancient[] getAncient1() {

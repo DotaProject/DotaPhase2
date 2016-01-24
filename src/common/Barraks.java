@@ -4,14 +4,13 @@ public class Barraks extends GameComponents {
 
     {
         isAlive = true;
-
         health = 5000;
     }
 
     public Path path;
 
     //constructor
-    public Barraks(int teamID, Cell[][] cell, Path path) {
+    public Barraks(int teamID, Cell[][] cell, Path path, Map map) {
 
         this.path = path;
         this.teamID = teamID;
@@ -19,8 +18,17 @@ public class Barraks extends GameComponents {
         for (int i = 0; i < cell.length; i++) {
             for (int j = 0; j < cell[0].length; j++) {
                 cells.add(cell[i][j]);
+                if(teamID == 0){
+                    cells.get(i).barraksSentinel.add(this);
+                    map.getGameBoard()[cell[i][j].getRow()][cell[i][j].getColumn()].barraksSentinel.add(this);
+                }
+                if(teamID == 1){
+                    cells.get(i).barraksScourge.add(this);
+                    map.getGameBoard()[cell[i][j].getRow()][cell[i][j].getColumn()].barraksScourge.add(this);
+                }
             }
         }
+
     }
 
     //getters and setters
