@@ -69,5 +69,5 @@ public class Ancient extends GameComponents {
         this.cell = cell;
     }
 
-
+//hi
 }

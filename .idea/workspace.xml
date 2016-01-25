@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1726638a-8aca-49ae-a33a-77950752dd17" name="Default" comment="adding judge">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="1726638a-8aca-49ae-a33a-77950752dd17" name="Default" comment="adding judge" />
     <ignored path="DotaPhase2.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,105 +24,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="heroMoveEvent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/gameEvents/heroMoveEvent.java">
+      <file leaf-file-name="Event.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/common/Event.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TowerAttackEvent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/gameEvents/TowerAttackEvent.java">
+      <file leaf-file-name="Lane.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/common/Lane.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AttackForceMoveEvent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/gameEvents/AttackForceMoveEvent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AncientMoneyEvent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/gameEvents/AncientMoneyEvent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EventHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/gameEvents/EventHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="18" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Path.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Path.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/common/Path.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+            <state vertical-scroll-proportion="1.3646724">
+              <caret line="107" column="5" selection-start-line="107" selection-start-column="5" selection-end-line="107" selection-end-column="5" />
               <folding>
-                <element signature="e#2185#2186#0" expanded="true" />
-                <element signature="e#2214#2215#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameEngine.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/GameEngine.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
-              <folding>
-                <element signature="method#createTower#0;class#GameEngine#0" expanded="false" />
-                <element signature="method#createAttacker#0;class#GameEngine#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GoldMine.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/GoldMine.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Judge.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/judge/Judge.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.95862067">
-              <caret line="339" column="80" selection-start-line="339" selection-start-column="80" selection-end-line="339" selection-end-column="80" />
-              <folding>
-                <element signature="method#makePathHashMap#0;class#Judge#0" expanded="false" />
-                <element signature="method#loadMap#0;class#Judge#0" expanded="false" />
-                <element signature="method#getBuildingID#0;class#Judge#0" expanded="false" />
-                <element signature="method#getPathID#0;class#Judge#0" expanded="false" />
-                <element signature="method#getHeroID#0;class#Judge#0" expanded="false" />
-                <element signature="method#createAttacker#0;class#Judge#0" expanded="false" />
-                <element signature="e#9788#9856#0" expanded="false" />
+                <element signature="method#Path#0;class#Path#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -149,7 +75,6 @@
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="AUTO_COMMIT_ON_CHERRY_PICK" value="true" />
     <option name="FORCE_PUSH_ALLOWED" value="true" />
   </component>
   <component name="GradleLocalSettings">
@@ -160,6 +85,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/GameComponents.java" />
+        <option value="$PROJECT_DIR$/src/Ancient.java" />
+        <option value="$PROJECT_DIR$/src/Barraks.java" />
         <option value="$PROJECT_DIR$/src/GameEngine.java" />
         <option value="$PROJECT_DIR$/src/GoldMine.java" />
         <option value="$PROJECT_DIR$/src/AttackForces.java" />
@@ -182,35 +110,26 @@
         <option value="$PROJECT_DIR$/src/common/components.java" />
         <option value="$PROJECT_DIR$/src/common/BoardComponents.java" />
         <option value="$PROJECT_DIR$/src/common/Barraks.java" />
-        <option value="$PROJECT_DIR$/src/common/Ancient.java" />
         <option value="$PROJECT_DIR$/src/common/Cell.java" />
         <option value="$PROJECT_DIR$/src/common/GoldMine.java" />
         <option value="$PROJECT_DIR$/src/common/Lane.java" />
         <option value="$PROJECT_DIR$/src/common/GameObjectID.java" />
-        <option value="$PROJECT_DIR$/src/common/GameEngine.java" />
         <option value="$PROJECT_DIR$/src/judge/JudgeAbstract.java" />
-        <option value="$PROJECT_DIR$/src/common/Map.java" />
         <option value="$PROJECT_DIR$/src/common/Hero.java" />
         <option value="$PROJECT_DIR$/src/common/AttackForces.java" />
         <option value="$PROJECT_DIR$/src/common/Tower.java" />
         <option value="$PROJECT_DIR$/src/common/GameComponents.java" />
         <option value="$PROJECT_DIR$/src/common/Forces.java" />
         <option value="$PROJECT_DIR$/src/common/MovingForces.java" />
+        <option value="$PROJECT_DIR$/src/judge/Judge.java" />
         <option value="$PROJECT_DIR$/src/judge/JavaTest.java" />
         <option value="$PROJECT_DIR$/src/judge/JudgeTest.java" />
         <option value="$PROJECT_DIR$/src/judge/MapReader.java" />
         <option value="$PROJECT_DIR$/src/common/Event.java" />
-        <option value="$PROJECT_DIR$/src/common/events/EventHandler.java" />
-        <option value="$PROJECT_DIR$/src/common/events/heroAttack.java" />
-        <option value="$PROJECT_DIR$/src/common/gameEvents/heroAttack.java" />
-        <option value="$PROJECT_DIR$/src/common/gameEvents/heroMoveEvent.java" />
-        <option value="$PROJECT_DIR$/src/common/gameEvents/AttackForceAttackEvent.java" />
-        <option value="$PROJECT_DIR$/src/common/gameEvents/TowerAttackEvent.java" />
-        <option value="$PROJECT_DIR$/src/common/gameEvents/AttackForceMoveEvent.java" />
-        <option value="$PROJECT_DIR$/src/common/gameEvents/AncientMoneyEvent.java" />
-        <option value="$PROJECT_DIR$/src/common/gameEvents/EventHandler.java" />
+        <option value="$PROJECT_DIR$/src/common/GameEngine.java" />
+        <option value="$PROJECT_DIR$/src/common/Ancient.java" />
+        <option value="$PROJECT_DIR$/src/common/Map.java" />
         <option value="$PROJECT_DIR$/src/common/Path.java" />
-        <option value="$PROJECT_DIR$/src/judge/Judge.java" />
       </list>
     </option>
   </component>
@@ -321,18 +240,18 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gameEvents" />
+              <option name="myItemId" value="exception" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -788,10 +707,8 @@
       <workItem from="1451890826500" duration="1718000" />
       <workItem from="1453661399326" duration="3451000" />
       <workItem from="1453670608415" duration="38000" />
-      <workItem from="1453670660258" duration="5902000" />
-      <workItem from="1453700585228" duration="47000" />
-      <workItem from="1453700655479" duration="2343000" />
-      <workItem from="1453707405006" duration="2013000" />
+      <workItem from="1453670660258" duration="5509000" />
+      <workItem from="1453706104712" duration="1111000" />
     </task>
     <task id="LOCAL-00001" summary="Hi">
       <created>1451760551825</created>
@@ -806,28 +723,16 @@
       <updated>1453693496641</updated>
     </task>
     <task id="LOCAL-00003" summary="adding judge">
-      <created>1453693597248</created>
+      <created>1453707216473</created>
       <option name="number" value="00003" />
       <option name="project" value="LOCAL" />
-      <updated>1453693597248</updated>
+      <updated>1453707216473</updated>
     </task>
-    <task id="LOCAL-00004" summary="adding judge">
-      <created>1453709416050</created>
-      <option name="number" value="00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1453709416050</updated>
-    </task>
-    <task id="LOCAL-00005" summary="adding judge">
-      <created>1453709451040</created>
-      <option name="number" value="00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1453709451040</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26291000" />
+    <option name="totallyTimeSpent" value="22606000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -842,7 +747,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32650274" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2015625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20113085" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -854,7 +759,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -902,9 +807,7 @@
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="1" />
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -912,6 +815,94 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/common/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="27" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5712#5713#0" expanded="true" />
+            <element signature="e#5739#5740#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/GameEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#makeMap#0;class#GameEngine#0" expanded="false" />
+            <element signature="method#createTower#0;class#GameEngine#0" expanded="false" />
+            <element signature="method#createAttacker#0;class#GameEngine#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="27" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5712#5713#0" expanded="true" />
+            <element signature="e#5739#5740#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Tower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5712#5713#0" expanded="true" />
+            <element signature="e#5739#5740#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Path.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="38" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="38" />
+          <folding>
+            <element signature="method#Path#0;class#Path#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Ancient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5712#5713#0" expanded="true" />
+            <element signature="e#5739#5740#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/HashMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -943,6 +934,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -951,8 +943,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="38" column="38" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="38" />
           <folding>
-            <element signature="e#2185#2186#0" expanded="true" />
-            <element signature="e#2214#2215#0" expanded="true" />
+            <element signature="method#Path#0;class#Path#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -961,10 +952,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#1028#1029#0" expanded="true" />
-            <element signature="e#1063#1064#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -972,6 +960,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding>
+            <element signature="e#513#514#0" expanded="true" />
+            <element signature="e#613#614#0" expanded="false" />
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#288#289#0" expanded="false" />
+            <element signature="e#322#323#0" expanded="false" />
+            <element signature="e#749#750#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#881#882#0" expanded="true" />
+            <element signature="e#915#916#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -991,6 +990,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#5712#5713#0" expanded="true" />
+            <element signature="e#5739#5740#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1000,8 +1001,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
           <folding>
-            <element signature="e#2185#2186#0" expanded="true" />
-            <element signature="e#2214#2215#0" expanded="true" />
+            <element signature="method#Path#0;class#Path#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1025,6 +1025,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding>
+            <element signature="method#makeMap#0;class#GameEngine#0" expanded="false" />
             <element signature="method#createTower#0;class#GameEngine#0" expanded="false" />
             <element signature="method#createAttacker#0;class#GameEngine#0" expanded="false" />
           </folding>
@@ -1052,6 +1053,8 @@
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#5712#5713#0" expanded="true" />
+            <element signature="e#5739#5740#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1061,8 +1064,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding>
-            <element signature="e#2185#2186#0" expanded="true" />
-            <element signature="e#2214#2215#0" expanded="true" />
+            <element signature="method#Path#0;class#Path#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1109,6 +1111,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.76551723">
           <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/GoldMine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7034483">
+          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+          <folding>
+            <element signature="e#435#436#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#515#516#0" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
+            <element signature="e#614#615#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+            <element signature="e#691#692#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1131,25 +1151,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.0068965">
           <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/judge/JudgeAbstract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14482759">
-          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
           <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.310345">
-          <caret line="208" column="25" selection-start-line="208" selection-start-column="25" selection-end-line="208" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#520#521#0" expanded="false" />
+            <element signature="e#573#574#0" expanded="false" />
+            <element signature="e#1780#1781#0" expanded="false" />
+            <element signature="e#1804#1805#0" expanded="false" />
+            <element signature="e#2369#2370#0" expanded="true" />
+            <element signature="e#2398#2399#0" expanded="true" />
+            <element signature="e#2428#2429#0" expanded="true" />
+            <element signature="e#2455#2456#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1186,6 +1196,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/judge/Judge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="14.544827">
+          <caret line="1428" column="25" selection-start-line="1428" selection-start-column="25" selection-end-line="1428" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="method#loadMap#0;class#Judge#0" expanded="false" />
+            <element signature="method#getBuildingID#0;class#Judge#0" expanded="false" />
+            <element signature="method#getPathID#0;class#Judge#0" expanded="false" />
+            <element signature="method#getLaneID#0;class#Judge#0" expanded="false" />
+            <element signature="method#getHeroID#0;class#Judge#0" expanded="false" />
+            <element signature="method#purchaseAttackersPowerup#0;class#Judge#0" expanded="false" />
+            <element signature="method#purchaseTowerPowerup#0;class#Judge#0" expanded="false" />
+            <element signature="method#heroMove#0;class#Judge#0" expanded="false" />
+            <element signature="method#getMoney#0;class#Judge#0" expanded="false" />
+            <element signature="method#getAttackerPowerups#0;class#Judge#0" expanded="false" />
+            <element signature="method#getTeamGoldMines#0;class#Judge#0" expanded="false" />
+            <element signature="method#getInfo#0;class#Judge#0" expanded="false" />
+            <element signature="method#getInRange#0;class#Judge#0" expanded="false" />
+            <element signature="method#getTarget#0;class#Judge#0" expanded="false" />
+            <element signature="e#47311#47312#0" expanded="true" />
+            <element signature="e#47338#47339#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/common/AttackForces.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.12413793">
@@ -1201,6 +1237,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.41379312">
           <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+          <folding>
+            <element signature="e#513#514#0" expanded="true" />
+            <element signature="e#613#614#0" expanded="false" />
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#288#289#0" expanded="false" />
+            <element signature="e#322#323#0" expanded="false" />
+            <element signature="e#749#750#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#881#882#0" expanded="true" />
+            <element signature="e#915#916#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1208,6 +1255,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.31034482">
           <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+          <folding>
+            <element signature="e#320#321#0" expanded="false" />
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#446#447#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1227,6 +1281,49 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="10.386207">
           <caret line="502" column="0" selection-start-line="502" selection-start-column="0" selection-end-line="502" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#492#493#0" expanded="true" />
+            <element signature="e#522#523#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="false" />
+            <element signature="e#603#604#0" expanded="false" />
+            <element signature="e#11530#11531#0" expanded="true" />
+            <element signature="e#11557#11558#0" expanded="true" />
+            <element signature="e#11594#11595#0" expanded="true" />
+            <element signature="e#11626#11627#0" expanded="true" />
+            <element signature="e#11678#11679#0" expanded="true" />
+            <element signature="e#11706#11707#0" expanded="true" />
+            <element signature="e#11768#11769#0" expanded="true" />
+            <element signature="e#11802#11803#0" expanded="true" />
+            <element signature="e#11854#11855#0" expanded="true" />
+            <element signature="e#11882#11883#0" expanded="true" />
+            <element signature="e#11944#11945#0" expanded="true" />
+            <element signature="e#11978#11979#0" expanded="true" />
+            <element signature="e#12030#12031#0" expanded="true" />
+            <element signature="e#12058#12059#0" expanded="true" />
+            <element signature="e#12120#12121#0" expanded="true" />
+            <element signature="e#12154#12155#0" expanded="true" />
+            <element signature="e#12191#12192#0" expanded="true" />
+            <element signature="e#12222#12223#0" expanded="true" />
+            <element signature="e#12272#12273#0" expanded="true" />
+            <element signature="e#12312#12313#0" expanded="true" />
+            <element signature="e#12349#12350#0" expanded="true" />
+            <element signature="e#12380#12381#0" expanded="true" />
+            <element signature="e#12430#12431#0" expanded="true" />
+            <element signature="e#12470#12471#0" expanded="true" />
+            <element signature="e#12519#12520#0" expanded="true" />
+            <element signature="e#12551#12552#0" expanded="true" />
+            <element signature="e#12614#12615#0" expanded="true" />
+            <element signature="e#12656#12657#0" expanded="true" />
+            <element signature="e#12705#12706#0" expanded="true" />
+            <element signature="e#12737#12738#0" expanded="true" />
+            <element signature="e#12800#12801#0" expanded="true" />
+            <element signature="e#12842#12843#0" expanded="true" />
+            <element signature="e#12887#12888#0" expanded="true" />
+            <element signature="e#12919#12920#0" expanded="true" />
+            <element signature="e#12978#12979#0" expanded="true" />
+            <element signature="e#13020#13021#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1240,118 +1337,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/gameEvents/Events.java">
+    <entry file="file://$PROJECT_DIR$/src/common/Ancient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <caret line="71" column="4" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/gameEvents/heroAttackEvent.java">
+    <entry file="file://$PROJECT_DIR$/src/common/Map.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="-0.640625">
+          <caret line="92" column="8" selection-start-line="92" selection-start-column="8" selection-end-line="92" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5712#5713#0" expanded="true" />
+            <element signature="e#5739#5740#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/gameEvents/AttackForceAttackEvent.java">
+    <entry file="file://$PROJECT_DIR$/src/judge/JudgeAbstract.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/gameEvents/TowerAttackEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/gameEvents/AttackForceMoveEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/gameEvents/AncientMoneyEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/common.Ancient">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>common.Ancient</OriginalElement>
-          <nodes>
-            <node x="" y="">common.AttackForces</node>
-            <node x="" y="">common.GameComponents</node>
-            <node x="" y="">common.Tower</node>
-            <node x="" y="">common.Hero</node>
-            <node x="" y="">common.Forces</node>
-            <node x="" y="">common.MovingForces</node>
-            <node x="" y="">common.Ancient</node>
-            <node x="" y="">common.Path</node>
-            <node x="" y="">common.Barraks</node>
-            <node x="" y="">common.Lane</node>
-            <node x="" y="">java.io.Serializable</node>
-            <node x="" y="">common.GameObjectID</node>
-            <node x="" y="">common.GameEngine</node>
-            <node x="" y="">common.Map</node>
-            <node x="" y="">common.Components</node>
-            <node x="" y="">common.GoldMine</node>
-            <node x="" y="">common.Cell</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="265.0" y="286.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/gameEvents/heroMoveEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/GoldMine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.11078287">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/common/GameEngine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.4900568">
+          <caret line="40" column="120" selection-start-line="40" selection-start-column="120" selection-end-line="40" selection-end-column="120" />
           <folding>
+            <element signature="method#makeMap#0;class#GameEngine#0" expanded="false" />
             <element signature="method#createTower#0;class#GameEngine#0" expanded="false" />
             <element signature="method#createAttacker#0;class#GameEngine#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/common/Lane.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51724136">
+        <state vertical-scroll-proportion="0.0">
           <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
           <folding />
         </state>
@@ -1359,46 +1395,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/common/Path.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+        <state vertical-scroll-proportion="1.3646724">
+          <caret line="107" column="5" selection-start-line="107" selection-start-column="5" selection-end-line="107" selection-end-column="5" />
           <folding>
-            <element signature="e#2185#2186#0" expanded="true" />
-            <element signature="e#2214#2215#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Ancient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4413793">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="e#1028#1029#0" expanded="true" />
-            <element signature="e#1063#1064#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/gameEvents/EventHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/judge/Judge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.95862067">
-          <caret line="339" column="80" selection-start-line="339" selection-start-column="80" selection-end-line="339" selection-end-column="80" />
-          <folding>
-            <element signature="method#makePathHashMap#0;class#Judge#0" expanded="false" />
-            <element signature="method#loadMap#0;class#Judge#0" expanded="false" />
-            <element signature="method#getBuildingID#0;class#Judge#0" expanded="false" />
-            <element signature="method#getPathID#0;class#Judge#0" expanded="false" />
-            <element signature="method#getHeroID#0;class#Judge#0" expanded="false" />
-            <element signature="method#createAttacker#0;class#Judge#0" expanded="false" />
-            <element signature="e#9788#9856#0" expanded="false" />
+            <element signature="method#Path#0;class#Path#0" expanded="false" />
           </folding>
         </state>
       </provider>
