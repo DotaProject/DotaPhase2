@@ -252,9 +252,6 @@ public class Judge extends JudgeAbstract {
         for (Map.Entry<Path, GameObjectID> entry : paths.entrySet()) {
             if (Objects.equals(path, entry.getValue())) {
                 mypath = entry.getKey();
-            }else {
-                mypath = null;
-                throw new DotaExceptionBase();
             }
         }
         Lane mylane = null;
@@ -262,9 +259,6 @@ public class Judge extends JudgeAbstract {
             for (int i = 0; i < entry.getKey().length; i++) {
                 if (Objects.equals(lane, entry.getValue()[i])) {
                     mylane = entry.getKey()[i];
-                } else {
-                    mypath = null;
-                    throw new DotaExceptionBase();
                 }
             }
         }
@@ -285,9 +279,6 @@ public class Judge extends JudgeAbstract {
         for (Map.Entry<Path, GameObjectID> entry : paths.entrySet()) {
             if (Objects.equals(path, entry.getValue())) {
                 mypath = entry.getKey();
-            }else {
-                mypath = null;
-                throw new DotaExceptionBase();
             }
         }
 
