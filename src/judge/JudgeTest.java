@@ -74,7 +74,8 @@ public class JudgeTest extends TestCase {
         int alive1 = values.get(Judge.IS_ALIVE);
         int alive2 = values2.get(Judge.IS_ALIVE);
 
-
+       ///Hi
+        
         System.out.println(row1);
 
         assertEquals(0, row1);
