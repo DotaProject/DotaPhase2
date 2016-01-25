@@ -24,16 +24,16 @@ public class GameEngine {
     public Tower createTower(int teamID, int towerType, Path path,Lane lane,int index, int row, int column, int time) {
         Tower tower = new Tower(teamID,towerType,path,lane,index,row,column,time,map);
         if (towerType == 0)
-            map.getGameBoardComponents().get().add(tower);
+            map.getGameBoard()[row][column].towerFire.add(tower);
 
         if (towerType == 1)
-            map.getGameBoardComponents().get().add(tower);
+            map.getGameBoard()[row][column].towerStone.add(tower);
 
         if (towerType == 2)
-            map.getGameBoardComponents().get().add(tower);
+            map.getGameBoard()[row][column].towerBlack.add(tower);
 
         if (towerType == 3)
-            map.getGameBoardComponents().get().add(tower);
+            map.getGameBoard()[row][column].towerPoison.add(tower);
 
         return tower;
     }
@@ -41,16 +41,16 @@ public class GameEngine {
     public AttackForces createAttacker(int teamID, int attackerType,Path path,Lane lane, int row, int column, int time) {
         AttackForces attackForce = new AttackForces(teamID, attackerType,path,lane, row, column,time,map);
         if (attackerType == 9 && teamID == 0) {
-            map.getGameBoardComponents().get().add(attackForce);
+            map.getGameBoard()[row][column].attackerSentinelTank.add(attackForce);
         }
         if (attackerType == 9 && teamID == 1) {
-            map.getGameBoardComponents().get().add(attackForce);
+            map.getGameBoard()[row][column].attackerScourgeTank.add(attackForce);
         }
         if (attackerType == 8 && teamID == 0) {
-            map.getGameBoardComponents().get().add(attackForce);
+            map.getGameBoard()[row][column].attackerSentinelInfantry.add(attackForce);
         }
         if (attackerType == 8 && teamID == 1) {
-            map.getGameBoardComponents().get().add(attackForce);
+            map.getGameBoard()[row][column].attackerScourgeInfantry.add(attackForce);
         }
         return attackForce;
     }
