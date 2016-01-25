@@ -9,7 +9,7 @@ public class Path implements Components {
     private Lane Lane3;
     private Lane Lane4;
     private Lane Lane5;
-    private ArrayList<Lane> lanes = new ArrayList<>();
+    private Lane[] lanes = new Lane[5];
     private ArrayList<Cell> cells = new ArrayList<>();
 
 
@@ -21,11 +21,11 @@ public class Path implements Components {
         Lane3 = new Lane(path.get(2), map);
         Lane4 = new Lane(path.get(3), map);
         Lane5 = new Lane(path.get(4), map);
-        lanes.add(Lane1);
-        lanes.add(Lane2);
-        lanes.add(Lane3);
-        lanes.add(Lane4);
-        lanes.add(Lane5);
+        lanes[0] = Lane1;
+        lanes[1] = Lane2;
+        lanes[2] = Lane3;
+        lanes[3] = Lane4;
+        lanes[4] = Lane5;
 
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < path.get(i).size(); j++) {
@@ -105,7 +105,7 @@ public class Path implements Components {
         return cells;
     }
 
-    public ArrayList<Lane> getLanes() {
+    public Lane[] getLanes() {
         return lanes;
     }
 }

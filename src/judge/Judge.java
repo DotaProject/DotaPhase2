@@ -37,13 +37,10 @@ public class Judge extends JudgeAbstract {
     }
 
     public void makeLaneHashMap() {
-        ArrayList<Lane> path1Lanes = engine.map.getPath1().getLanes();
-        ArrayList<Lane> path2Lanes = engine.map.getPath2().getLanes();
-        ArrayList<Lane> path3Lanes = engine.map.getPath3().getLanes();
 
-        Lane[] path1LaneArray = (Lane[])path1Lanes.toArray();
-        Lane[] path2LaneArray =(Lane[])path2Lanes.toArray();
-        Lane[] path3LaneArray = (Lane[])path3Lanes.toArray();
+        Lane[] path1LaneArray = engine.map.getPath1().getLanes();
+        Lane[] path2LaneArray =engine.map.getPath2().getLanes();
+        Lane[] path3LaneArray = engine.map.getPath3().getLanes();
 
         //1
         GameObjectID[] g13 = new GameObjectID[5];
@@ -217,14 +214,14 @@ public class Judge extends JudgeAbstract {
     @Override
     public GameObjectID[] getLaneID(int pathNumber) {
         if (pathNumber == 1) {
-            Lane[] pathLanes1 = (Lane[])engine.map.getPath1().getLanes().toArray();
+            Lane[] pathLanes1 = (Lane[])engine.map.getPath1().getLanes();
             return pathLanesID.get(pathLanes1);
 
         } else if (pathNumber == 2) {
-            Lane[] pathLanes2 = (Lane[])engine.map.getPath2().getLanes().toArray();
+            Lane[] pathLanes2 = (Lane[])engine.map.getPath2().getLanes();
             return pathLanesID.get(pathLanes2);
         } else {
-            Lane[] pathLanes3 = (Lane[])engine.map.getPath3().getLanes().toArray();
+            Lane[] pathLanes3 = (Lane[])engine.map.getPath3().getLanes();
             return pathLanesID.get(pathLanes3);
         }
     }

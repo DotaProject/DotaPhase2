@@ -14,8 +14,9 @@ public class Lane implements Components {
 
         for (int i = 0; i < cell.size(); i++) {
             this.cells.add(cell.get(i));
-            this.cells.get(i).lanes.add(this);
+//            this.cells.get(i).lanes.add(this);
             map.getGameBoard()[cell.get(i).getRow()][cell.get(i).getColumn()].lanes.add(this);
+
         }
     }
 

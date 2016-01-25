@@ -1,7 +1,6 @@
 package common;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class Map {
 
@@ -10,13 +9,12 @@ public class Map {
     private Path path1;
     private Path path2;
     private Path path3;
-    private ArrayList<GoldMine> goldMines;
+    private ArrayList<GoldMine> goldMines = new ArrayList<>();
     private int numberOfGoldMines;
     private Hero tiny;
     private Hero venomancer;
 
     private Cell[][] gameBoard;
-    private HashMap<Cell, ArrayList<Components>> gameBoardComponents = new HashMap<>();
 
     private Ancient[] ancient1 = new Ancient[1];
     private Ancient[] ancient2 = new Ancient[1];
@@ -31,6 +29,14 @@ public class Map {
 
         gameBoard = new Cell[row][column];
 
+        for (int i = 0; i < row ; i++) {
+            for (int j = 0; j < column ; j++) {
+                gameBoard[i][j] = new Cell();
+                gameBoard[i][j].setRow(i);
+                gameBoard[i][j].setColumn(j);
+            }
+        }
+
         this.row = row;
         this.column = column;
 
@@ -40,49 +46,24 @@ public class Map {
 
         numberOfGoldMines = goldMines.size();
 
-        ArrayList<Components> components = new ArrayList<>();
-        for (int i = 0; i < row; i++) {
-            for (int j = 0; j < column; j++) {
-                gameBoardComponents.put(gameBoard[i][j], components);
-            }
-        }
-
-        //newing Ancients
+        //newing ancients
         this.ancient1[0] = new Ancient(0, ancient1, this);
-
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 5; j++) {
-                gameBoardComponents.get(ancient1[i][j]).add(this.ancient1[0]);
-            }
-        }
         this.ancient2[0] = new Ancient(1, ancient2, this);
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 5; j++) {
-                gameBoardComponents.get(ancient2[i][j]).add(this.ancient2[0]);
-            }
-        }
+
 
         //newing barraks
         this.barraks1[0] = new Barraks(0, barraks1.get(0), this.path1, this);
         this.barraks1[1] = new Barraks(0, barraks1.get(1), this.path2, this);
         this.barraks1[2] = new Barraks(0, barraks1.get(2), this.path3, this);
 
-        initializingBarraks(this.barraks1[0]);
-        initializingBarraks(this.barraks1[1]);
-        initializingBarraks(this.barraks1[2]);
 
         this.barraks2[0] = new Barraks(1, barraks2.get(0), this.path1, this);
         this.barraks2[1] = new Barraks(1, barraks2.get(1), this.path2, this);
         this.barraks2[2] = new Barraks(1, barraks2.get(2), this.path3, this);
 
-        initializingBarraks(this.barraks2[0]);
-        initializingBarraks(this.barraks2[1]);
-        initializingBarraks(this.barraks2[2]);
-
         //newing goldmines
         for (int i = 0; i < goldMines.size(); i++) {
             this.goldMines.add(new GoldMine(goldMines.get(i),this));
-            gameBoardComponents.get(goldMines.get(i)).add(this.goldMines.get(i));
         }
 
         //newing hero
@@ -93,13 +74,6 @@ public class Map {
 
     }
 
-
-    public void initializingBarraks(Barraks barraks) {
-        for (int i = 0; i < barraks.getCells().size(); i++) {
-            gameBoardComponents.get(barraks.getCells().get(i)).add(barraks);
-        }
-
-    }
 
     //getters and setters
     public int getRow() {
@@ -164,14 +138,6 @@ public class Map {
 
     public void setGameBoard(Cell[][] gameBoard) {
         this.gameBoard = gameBoard;
-    }
-
-    public HashMap<Cell, ArrayList<Components>> getGameBoardComponents() {
-        return gameBoardComponents;
-    }
-
-    public void setGameBoardComponents(HashMap<Cell, ArrayList<Components>> gameBoardComponents) {
-        this.gameBoardComponents = gameBoardComponents;
     }
 
     public Ancient[] getAncient1() {
