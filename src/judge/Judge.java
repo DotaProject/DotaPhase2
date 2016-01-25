@@ -137,10 +137,10 @@ public class Judge extends JudgeAbstract {
         tinyMove = false;
         venomancerMove = false;
 
-//        Event event1 = new Event(engine.ancient1[0], eventHandler);
-//        Event event2 = new Event(engine.ancient2[0], eventHandler);
-//        Event event3 = new Event(engine.getTiny(), eventHandler);
-//        Event event4 = new Event(engine.getVenomancer(), eventHandler);
+//        gameEvents event1 = new gameEvents(engine.ancient1[0], eventHandler);
+//        gameEvents event2 = new gameEvents(engine.ancient2[0], eventHandler);
+//        gameEvents event3 = new gameEvents(engine.getTiny(), eventHandler);
+//        gameEvents event4 = new gameEvents(engine.getVenomancer(), eventHandler);
 //
 //        event1.start();
 //        event2.start();
@@ -243,7 +243,7 @@ public class Judge extends JudgeAbstract {
         if (attackerType != 8 && attackerType != 9) {
             throw new DotaExceptionBase();
         }
-        if (rowNumber > engine.GameBoard.length - 1 || colNumber > engine.GameBoard[0].length - 1 || rowNumber < 0 || colNumber < 0) {
+        if (rowNumber > engine.map.getRow() - 1 || colNumber > engine.map.getColumn() - 1 || rowNumber < 0 || colNumber < 0) {
             throw new DotaExceptionBase();
         }
         //find path
@@ -255,7 +255,7 @@ public class Judge extends JudgeAbstract {
         }
 
         AttackForces attacker = engine.createAttacker(teamID,attackerType,mypath,lane,rowNumber,colNumber,time);
-//        Event event = new Event(attacker, eventHandler);
+//        gameEvents event = new gameEvents(attacker, eventHandler);
 //        event.start();
         GameObjectID g10 = GameObjectID.create(AttackForces.class);
         attackers.put(attacker, g10);
@@ -271,7 +271,7 @@ public class Judge extends JudgeAbstract {
         if (towerType != 0 && towerType != 1 && towerType != 2 && towerType != 3) {
             throw new DotaExceptionBase();
         }
-        if (rowNumber > engine.GameBoard.length - 1 || colNumber > engine.GameBoard[0].length - 1 || rowNumber < 0 || colNumber < 0) {
+        if (rowNumber > engine.map.getRow() - 1 || colNumber > engine.map.getColumn() - 1 || rowNumber < 0 || colNumber < 0) {
             throw new DotaExceptionBase();
         }
         for (Map.Entry<Lane[], GameObjectID[]> entry : pathLanesID.entrySet()) {
@@ -307,7 +307,7 @@ public class Judge extends JudgeAbstract {
         }
         //az path o lane ina estefade mishe?
         Tower tower = engine.createTower(teamID, towerType, rowNumber, colNumber, time);
-//        Event event = new Event(tower, eventHandler);
+//        gameEvents event = new gameEvents(tower, eventHandler);
 //        event.start();
         GameObjectID g11 = GameObjectID.create(Tower.class);
         towers.put(tower, g11);
@@ -371,10 +371,10 @@ public class Judge extends JudgeAbstract {
             if (Objects.equals(hero, entry.getValue())) {
                 if ((entry.getKey().getTeamID() == 0 && tinyMove == true) || (entry.getKey().getTeamID() == 1 && venomancerMove == true)) {
                     entry.getKey().heroMove(dest, direction, engine.map);
-//                    for (int i = 0; i < eventHandler.events.size(); i++) {
-//                        if (eventHandler.events.get(i).getFlag() == 1) {
-//                            if (eventHandler.events.get(i).hero.team_ID == entry.getKey().team_ID) {
-//                                eventHandler.events.get(i).hero.heroMove(dest, direction, engine);
+//                    for (int i = 0; i < eventHandler.gameEvents.size(); i++) {
+//                        if (eventHandler.gameEvents.get(i).getFlag() == 1) {
+//                            if (eventHandler.gameEvents.get(i).hero.team_ID == entry.getKey().team_ID) {
+//                                eventHandler.gameEvents.get(i).hero.heroMove(dest, direction, engine);
 //                            }
 //                        }
 //                    }
@@ -396,10 +396,10 @@ public class Judge extends JudgeAbstract {
                     venomancerTarget = true;
                 }
                 entry.getKey().attack(target, engine.map);
-//                for (int i = 0; i < eventHandler.events.size(); i++) {
-//                    if (eventHandler.events.get(i).getFlag() == 1) {
-//                        if (eventHandler.events.get(i).hero.team_ID == entry.getKey().team_ID) {
-//                            eventHandler.events.get(i).hero.attack(target, engine);
+//                for (int i = 0; i < eventHandler.gameEvents.size(); i++) {
+//                    if (eventHandler.gameEvents.get(i).getFlag() == 1) {
+//                        if (eventHandler.gameEvents.get(i).hero.team_ID == entry.getKey().team_ID) {
+//                            eventHandler.gameEvents.get(i).hero.attack(target, engine);
 //                        }
 //                    }
 //                }
@@ -1039,9 +1039,9 @@ public class Judge extends JudgeAbstract {
             //eventHandler.game(time, engine);
             time += 50;
             if (tinyTarget == false) {
-//                for (int i = 0; i < eventHandler.events.size(); i++) {
-//                    if (eventHandler.events.get(i).hero != null && eventHandler.events.get(i).hero.team_ID == 0) {
-//                        if (tinyMoveTime % eventHandler.events.get(i).hero.speed == 0) {
+//                for (int i = 0; i < eventHandler.gameEvents.size(); i++) {
+//                    if (eventHandler.gameEvents.get(i).hero != null && eventHandler.gameEvents.get(i).hero.team_ID == 0) {
+//                        if (tinyMoveTime % eventHandler.gameEvents.get(i).hero.speed == 0) {
 //                            tinyMove = true;
 //                        } else {
 //                            tinyMove = false;
@@ -1053,9 +1053,9 @@ public class Judge extends JudgeAbstract {
 
             }
             if (venomancerTarget == false) {
-//                for (int i = 0; i < eventHandler.events.size(); i++) {
-//                    if (eventHandler.events.get(i).hero != null && eventHandler.events.get(i).hero.team_ID == 1) {
-//                        if (venomancerMoveTime % eventHandler.events.get(i).hero.speed == 0) {
+//                for (int i = 0; i < eventHandler.gameEvents.size(); i++) {
+//                    if (eventHandler.gameEvents.get(i).hero != null && eventHandler.gameEvents.get(i).hero.team_ID == 1) {
+//                        if (venomancerMoveTime % eventHandler.gameEvents.get(i).hero.speed == 0) {
 //                            venomancerMove = true;
 //                        } else {
 //                            venomancerMove = false;
@@ -1159,13 +1159,13 @@ public class Judge extends JudgeAbstract {
                     } else if (infoKey.equals("RELOAD_TIME")) {
                         entry.getKey().setReloadTime(infoValue);
                     } else if (infoKey.equals("ROW")) {
-                        if (infoValue > engine.GameBoard.length || infoValue < 0) {
+                        if (infoValue > engine.map.getRow() || infoValue < 0) {
                             throw new DotaExceptionBase();
                         } else {
                             entry.getKey().setRow(infoValue);
                         }
                     } else if (infoKey.equals("COLUMN")) {
-                        if (infoValue > engine.GameBoard[0].length || infoValue < 0) {
+                        if (infoValue > engine.map.getColumn() || infoValue < 0) {
                             throw new DotaExceptionBase();
                         } else {
                             entry.getKey().setColumn(infoValue);
@@ -1203,13 +1203,13 @@ public class Judge extends JudgeAbstract {
                     } else if (infoKey.equals("RELOAD_TIME")) {
                         entry.getKey().setReloadTime(infoValue);
                     } else if (infoKey.equals("ROW")) {
-                        if (infoValue > engine.GameBoard.length || infoValue < 0) {
+                        if (infoValue > engine.map.getRow() || infoValue < 0) {
                             throw new DotaExceptionBase();
                         } else {
                             entry.getKey().setRow(infoValue);
                         }
                     } else if (infoKey.equals("COLUMN")) {
-                        if (infoValue > engine.GameBoard[0].length || infoValue < 0) {
+                        if (infoValue > engine.map.getColumn() || infoValue < 0) {
                             throw new DotaExceptionBase();
                         } else {
                             entry.getKey().setColumn(infoValue);
@@ -1248,13 +1248,13 @@ public class Judge extends JudgeAbstract {
                     } else if (infoKey.equals("RELOAD_TIME")) {
                         entry.getKey().setReloadTime(infoValue);
                     } else if (infoKey.equals("ROW")) {
-                        if (infoValue > engine.GameBoard.length || infoValue < 0) {
+                        if (infoValue > engine.map.getRow() || infoValue < 0) {
                             throw new DotaExceptionBase();
                         } else {
                             entry.getKey().setRow(infoValue);
                         }
                     } else if (infoKey.equals("COLUMN")) {
-                        if (infoValue > engine.GameBoard[0].length || infoValue < 0) {
+                        if (infoValue > engine.map.getColumn() || infoValue < 0) {
                             throw new DotaExceptionBase();
                         } else {
                             entry.getKey().setColumn(infoValue);
@@ -1346,13 +1346,13 @@ public class Judge extends JudgeAbstract {
                     } else if (newInfo.containsValue("RELOAD_TIME")) {
                         entry.getKey().setReloadTime(newInfo.get("RELOAD_TIME"));
                     } else if (newInfo.containsValue("ROW")) {
-                        if (newInfo.get("ROW") > engine.GameBoard.length || newInfo.get("ROW") < 0) {
+                        if (newInfo.get("ROW") > engine.map.getRow() || newInfo.get("ROW") < 0) {
                             throw new DotaExceptionBase();
                         } else {
                             entry.getKey().setRow(newInfo.get("ROW"));
                         }
                     } else if (newInfo.containsValue("COLUMN")) {
-                        if (newInfo.get("COLUMN") > engine.GameBoard[0].length || newInfo.get("COLUMN") < 0) {
+                        if (newInfo.get("COLUMN") > engine.map.getColumn() || newInfo.get("COLUMN") < 0) {
                             throw new DotaExceptionBase();
                         } else {
                             entry.getKey().setColumn(newInfo.get("COLUMN"));
@@ -1388,13 +1388,13 @@ public class Judge extends JudgeAbstract {
                     } else if (newInfo.containsValue("RELOAD_TIME")) {
                         entry.getKey().setReloadTime(newInfo.get("RELOAD_TIME"));
                     } else if (newInfo.containsValue("ROW")) {
-                        if (newInfo.get("ROW") > engine.GameBoard.length || newInfo.get("ROW") < 0) {
+                        if (newInfo.get("ROW") > engine.map.getRow() || newInfo.get("ROW") < 0) {
                             throw new DotaExceptionBase();
                         } else {
                             entry.getKey().setRow(newInfo.get("ROW"));
                         }
                     } else if (newInfo.containsValue("COLUMN")) {
-                        if (newInfo.get("COLUMN") > engine.GameBoard[0].length || newInfo.get("COLUMN") < 0) {
+                        if (newInfo.get("COLUMN") > engine.map.getColumn() || newInfo.get("COLUMN") < 0) {
                             throw new DotaExceptionBase();
                         } else {
                             entry.getKey().setColumn(newInfo.get("COLUMN"));
@@ -1431,13 +1431,13 @@ public class Judge extends JudgeAbstract {
                     } else if (newInfo.containsValue("RELOAD_TIME")) {
                         entry.getKey().setReloadTime(newInfo.get("RELOAD_TIME"));
                     } else if (newInfo.containsValue("ROW")) {
-                        if (newInfo.get("ROW") > engine.GameBoard.length || newInfo.get("ROW") < 0) {
+                        if (newInfo.get("ROW") > engine.map.getRow() || newInfo.get("ROW") < 0) {
                             throw new DotaExceptionBase();
                         } else {
                             entry.getKey().setRow(newInfo.get("ROW"));
                         }
                     } else if (newInfo.containsValue("COLUMN")) {
-                        if (newInfo.get("COLUMN") > engine.GameBoard[0].length || newInfo.get("COLUMN") < 0) {
+                        if (newInfo.get("COLUMN") > engine.map.getColumn() || newInfo.get("COLUMN") < 0) {
                             throw new DotaExceptionBase();
                         } else {
                             entry.getKey().setColumn(newInfo.get("COLUMN"));
