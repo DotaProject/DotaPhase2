@@ -7,11 +7,5 @@ import java.util.ArrayList;
  */
 public class EventHandler extends Thread{
     ArrayList<Events> eventsqueue = new ArrayList<>();
-
-    @Override
-    public void run() {
-        for (int i = 0; i < ; i++) {
-            
-        }
-    }
+    
 }
