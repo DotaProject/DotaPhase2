@@ -21,6 +21,10 @@ public class Tower extends Forces {
     private Path path;
     private Lane lane;
 
+    private int falg = 0;
+    //0 morde
+    //1 zende o hamle
+
     //constructor
     public Tower(int teamID, int towerType, Path path, Lane lane, int index, int rowNumber, int colNumber, int time, Map map) {
 

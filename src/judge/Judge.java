@@ -19,7 +19,7 @@ public class Judge extends JudgeAbstract {
     HashMap<GoldMine, GameObjectID> goldMines = new HashMap<>();
     HashMap<Hero, GameObjectID> heroes = new HashMap<>();
     HashMap<Lane[], GameObjectID[]> pathLanesID = new HashMap<>();
-    HashMap<String, Integer> info = new HashMap<>();
+    ArrayList<AttackForces> test = new ArrayList<>();
     GameEngine engine = new GameEngine();
     boolean tinyTarget;
     boolean venomancerTarget;
@@ -99,16 +99,16 @@ public class Judge extends JudgeAbstract {
         paths.put(path3, g7);
     }
 
-//    public void makeHeroHashmap() {
-//        Hero tiny = engine.getTiny();
-//        GameObjectID g8 = GameObjectID.create(Hero.class);
-//        heroes.put(tiny, g8);
-//
-//        Hero venomancer = engine.getVenomancer();
-//        GameObjectID g9 = GameObjectID.create(Hero.class);
-//        heroes.put(venomancer, g9);
-//
-//    }
+    public void makeHeroHashmap() {
+        Hero tiny = engine.map.getTiny();
+        GameObjectID g8 = GameObjectID.create(Hero.class);
+        heroes.put(tiny, g8);
+
+        Hero venomancer = engine.map.getVenomancer();
+        GameObjectID g9 = GameObjectID.create(Hero.class);
+        heroes.put(venomancer, g9);
+
+    }
 
     @Override
     public void loadMap(int columns, int rows, ArrayList<ArrayList<Cell>> path1, ArrayList<ArrayList<Cell>> path2, ArrayList<ArrayList<Cell>> path3,
@@ -267,10 +267,8 @@ public class Judge extends JudgeAbstract {
 //        gameEvents event = new gameEvents(attacker, eventHandler);
 //        event.start();
         GameObjectID g10 = GameObjectID.create(AttackForces.class);
-        System.out.println(attackers);
         attackers.put(attacker, g10);
-        System.out.println(attackers);
-        return attackers.get(attacker);
+        return g10;
     }
 
     @Override
@@ -313,13 +311,13 @@ public class Judge extends JudgeAbstract {
             }
         }
         if (teamID == 0) {
-            if (tempNumber > mylane.getCells().size() / 2) {
+            if (tempNumber < mylane.getCells().size() / 2) {
                 throw new DotaExceptionBase();
             }
         }
         if (teamID == 1) {
 
-            if (tempNumber < mylane.getCells().size() / 2) {
+            if (tempNumber > mylane.getCells().size() / 2) {
                 throw new DotaExceptionBase();
             }
 
@@ -332,7 +330,7 @@ public class Judge extends JudgeAbstract {
 //        event.start();
         GameObjectID g11 = GameObjectID.create(Tower.class);
         towers.put(tower, g11);
-        return towers.get(tower);
+        return g11;
     }
 
     @Override
@@ -390,7 +388,7 @@ public class Judge extends JudgeAbstract {
 
         for (Map.Entry<Hero, GameObjectID> entry : heroes.entrySet()) {
             if (Objects.equals(hero, entry.getValue())) {
-                if ((entry.getKey().getTeamID() == 0 && tinyMove == true) || (entry.getKey().getTeamID() == 1 && venomancerMove == true)) {
+                if ((entry.getKey().getTeamID() == 0 || (entry.getKey().getTeamID() == 1 ))) {
                     entry.getKey().heroMove(dest, direction, engine.map);
 //                    for (int i = 0; i < eventHandler.gameEvents.size(); i++) {
 //                        if (eventHandler.gameEvents.get(i).getFlag() == 1) {
@@ -433,10 +431,10 @@ public class Judge extends JudgeAbstract {
     @Override
     public int getMoney(int teamID) {
         if (teamID == 0) {
-            engine.map.getAncient1()[0].getTreasury();
+            return engine.map.getAncient1()[0].getTreasury();
         }
         if (teamID == 1) {
-            engine.map.getAncient2()[0].getTreasury();
+            return engine.map.getAncient2()[0].getTreasury();
         }
         return 0;
     }
@@ -463,6 +461,7 @@ public class Judge extends JudgeAbstract {
 
     @Override
     public HashMap<String, Integer> getInfo(GameObjectID id) throws DotaExceptionBase {
+        HashMap<String, Integer> info = new HashMap<>();
         GameObjectID[] tempID = new GameObjectID[1];
         tempID[0] = id;
         info.clear();
@@ -526,12 +525,12 @@ public class Judge extends JudgeAbstract {
             for (Map.Entry<AttackForces, GameObjectID> entry : attackers.entrySet()) {
                 if (Objects.equals(id, entry.getValue())) {
                     AttackForces attacker = entry.getKey();
+                    test.add(attacker);
                     info.put("id", attacker.getTeamID());
                     info.put("health", attacker.getHealth());
                     info.put("range", attacker.getRange());
                     info.put("time", attacker.getReloadTime());
                     info.put("row", attacker.getRow());
-                    System.out.println("this"+info.get("row"));
                     info.put("col", attacker.getColumn());
                     info.put("value", (int) attacker.getValue());
                     if (attacker.isAlive()){
@@ -541,6 +540,8 @@ public class Judge extends JudgeAbstract {
                     }
                     info.put("speed", attacker.getSpeed());
                     info.put("attack", attacker.getDamage());
+
+                   // System.out.println(test.get(0).getRow());
                 }
             }
 

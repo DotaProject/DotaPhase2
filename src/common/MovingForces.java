@@ -6,6 +6,10 @@ public class MovingForces extends Forces {
     protected double value;
     protected int damage;
     protected int speed;
+    private int flag = 0;
+    //0 = morde
+    //1 = zende o move
+    //2 = zende o attack
 
     public double getValue() {
         return value;
@@ -49,5 +53,9 @@ public class MovingForces extends Forces {
 
     public void setSpeed(int speed) {
         this.speed = speed;
+    }
+
+    public int getFlag() {
+        return flag;
     }
 }

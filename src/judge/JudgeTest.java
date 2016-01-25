@@ -52,25 +52,22 @@ public class JudgeTest extends TestCase {
         GameObjectID path1 = j1.getPathID(0);
         GameObjectID[] path1Lanes = j1.getLaneID(0);
         j1.setup();
+
         // Start game
         GameObjectID attacker = j1.createAttacker(Judge.TEAM_SENTINEL,
                 Judge.ATTACKER_TANK, path1, path1Lanes[0], 29, 0);
 
+
         GameObjectID attacker2 = j1.createAttacker(Judge.TEAM_SCOURGE,
                 Judge.ATTACKER_INFANTRY, path1, path1Lanes[0], 0, 31);
+
+
         for (int i = 0; i < 2500; i++) {
             j1.next50milis();
         }
 
-        //System.out.println(j1.getInfo(attacker));
-
-        //System.out.println(j1.getInfo(attacker2));
-
         HashMap<String, Integer> values = j1.getInfo(attacker);
         HashMap<String, Integer> values2 = j1.getInfo(attacker2);
-        //System.out.println(values.size());
-        //System.out.println(values);
-        //System.out.println(values.size());
 
         int row2 = values2.get(Judge.ROW);
         int row1 = values.get(Judge.ROW);
@@ -78,14 +75,15 @@ public class JudgeTest extends TestCase {
         int col2 = values2.get(Judge.COLOUMN);
         int alive1 = values.get(Judge.IS_ALIVE);
         int alive2 = values2.get(Judge.IS_ALIVE);
-        //System.out.println(values.get(Judge.ROW));
+
+
 
         assertEquals(0, row1);
-        //assertEquals(31, col1,3);
-        //assertEquals(0, row2);
-        //assertEquals(4, col2);
-        //assertEquals(1, alive1);
-        //assertEquals(0, alive2);
+        assertEquals(31, col1,3);
+        assertEquals(0, row2);
+        assertEquals(4, col2);
+        assertEquals(1, alive1);
+        assertEquals(0, alive2);
     }
 
     @Test
@@ -114,7 +112,7 @@ public class JudgeTest extends TestCase {
         int col1 = values.get(Judge.COLOUMN);
         int alive1 = values.get(Judge.IS_ALIVE);
         assertEquals(35, row1);
-//        assertEquals(10, col1);
+        assertEquals(10, col1);
         assertEquals(1, alive1);
     }
 
@@ -131,12 +129,12 @@ public class JudgeTest extends TestCase {
         j1.setup();
         // Start game
         int money = j1.getMoney(Judge.TEAM_SENTINEL);
-//        assertEquals(5000, money, 10);
+        assertEquals(5000, money, 10);
         for (int i = 0; i < 2000; i++) {
             j1.next50milis();
         }
         money = j1.getMoney(Judge.TEAM_SENTINEL);
-//        assertEquals(6000, money, 20);
+        assertEquals(6000, money, 20);
         common.Cell nextCell = new Cell();
         nextCell.setRow(35);
         for (int i = 0; i < 7; i++) {
@@ -157,7 +155,7 @@ public class JudgeTest extends TestCase {
             j1.next50milis();
         }
         money = j1.getMoney(Judge.TEAM_SENTINEL);
-//        assertEquals(17100, money, 1000);
+        assertEquals(17100, money, 1000);
     }
 
     @Test
@@ -201,9 +199,9 @@ public class JudgeTest extends TestCase {
         int col1 = values.get(Judge.COLOUMN);
         int alive1 = values.get(Judge.IS_ALIVE);
         int hp = values.get(Judge.HEALTH);
-        //assertEquals(3000, hp, 100);
-        //assertEquals(2, row1);
-        //assertEquals(15, col1);
+        assertEquals(3000, hp, 100);
+        assertEquals(2, row1);
+        assertEquals(15, col1);
         assertEquals(1, alive1);
         for (int i = 0; i < 1700; i++) {
             j1.next50milis();
@@ -212,8 +210,8 @@ public class JudgeTest extends TestCase {
         alive1 = values.get(Judge.IS_ALIVE);
         hp = values.get(Judge.HEALTH);
 
-        //assertEquals(0, alive1);
-        //assertEquals(0, hp);
+        assertEquals(0, alive1);
+        assertEquals(0, hp);
         for (int i = 0; i < 1000; i++) {
             j1.next50milis();
         }
