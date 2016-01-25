@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1726638a-8aca-49ae-a33a-77950752dd17" name="Default" comment="adding judge">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/judge/Judge.class" afterPath="$PROJECT_DIR$/out/production/DotaPhase2/judge/Judge.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/judge/JudgeTest.class" afterPath="$PROJECT_DIR$/out/production/DotaPhase2/judge/JudgeTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/judge/Judge.java" afterPath="$PROJECT_DIR$/src/judge/Judge.java" />
     </list>
     <ignored path="DotaPhase2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,87 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="JudgeTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="JudgeTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/judge/JudgeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Judge.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/judge/Judge.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.2251083">
-              <caret line="281" column="13" selection-start-line="281" selection-start-column="13" selection-end-line="281" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#makePathHashMap#0;class#Judge#0" expanded="false" />
-                <element signature="method#getBuildingID#0;class#Judge#0" expanded="false" />
-                <element signature="method#getPathID#0;class#Judge#0" expanded="false" />
-                <element signature="method#getHeroID#0;class#Judge#0" expanded="false" />
-                <element signature="e#9348#9416#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameEngine.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/GameEngine.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding>
-                <element signature="method#createTower#0;class#GameEngine#0" expanded="false" />
-                <element signature="method#createAttacker#0;class#GameEngine#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Map.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/Map.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Hero.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/Hero.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-              <folding>
-                <element signature="method#heroMove#0;class#Hero#0" expanded="false" />
-                <element signature="method#checkGoldMine#0;class#Hero#0" expanded="false" />
-                <element signature="method#makeRandomGoldMine#0;class#Hero#0" expanded="false" />
-                <element signature="method#attack#0;class#Hero#0" expanded="false" />
-                <element signature="method#getInRange#0;class#Hero#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Lane.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/Lane.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Path.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/Path.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="107" column="28" selection-start-line="107" selection-start-column="28" selection-end-line="107" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.2034632">
+              <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -178,7 +101,6 @@
         <option value="$PROJECT_DIR$/src/common/Forces.java" />
         <option value="$PROJECT_DIR$/src/common/MovingForces.java" />
         <option value="$PROJECT_DIR$/src/judge/JavaTest.java" />
-        <option value="$PROJECT_DIR$/src/judge/JudgeTest.java" />
         <option value="$PROJECT_DIR$/src/judge/MapReader.java" />
         <option value="$PROJECT_DIR$/src/common/Event.java" />
         <option value="$PROJECT_DIR$/src/common/events/EventHandler.java" />
@@ -195,6 +117,7 @@
         <option value="$PROJECT_DIR$/src/common/Map.java" />
         <option value="$PROJECT_DIR$/src/common/Path.java" />
         <option value="$PROJECT_DIR$/src/judge/Judge.java" />
+        <option value="$PROJECT_DIR$/src/judge/JudgeTest.java" />
       </list>
     </option>
   </component>
@@ -789,7 +712,7 @@
       <workItem from="1453700655479" duration="2343000" />
       <workItem from="1453707405006" duration="2013000" />
       <workItem from="1453709660090" duration="297000" />
-      <workItem from="1453710081021" duration="4742000" />
+      <workItem from="1453710081021" duration="5634000" />
     </task>
     <task id="LOCAL-00001" summary="Hi">
       <created>1451760551825</created>
@@ -837,15 +760,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="JudgeTest_test1 - 2016.01.25 at 14h 25m 02s.xml">
-      <configuration name="JudgeTest.test1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JudgeTest_test1 - 2016.01.25 at 14h 29m 00s.xml">
-      <configuration name="JudgeTest.test1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JudgeTest_test1 - 2016.01.25 at 14h 30m 11s.xml">
-      <configuration name="JudgeTest.test1" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="JudgeTest_test1 - 2016.01.25 at 14h 31m 30s.xml">
       <configuration name="JudgeTest.test1" configurationId="JUnit" />
     </history-entry>
@@ -867,9 +781,18 @@
     <history-entry file="JudgeTest_test1 - 2016.01.25 at 14h 52m 33s.xml">
       <configuration name="JudgeTest.test1" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="JudgeTest_test1 - 2016.01.25 at 15h 07m 20s.xml">
+      <configuration name="JudgeTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JudgeTest_test1 - 2016.01.25 at 15h 08m 28s.xml">
+      <configuration name="JudgeTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JudgeTest_test1 - 2016.01.25 at 15h 11m 57s.xml">
+      <configuration name="JudgeTest.test1" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31330000" />
+    <option name="totallyTimeSpent" value="32222000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -1407,18 +1330,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/judge/JudgeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/judge/Judge.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2251083">
-          <caret line="281" column="13" selection-start-line="281" selection-start-column="13" selection-end-line="281" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.29885057">
+          <caret line="525" column="59" selection-start-line="525" selection-start-column="59" selection-end-line="525" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#makePathHashMap#0;class#Judge#0" expanded="false" />
@@ -1427,6 +1342,14 @@
             <element signature="method#getHeroID#0;class#Judge#0" expanded="false" />
             <element signature="e#9348#9416#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/judge/JudgeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2034632">
+          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
