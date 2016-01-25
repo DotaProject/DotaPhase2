@@ -4,9 +4,6 @@ import java.util.ArrayList;
 
 public class Cell {
 
-    private int row;
-    private int column;
-
     public ArrayList<Ancient> ancientSentinel = new ArrayList<>();
     public ArrayList<Ancient> ancientScourge = new ArrayList<>();
     public ArrayList<Barraks> barraksSentinel = new ArrayList<>();
@@ -23,6 +20,8 @@ public class Cell {
     public ArrayList<Tower> towerStone = new ArrayList<>();
     public ArrayList<Tower> towerBlack = new ArrayList<>();
     public ArrayList<Tower> towerPoison = new ArrayList<>();
+    private int row;
+    private int column;
 
     //getter and setter
     public int getRow() {

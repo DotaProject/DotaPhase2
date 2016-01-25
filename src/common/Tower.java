@@ -12,7 +12,6 @@ public class Tower extends Forces {
     private int tankAttackPower;
     private int towerType;
 
-
     private int price;
     private int rangeUpgradeTime = 0;
     private int index;
@@ -495,30 +494,30 @@ public class Tower extends Forces {
         if (targets.size() == 1) {
             return targets.get(0);
         }
-            if (targets.size() > 1) {
+        if (targets.size() > 1) {
 
-                tempTargets1 = findMinValue(targets);
+            tempTargets1 = findMinValue(targets);
 
-                if (tempTargets1.size() == 1) {
-                    return tempTargets1.get(0);
-                }
-                if (tempTargets1.size() > 1) {
-
-                    tempTargets2 = findMinDistance(tempTargets1);
-
-                    if (tempTargets2.size() == 1) {
-                        return tempTargets2.get(0);
-                    }
-
-                    if (tempTargets2.size() > 1) {
-
-                        tempTargets3 = findMostValue(tempTargets2);
-
-                        return tempTargets3.get(0);
-                    }
-                }
-
+            if (tempTargets1.size() == 1) {
+                return tempTargets1.get(0);
             }
+            if (tempTargets1.size() > 1) {
+
+                tempTargets2 = findMinDistance(tempTargets1);
+
+                if (tempTargets2.size() == 1) {
+                    return tempTargets2.get(0);
+                }
+
+                if (tempTargets2.size() > 1) {
+
+                    tempTargets3 = findMostValue(tempTargets2);
+
+                    return tempTargets3.get(0);
+                }
+            }
+
+        }
 
         return null;
     }
@@ -599,12 +598,24 @@ public class Tower extends Forces {
         return towerType;
     }
 
+    public void setTowerType(int towerType) {
+        this.towerType = towerType;
+    }
+
     public int getInfantryAttackPower() {
         return infantryAttackPower;
     }
 
+    public void setInfantryAttackPower(int infantryAttackPower) {
+        this.infantryAttackPower = infantryAttackPower;
+    }
+
     public int getTankAttackPower() {
         return tankAttackPower;
+    }
+
+    public void setTankAttackPower(int tankAttackPower) {
+        this.tankAttackPower = tankAttackPower;
     }
 
     public double getValue() {
@@ -615,24 +626,12 @@ public class Tower extends Forces {
         this.value = value;
     }
 
-    public void setInfantryAttackPower(int infantryAttackPower) {
-        this.infantryAttackPower = infantryAttackPower;
-    }
-
-    public void setTankAttackPower(int tankAttackPower) {
-        this.tankAttackPower = tankAttackPower;
-    }
-
     public int getBirthTime() {
         return birthTime;
     }
 
     public void setBirthTime(int birthTime) {
         this.birthTime = birthTime;
-    }
-
-    public void setTowerType(int towerType) {
-        this.towerType = towerType;
     }
 
     public int getPrice() {

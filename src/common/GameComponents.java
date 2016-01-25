@@ -34,4 +34,12 @@ public class GameComponents implements Components {
     public void setAlive(boolean alive) {
         isAlive = alive;
     }
+
+    public int getTeamID() {
+        return teamID;
+    }
+
+    public void setTeamID(int teamID) {
+        this.teamID = teamID;
+    }
 }

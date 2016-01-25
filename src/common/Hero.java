@@ -1,6 +1,7 @@
 package common;
 
 import common.exception.DotaExceptionBase;
+
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -16,8 +17,9 @@ public class Hero extends MovingForces {
             reloadTime = 300;
             range = 7;
             health = 4000;
-            row = map.getAncient1()[0].getCell()[2][2].getRow();
-            column = map.getAncient1()[0].getCell()[2][2].getColumn();
+            this.teamID = teamID;
+            row = map.getAncient2()[0].getCell()[2][2].getRow();
+            column = map.getAncient2()[0].getCell()[2][2].getColumn();
             map.getGameBoard()[row][column].tiny.add(this);
         } else if (teamID == 0) {
             speed = 400;
@@ -27,6 +29,7 @@ public class Hero extends MovingForces {
             health = 5000;
             row = map.getAncient1()[0].getCell()[2][2].getRow();
             column = map.getAncient1()[0].getCell()[2][2].getColumn();
+            this.teamID = teamID;
             map.getGameBoard()[row][column].venomancer.add(this);
         }
         this.heroType = heroType;
@@ -168,7 +171,7 @@ public class Hero extends MovingForces {
                         target.attackerScourgeInfantry.get(i).health -= damage;
                         if (target.attackerScourgeInfantry.get(i).health <= 0) {
                             target.attackerScourgeInfantry.get(i).isAlive = false;
-                            map.getAncient1()[0].setTreasury(map.getAncient1()[0].getTreasury() + (int) target.attackerScourgeInfantry.get(i).value);
+                            map.getAncient1()[0].setTreasury(map.getAncient1()[0].getTreasury() + (int) target.attackerScourgeInfantry.get(i).getValue());
                             map.getGameBoard()[target.getRow()][target.getColumn()].attackerScourgeInfantry.remove(i);
                         }
                     }
@@ -178,7 +181,7 @@ public class Hero extends MovingForces {
                         target.attackerScourgeTank.get(i).health -= damage;
                         if (target.attackerScourgeTank.get(i).health <= 0) {
                             target.attackerScourgeTank.get(i).isAlive = false;
-                            map.getAncient1()[0].setTreasury(map.getAncient1()[0].getTreasury() + (int) target.attackerScourgeTank.get(i).value);
+                            map.getAncient1()[0].setTreasury(map.getAncient1()[0].getTreasury() + (int) target.attackerScourgeTank.get(i).getValue());
                             map.getGameBoard()[target.getRow()][target.getColumn()].attackerScourgeTank.remove(i);
                         }
                     }
@@ -232,7 +235,7 @@ public class Hero extends MovingForces {
                         target.attackerSentinelInfantry.get(i).health -= damage;
                         if (target.attackerSentinelInfantry.get(i).health <= 0) {
                             target.attackerSentinelInfantry.get(i).isAlive = false;
-                            map.getAncient1()[0].setTreasury(map.getAncient1()[0].getTreasury() + (int) target.attackerSentinelInfantry.get(i).value);
+                            map.getAncient1()[0].setTreasury(map.getAncient1()[0].getTreasury() + (int) target.attackerSentinelInfantry.get(i).getValue());
                             map.getGameBoard()[target.getRow()][target.getColumn()].attackerSentinelInfantry.remove(i);
                         }
                     }
@@ -242,7 +245,7 @@ public class Hero extends MovingForces {
                         target.attackerSentinelTank.get(i).health -= damage;
                         if (target.attackerSentinelTank.get(i).health <= 0) {
                             target.attackerSentinelTank.get(i).isAlive = false;
-                            map.getAncient1()[0].setTreasury(map.getAncient1()[0].getTreasury() + (int) target.attackerSentinelTank.get(i).value);
+                            map.getAncient1()[0].setTreasury(map.getAncient1()[0].getTreasury() + (int) target.attackerSentinelTank.get(i).getValue());
                             map.getGameBoard()[target.getRow()][target.getColumn()].attackerSentinelTank.remove(i);
                         }
                     }
@@ -350,5 +353,6 @@ public class Hero extends MovingForces {
         }
         return heroRange;
     }
-}
 
+
+}

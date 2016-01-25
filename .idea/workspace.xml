@@ -2,19 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1726638a-8aca-49ae-a33a-77950752dd17" name="Default" comment="">
-<<<<<<< Updated upstream
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/common/components.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/Minam.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/GameObjectID.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/judge/Judge.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/judge/JudgeAbstract.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/judge/JudgeTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/judge/MapReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DotaPhase2.iml" afterPath="$PROJECT_DIR$/DotaPhase2.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/Ancient.java" afterPath="$PROJECT_DIR$/src/common/Ancient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/AttackForces.java" afterPath="$PROJECT_DIR$/src/common/AttackForces.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/Barraks.java" afterPath="$PROJECT_DIR$/src/common/Barraks.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/Cell.java" afterPath="$PROJECT_DIR$/src/common/Cell.java" />
-=======
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
->>>>>>> Stashed changes
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/Forces.java" afterPath="$PROJECT_DIR$/src/common/Forces.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/GameComponents.java" afterPath="$PROJECT_DIR$/src/common/GameComponents.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/GameEngine.java" afterPath="$PROJECT_DIR$/src/common/GameEngine.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/GoldMine.java" afterPath="$PROJECT_DIR$/src/common/GoldMine.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/Hero.java" afterPath="$PROJECT_DIR$/src/common/Hero.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/Map.java" afterPath="$PROJECT_DIR$/src/common/Map.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/MovingForces.java" afterPath="$PROJECT_DIR$/src/common/MovingForces.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/Path.java" afterPath="$PROJECT_DIR$/src/common/Path.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/Tower.java" afterPath="$PROJECT_DIR$/src/common/Tower.java" />
     </list>
     <ignored path="DotaPhase2.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path=".idea/dataSources.local.xml" />
+    <ignored path="$PROJECT_DIR$/.idea/shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,68 +46,7 @@
     <favorites_list name="DotaPhase2" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MovingForces.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/MovingForces.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Map.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/common/Map.java">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-            <state vertical-scroll-proportion="1.0344827">
-              <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
-=======
-            <state vertical-scroll-proportion="0.765625">
-              <caret line="124" column="25" selection-start-line="124" selection-start-column="25" selection-end-line="124" selection-end-column="25" />
->>>>>>> Stashed changes
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< Updated upstream
-      <file leaf-file-name="ScourgeAttackForces.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/ScourgeAttackForces.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Path.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/Path.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="38" column="38" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Ancient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/Ancient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-=======
->>>>>>> Stashed changes
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -107,6 +61,7 @@
         <option value="Fatemeh" />
       </list>
     </option>
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -142,15 +97,28 @@
         <option value="$PROJECT_DIR$/src/Lane.java" />
         <option value="$PROJECT_DIR$/src/Map.java" />
         <option value="$PROJECT_DIR$/src/Cell.java" />
-        <option value="$PROJECT_DIR$/src/common/Ancient.java" />
-        <option value="$PROJECT_DIR$/src/common/Barraks.java" />
         <option value="$PROJECT_DIR$/src/common/components.java" />
-        <option value="$PROJECT_DIR$/src/common/GameComponents.java" />
         <option value="$PROJECT_DIR$/src/common/BoardComponents.java" />
-        <option value="$PROJECT_DIR$/src/common/Path.java" />
-        <option value="$PROJECT_DIR$/src/common/Lane.java" />
+        <option value="$PROJECT_DIR$/src/common/Barraks.java" />
+        <option value="$PROJECT_DIR$/src/common/Ancient.java" />
         <option value="$PROJECT_DIR$/src/common/Cell.java" />
+        <option value="$PROJECT_DIR$/src/common/GoldMine.java" />
+        <option value="$PROJECT_DIR$/src/common/Lane.java" />
+        <option value="$PROJECT_DIR$/src/common/Path.java" />
+        <option value="$PROJECT_DIR$/src/common/GameObjectID.java" />
+        <option value="$PROJECT_DIR$/src/common/GameEngine.java" />
+        <option value="$PROJECT_DIR$/src/judge/JudgeAbstract.java" />
         <option value="$PROJECT_DIR$/src/common/Map.java" />
+        <option value="$PROJECT_DIR$/src/common/Hero.java" />
+        <option value="$PROJECT_DIR$/src/common/AttackForces.java" />
+        <option value="$PROJECT_DIR$/src/common/Tower.java" />
+        <option value="$PROJECT_DIR$/src/common/GameComponents.java" />
+        <option value="$PROJECT_DIR$/src/common/Forces.java" />
+        <option value="$PROJECT_DIR$/src/common/MovingForces.java" />
+        <option value="$PROJECT_DIR$/src/judge/Judge.java" />
+        <option value="$PROJECT_DIR$/src/judge/JavaTest.java" />
+        <option value="$PROJECT_DIR$/src/judge/JudgeTest.java" />
+        <option value="$PROJECT_DIR$/src/judge/MapReader.java" />
       </list>
     </option>
   </component>
@@ -188,10 +156,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-<<<<<<< Updated upstream
-=======
-      <pane id="PackagesPane" />
->>>>>>> Stashed changes
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -224,18 +188,55 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="judge" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DotaPhase2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DotaPhase2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DotaPhase2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DotaPhase2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exception" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-<<<<<<< Updated upstream
-      <pane id="PackagesPane" />
-=======
->>>>>>> Stashed changes
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -260,7 +261,10 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="900" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FullScreen" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/lib/hamcrest-core-1.3.jar!/" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -688,13 +692,11 @@
       <workItem from="1451806351088" duration="1248000" />
       <workItem from="1451809101921" duration="240000" />
       <workItem from="1451839550845" duration="1842000" />
-<<<<<<< Updated upstream
       <workItem from="1451844899865" duration="6390000" />
       <workItem from="1451890826500" duration="1718000" />
-=======
-      <workItem from="1451844899865" duration="6979000" />
-      <workItem from="1451900273705" duration="297000" />
->>>>>>> Stashed changes
+      <workItem from="1453661399326" duration="3451000" />
+      <workItem from="1453670608415" duration="38000" />
+      <workItem from="1453670660258" duration="5358000" />
     </task>
     <task id="LOCAL-00001" summary="Hi">
       <created>1451760551825</created>
@@ -706,15 +708,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< Updated upstream
-    <option name="totallyTimeSpent" value="12497000" />
-=======
-    <option name="totallyTimeSpent" value="11665000" />
->>>>>>> Stashed changes
+    <option name="totallyTimeSpent" value="21344000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -724,11 +722,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32650274" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-<<<<<<< Updated upstream
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24921875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-=======
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
->>>>>>> Stashed changes
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2015625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -794,11 +788,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< Updated upstream
-    <entry file="file://$PROJECT_DIR$/src/common/Venomancer.java">
+    <entry file="file://$PROJECT_DIR$/src/common/GameEngine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -806,72 +799,105 @@
     <entry file="file://$PROJECT_DIR$/src/common/Map.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/common/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
->>>>>>> Stashed changes
+          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="27" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4787#4788#0" expanded="true" />
+            <element signature="e#4829#4830#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/HashMap.java">
+    <entry file="file://$PROJECT_DIR$/src/common/GameEngine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="553" column="13" selection-start-line="553" selection-start-column="13" selection-end-line="553" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Cell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-<<<<<<< Updated upstream
-          <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
-=======
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
->>>>>>> Stashed changes
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/GameComponents.java">
+    <entry file="file://$PROJECT_DIR$/src/common/Map.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="27" selection-end-column="70" />
           <folding>
-            <element signature="e#279#280#0" expanded="true" />
-            <element signature="e#307#308#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#4787#4788#0" expanded="true" />
+            <element signature="e#4829#4830#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Barraks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#605#606#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< Updated upstream
-=======
-    <entry file="file://$PROJECT_DIR$/src/common/ScourgeAttackForces.java">
+    <entry file="file://$PROJECT_DIR$/src/common/Tower.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#27216#27217#0" expanded="true" />
+            <element signature="e#27248#27249#0" expanded="true" />
+            <element signature="e#27291#27292#0" expanded="true" />
+            <element signature="e#27333#27334#0" expanded="true" />
+            <element signature="e#27372#27373#0" expanded="true" />
+            <element signature="e#27410#27411#0" expanded="true" />
+            <element signature="e#27442#27443#0" expanded="true" />
+            <element signature="e#27470#27471#0" expanded="true" />
+            <element signature="e#27512#27513#0" expanded="true" />
+            <element signature="e#27546#27547#0" expanded="true" />
+            <element signature="e#27613#27614#0" expanded="true" />
+            <element signature="e#27675#27676#0" expanded="true" />
+            <element signature="e#27734#27735#0" expanded="true" />
+            <element signature="e#27788#27789#0" expanded="true" />
+            <element signature="e#27821#27822#0" expanded="true" />
+            <element signature="e#27853#27854#0" expanded="true" />
+            <element signature="e#27900#27901#0" expanded="true" />
+            <element signature="e#27942#27943#0" expanded="true" />
+            <element signature="e#27989#27990#0" expanded="true" />
+            <element signature="e#28031#28032#0" expanded="true" />
+            <element signature="e#28060#28061#0" expanded="true" />
+            <element signature="e#28088#28089#0" expanded="true" />
+            <element signature="e#28127#28128#0" expanded="true" />
+            <element signature="e#28161#28162#0" expanded="true" />
+            <element signature="e#28201#28202#0" expanded="true" />
+            <element signature="e#28240#28241#0" expanded="true" />
+            <element signature="e#28301#28302#0" expanded="true" />
+            <element signature="e#28357#28358#0" expanded="true" />
+            <element signature="e#28386#28387#0" expanded="true" />
+            <element signature="e#28414#28415#0" expanded="true" />
+            <element signature="e#28453#28454#0" expanded="true" />
+            <element signature="e#28487#28488#0" expanded="true" />
+            <element signature="e#28514#28515#0" expanded="true" />
+            <element signature="e#28540#28541#0" expanded="true" />
+            <element signature="e#28575#28576#0" expanded="true" />
+            <element signature="e#28605#28606#0" expanded="true" />
+            <element signature="e#28635#28636#0" expanded="true" />
+            <element signature="e#28664#28665#0" expanded="true" />
+            <element signature="e#28705#28706#0" expanded="true" />
+            <element signature="e#28741#28742#0" expanded="true" />
+            <element signature="e#28770#28771#0" expanded="true" />
+            <element signature="e#28797#28798#0" expanded="true" />
+            <element signature="e#28835#28836#0" expanded="true" />
+            <element signature="e#28867#28868#0" expanded="true" />
+            <element signature="e#28896#28897#0" expanded="true" />
+            <element signature="e#28923#28924#0" expanded="true" />
+            <element signature="e#28961#28962#0" expanded="true" />
+            <element signature="e#28993#28994#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
->>>>>>> Stashed changes
+    <entry file="file://$PROJECT_DIR$/src/common/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4787#4788#0" expanded="true" />
+            <element signature="e#4829#4830#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/common/Path.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -884,7 +910,103 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#1028#1029#0" expanded="true" />
+            <element signature="e#1063#1064#0" expanded="true" />
+            <element signature="e#1146#1147#0" expanded="true" />
+            <element signature="e#1200#1201#0" expanded="true" />
+            <element signature="e#1267#1268#0" expanded="true" />
+            <element signature="e#1307#1308#0" expanded="true" />
+            <element signature="e#1370#1371#0" expanded="true" />
+            <element signature="e#1428#1429#0" expanded="true" />
+            <element signature="e#1460#1461#0" expanded="true" />
+            <element signature="e#1491#1492#0" expanded="true" />
+            <element signature="e#1536#1537#0" expanded="true" />
+            <element signature="e#1576#1577#0" expanded="true" />
+            <element signature="e#1609#1610#0" expanded="true" />
+            <element signature="e#1636#1637#0" expanded="true" />
+            <element signature="e#1678#1679#0" expanded="true" />
+            <element signature="e#1710#1711#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4787#4788#0" expanded="true" />
+            <element signature="e#4829#4830#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="553" column="13" selection-start-line="553" selection-start-column="13" selection-end-line="553" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Cell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+          <folding>
+            <element signature="e#1210#1211#0" expanded="true" />
+            <element signature="e#1236#1237#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/GameComponents.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Barraks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Path.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="38" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Ancient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#1028#1029#0" expanded="true" />
+            <element signature="e#1063#1064#0" expanded="true" />
+            <element signature="e#1146#1147#0" expanded="true" />
+            <element signature="e#1200#1201#0" expanded="true" />
+            <element signature="e#1267#1268#0" expanded="true" />
+            <element signature="e#1307#1308#0" expanded="true" />
+            <element signature="e#1370#1371#0" expanded="true" />
+            <element signature="e#1428#1429#0" expanded="true" />
+            <element signature="e#1460#1461#0" expanded="true" />
+            <element signature="e#1491#1492#0" expanded="true" />
+            <element signature="e#1536#1537#0" expanded="true" />
+            <element signature="e#1576#1577#0" expanded="true" />
+            <element signature="e#1609#1610#0" expanded="true" />
+            <element signature="e#1636#1637#0" expanded="true" />
+            <element signature="e#1678#1679#0" expanded="true" />
+            <element signature="e#1710#1711#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -896,46 +1018,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/ScourgeTower.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/SentinelAttackForce.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/SentinelTower.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Tiny.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/common/Tower.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Venomancer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#27216#27217#0" expanded="true" />
+            <element signature="e#27248#27249#0" expanded="true" />
+            <element signature="e#27291#27292#0" expanded="true" />
+            <element signature="e#27333#27334#0" expanded="true" />
+            <element signature="e#27372#27373#0" expanded="true" />
+            <element signature="e#27410#27411#0" expanded="true" />
+            <element signature="e#27442#27443#0" expanded="true" />
+            <element signature="e#27470#27471#0" expanded="true" />
+            <element signature="e#27512#27513#0" expanded="true" />
+            <element signature="e#27546#27547#0" expanded="true" />
+            <element signature="e#27613#27614#0" expanded="true" />
+            <element signature="e#27675#27676#0" expanded="true" />
+            <element signature="e#27734#27735#0" expanded="true" />
+            <element signature="e#27788#27789#0" expanded="true" />
+            <element signature="e#27821#27822#0" expanded="true" />
+            <element signature="e#27853#27854#0" expanded="true" />
+            <element signature="e#27900#27901#0" expanded="true" />
+            <element signature="e#27942#27943#0" expanded="true" />
+            <element signature="e#27989#27990#0" expanded="true" />
+            <element signature="e#28031#28032#0" expanded="true" />
+            <element signature="e#28060#28061#0" expanded="true" />
+            <element signature="e#28088#28089#0" expanded="true" />
+            <element signature="e#28127#28128#0" expanded="true" />
+            <element signature="e#28161#28162#0" expanded="true" />
+            <element signature="e#28201#28202#0" expanded="true" />
+            <element signature="e#28240#28241#0" expanded="true" />
+            <element signature="e#28301#28302#0" expanded="true" />
+            <element signature="e#28357#28358#0" expanded="true" />
+            <element signature="e#28386#28387#0" expanded="true" />
+            <element signature="e#28414#28415#0" expanded="true" />
+            <element signature="e#28453#28454#0" expanded="true" />
+            <element signature="e#28487#28488#0" expanded="true" />
+            <element signature="e#28514#28515#0" expanded="true" />
+            <element signature="e#28540#28541#0" expanded="true" />
+            <element signature="e#28575#28576#0" expanded="true" />
+            <element signature="e#28605#28606#0" expanded="true" />
+            <element signature="e#28635#28636#0" expanded="true" />
+            <element signature="e#28664#28665#0" expanded="true" />
+            <element signature="e#28705#28706#0" expanded="true" />
+            <element signature="e#28741#28742#0" expanded="true" />
+            <element signature="e#28770#28771#0" expanded="true" />
+            <element signature="e#28797#28798#0" expanded="true" />
+            <element signature="e#28835#28836#0" expanded="true" />
+            <element signature="e#28867#28868#0" expanded="true" />
+            <element signature="e#28896#28897#0" expanded="true" />
+            <element signature="e#28923#28924#0" expanded="true" />
+            <element signature="e#28961#28962#0" expanded="true" />
+            <element signature="e#28993#28994#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -945,15 +1082,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4787#4788#0" expanded="true" />
+            <element signature="e#4829#4830#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/ScourgeAttackForces.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -983,6 +1114,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -990,6 +1122,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -999,6 +1134,8 @@
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4787#4788#0" expanded="true" />
+            <element signature="e#4829#4830#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1011,25 +1148,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/SentinelTower.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/common/Tower.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Venomancer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#27216#27217#0" expanded="true" />
+            <element signature="e#27248#27249#0" expanded="true" />
+            <element signature="e#27291#27292#0" expanded="true" />
+            <element signature="e#27333#27334#0" expanded="true" />
+            <element signature="e#27372#27373#0" expanded="true" />
+            <element signature="e#27410#27411#0" expanded="true" />
+            <element signature="e#27442#27443#0" expanded="true" />
+            <element signature="e#27470#27471#0" expanded="true" />
+            <element signature="e#27512#27513#0" expanded="true" />
+            <element signature="e#27546#27547#0" expanded="true" />
+            <element signature="e#27613#27614#0" expanded="true" />
+            <element signature="e#27675#27676#0" expanded="true" />
+            <element signature="e#27734#27735#0" expanded="true" />
+            <element signature="e#27788#27789#0" expanded="true" />
+            <element signature="e#27821#27822#0" expanded="true" />
+            <element signature="e#27853#27854#0" expanded="true" />
+            <element signature="e#27900#27901#0" expanded="true" />
+            <element signature="e#27942#27943#0" expanded="true" />
+            <element signature="e#27989#27990#0" expanded="true" />
+            <element signature="e#28031#28032#0" expanded="true" />
+            <element signature="e#28060#28061#0" expanded="true" />
+            <element signature="e#28088#28089#0" expanded="true" />
+            <element signature="e#28127#28128#0" expanded="true" />
+            <element signature="e#28161#28162#0" expanded="true" />
+            <element signature="e#28201#28202#0" expanded="true" />
+            <element signature="e#28240#28241#0" expanded="true" />
+            <element signature="e#28301#28302#0" expanded="true" />
+            <element signature="e#28357#28358#0" expanded="true" />
+            <element signature="e#28386#28387#0" expanded="true" />
+            <element signature="e#28414#28415#0" expanded="true" />
+            <element signature="e#28453#28454#0" expanded="true" />
+            <element signature="e#28487#28488#0" expanded="true" />
+            <element signature="e#28514#28515#0" expanded="true" />
+            <element signature="e#28540#28541#0" expanded="true" />
+            <element signature="e#28575#28576#0" expanded="true" />
+            <element signature="e#28605#28606#0" expanded="true" />
+            <element signature="e#28635#28636#0" expanded="true" />
+            <element signature="e#28664#28665#0" expanded="true" />
+            <element signature="e#28705#28706#0" expanded="true" />
+            <element signature="e#28741#28742#0" expanded="true" />
+            <element signature="e#28770#28771#0" expanded="true" />
+            <element signature="e#28797#28798#0" expanded="true" />
+            <element signature="e#28835#28836#0" expanded="true" />
+            <element signature="e#28867#28868#0" expanded="true" />
+            <element signature="e#28896#28897#0" expanded="true" />
+            <element signature="e#28923#28924#0" expanded="true" />
+            <element signature="e#28961#28962#0" expanded="true" />
+            <element signature="e#28993#28994#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1051,106 +1224,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33238637">
           <caret line="147" column="19" selection-start-line="147" selection-start-column="19" selection-end-line="147" selection-end-column="19" />
-          <folding>
-            <element signature="e#5748#5749#0" expanded="false" />
-            <element signature="e#5784#5785#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/AttackForces.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< Updated upstream
-=======
-    <entry file="file://$PROJECT_DIR$/src/common/Components.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
->>>>>>> Stashed changes
-    <entry file="file://$PROJECT_DIR$/src/common/GameEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/GoldMine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="e#397#398#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Hero.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Lane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< Updated upstream
-    <entry file="file://$PROJECT_DIR$/src/common/MovingForces.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-=======
->>>>>>> Stashed changes
-    <entry file="file://$PROJECT_DIR$/src/common/ScourgeTower.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/SentinelAttackForce.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/SentinelTower.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Tiny.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Tower.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1158,120 +1231,390 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.020689655">
           <caret line="553" column="13" selection-start-line="553" selection-start-column="13" selection-end-line="553" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Barraks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.76551723">
+          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Ancient.java">
+    <entry file="file://$PROJECT_DIR$/src/common/GoldMine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.7034483">
+          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+          <folding>
+            <element signature="e#435#436#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#515#516#0" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
+            <element signature="e#614#615#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+            <element signature="e#691#692#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/exception/DotaExceptionBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04137931">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Lane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51724136">
+          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/common/Cell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39310345">
-          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Barraks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62068963">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#605#606#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/GameComponents.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24827586">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-          <folding>
-            <element signature="e#279#280#0" expanded="true" />
-            <element signature="e#307#308#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/ScourgeAttackForces.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <caret line="59" column="1" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/GameObjectID.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.0068965">
+          <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+          <folding>
+            <element signature="e#358#359#0" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#733#734#0" expanded="true" />
+            <element signature="e#757#758#0" expanded="true" />
+            <element signature="e#2370#2371#0" expanded="true" />
+            <element signature="e#2399#2400#0" expanded="true" />
+            <element signature="e#2429#2430#0" expanded="true" />
+            <element signature="e#2456#2457#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/common/Path.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="38" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="38" />
+          <caret line="99" column="1" selection-start-line="99" selection-start-column="1" selection-end-line="99" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/ScourgeAttackForces.java">
+    <entry file="file://$PROJECT_DIR$/src/judge/JudgeAbstract.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-=======
-        <state vertical-scroll-proportion="0.63920456">
-          <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
->>>>>>> Stashed changes
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Components.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-        <state vertical-scroll-proportion="0.04137931">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-=======
-        <state vertical-scroll-proportion="0.021306818">
-          <caret line="553" column="13" selection-start-line="553" selection-start-column="13" selection-end-line="553" selection-end-column="13" />
->>>>>>> Stashed changes
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Venomancer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06392045">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/MovingForces.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-        <state vertical-scroll-proportion="1.0344827">
-          <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
-=======
-        <state vertical-scroll-proportion="0.765625">
-          <caret line="124" column="25" selection-start-line="124" selection-start-column="25" selection-end-line="124" selection-end-column="25" />
->>>>>>> Stashed changes
+        <state vertical-scroll-proportion="0.14482759">
+          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.310345">
+          <caret line="208" column="25" selection-start-line="208" selection-start-column="25" selection-end-line="208" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4787#4788#0" expanded="true" />
+            <element signature="e#4829#4830#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Hero.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#heroMove#0;class#Hero#0" expanded="false" />
+            <element signature="method#checkGoldMine#0;class#Hero#0" expanded="false" />
+            <element signature="method#makeRandomGoldMine#0;class#Hero#0" expanded="false" />
+            <element signature="method#attack#0;class#Hero#0" expanded="false" />
+            <element signature="method#getInRange#0;class#Hero#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Ancient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Tower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Components.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/judge/Judge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="14.544827">
+          <caret line="1428" column="25" selection-start-line="1428" selection-start-column="25" selection-end-line="1428" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#loadMap#0;class#Judge#0" expanded="false" />
+            <element signature="method#getBuildingID#0;class#Judge#0" expanded="false" />
+            <element signature="method#getPathID#0;class#Judge#0" expanded="false" />
+            <element signature="method#getLaneID#0;class#Judge#0" expanded="false" />
+            <element signature="method#getHeroID#0;class#Judge#0" expanded="false" />
+            <element signature="method#purchaseAttackersPowerup#0;class#Judge#0" expanded="false" />
+            <element signature="method#purchaseTowerPowerup#0;class#Judge#0" expanded="false" />
+            <element signature="method#heroMove#0;class#Judge#0" expanded="false" />
+            <element signature="method#getMoney#0;class#Judge#0" expanded="false" />
+            <element signature="method#getAttackerPowerups#0;class#Judge#0" expanded="false" />
+            <element signature="method#getTeamGoldMines#0;class#Judge#0" expanded="false" />
+            <element signature="method#getInfo#0;class#Judge#0" expanded="false" />
+            <element signature="method#getInRange#0;class#Judge#0" expanded="false" />
+            <element signature="method#getTarget#0;class#Judge#0" expanded="false" />
+            <element signature="e#47254#47255#0" expanded="true" />
+            <element signature="e#47281#47282#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/GameEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0068965517">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/AttackForces.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12413793">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#moveAttacker#0;class#AttackForces#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/MovingForces.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41379312">
+          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+          <folding>
+            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#652#653#0" expanded="true" />
+            <element signature="e#688#689#0" expanded="true" />
+            <element signature="e#730#731#0" expanded="true" />
+            <element signature="e#764#765#0" expanded="true" />
+            <element signature="e#805#806#0" expanded="true" />
+            <element signature="e#841#842#0" expanded="true" />
+            <element signature="e#880#881#0" expanded="true" />
+            <element signature="e#914#915#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Forces.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31034482">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+          <folding>
+            <element signature="e#247#248#0" expanded="true" />
+            <element signature="e#280#281#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#446#447#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/GameComponents.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6">
+          <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+          <folding>
+            <element signature="e#724#725#0" expanded="true" />
+            <element signature="e#753#754#0" expanded="true" />
+            <element signature="e#830#831#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/judge/MapReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="10.386207">
+          <caret line="502" column="0" selection-start-line="502" selection-start-column="0" selection-end-line="502" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+            <element signature="e#522#523#0" expanded="true" />
+            <element signature="e#11464#11465#0" expanded="true" />
+            <element signature="e#11502#11503#0" expanded="true" />
+            <element signature="e#11530#11531#0" expanded="true" />
+            <element signature="e#11557#11558#0" expanded="true" />
+            <element signature="e#11594#11595#0" expanded="true" />
+            <element signature="e#11626#11627#0" expanded="true" />
+            <element signature="e#11678#11679#0" expanded="true" />
+            <element signature="e#11706#11707#0" expanded="true" />
+            <element signature="e#11768#11769#0" expanded="true" />
+            <element signature="e#11802#11803#0" expanded="true" />
+            <element signature="e#11854#11855#0" expanded="true" />
+            <element signature="e#11882#11883#0" expanded="true" />
+            <element signature="e#11944#11945#0" expanded="true" />
+            <element signature="e#11978#11979#0" expanded="true" />
+            <element signature="e#12030#12031#0" expanded="true" />
+            <element signature="e#12058#12059#0" expanded="true" />
+            <element signature="e#12120#12121#0" expanded="true" />
+            <element signature="e#12154#12155#0" expanded="true" />
+            <element signature="e#12191#12192#0" expanded="true" />
+            <element signature="e#12222#12223#0" expanded="true" />
+            <element signature="e#12272#12273#0" expanded="true" />
+            <element signature="e#12312#12313#0" expanded="true" />
+            <element signature="e#12349#12350#0" expanded="true" />
+            <element signature="e#12380#12381#0" expanded="true" />
+            <element signature="e#12430#12431#0" expanded="true" />
+            <element signature="e#12470#12471#0" expanded="true" />
+            <element signature="e#12519#12520#0" expanded="true" />
+            <element signature="e#12551#12552#0" expanded="true" />
+            <element signature="e#12614#12615#0" expanded="true" />
+            <element signature="e#12656#12657#0" expanded="true" />
+            <element signature="e#12705#12706#0" expanded="true" />
+            <element signature="e#12737#12738#0" expanded="true" />
+            <element signature="e#12800#12801#0" expanded="true" />
+            <element signature="e#12842#12843#0" expanded="true" />
+            <element signature="e#12887#12888#0" expanded="true" />
+            <element signature="e#12919#12920#0" expanded="true" />
+            <element signature="e#12978#12979#0" expanded="true" />
+            <element signature="e#13020#13021#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/judge/JudgeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20689656">
+          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>DotaPhase2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

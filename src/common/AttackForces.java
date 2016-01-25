@@ -6,35 +6,26 @@ import java.util.ArrayList;
 
 public class AttackForces extends MovingForces {
 
-    private int price;
-    private int birthTime;
-
     private static int scourge_upgradeHealthTime = 0;
     private static int sentinel_upgradeHealthTime = 0;
-
     private static int sentinel_upgradeDamageTime = 0;
     private static int scourge_upgradeDamageTime = 0;
-
-    private double value;
-
     private static int static_health_tank_scourge = 1000;
     private static int static_health_infantry_scourge = 400;
     private static int static_health_tank_sentinel = 1000;
     private static int static_health_infantry_sentinel = 400;
-
     private static int static_damage_tank_scourge = 100;
     private static int static_damage_infantry_scourge = 20;
     private static int static_damage_tank_sentinel = 100;
     private static int static_damage_infantry_sentinel = 20;
-
     private static double static_value_tank_scourge = 0.8 * 40;
     private static double static_value_infantry_scourge = 0.8 * 10;
     private static double static_value_tank_sentinel = 0.8 * 40;
     private static double static_value_infantry_sentinel = 0.8 * 10;
-
     private static ArrayList<Integer> attackerPowerUpsSentinel = new ArrayList<>();
     private static ArrayList<Integer> attackerPowerUpsScourge = new ArrayList<>();
-
+    private int price;
+    private int birthTime;
     private int attackerType;
     private Lane lane;
     private Path path;
@@ -167,6 +158,14 @@ public class AttackForces extends MovingForces {
 
     }
 
+    public static ArrayList<Integer> getAttackerPowerUpsSentinel() {
+        return attackerPowerUpsSentinel;
+    }
+
+    public static ArrayList<Integer> getAttackerPowerUpsScourge() {
+        return attackerPowerUpsScourge;
+    }
+
     public ArrayList<Cell> getInRange(Map map) {
         ArrayList<Cell> attackerRange = new ArrayList<>();
         for (int i = -range; i < range + 1; i++) {
@@ -255,6 +254,38 @@ public class AttackForces extends MovingForces {
         return attackerRange;
     }
 
+    public Cell minDistanceTower(ArrayList<Cell> attackerRangeTower) {
+        int minDistance = 10;
+        for (Cell towerCell : attackerRangeTower) {
+            if (Math.max(Math.abs(towerCell.getRow() - row), Math.abs(towerCell.getColumn() - column)) < minDistance) {
+                minDistance = Math.max(Math.abs(towerCell.getRow() - row), Math.abs(towerCell.getColumn() - column));
+            }
+        }
+        for (Cell towerCell : attackerRangeTower) {
+            if (minDistance == Math.max(Math.abs(towerCell.getRow() - row), Math.abs(towerCell.getColumn() - column))) {
+                return towerCell;
+            }
+        }
+        return null;
+    }
+
+    public ArrayList<Cell> minDistanceForces(ArrayList<Cell> attackerRangeAttacker) {
+        ArrayList<Cell> attackerRangeAtackerDistance = new ArrayList<>();
+
+        int minDistance = 10;
+        for (Cell attackerCell : attackerRangeAttacker) {
+            if (Math.max(Math.abs(attackerCell.getRow() - row), Math.abs(attackerCell.getColumn() - column)) < minDistance) {
+                minDistance = Math.max(Math.abs(attackerCell.getRow() - row), Math.abs(attackerCell.getColumn() - column));
+            }
+        }
+        for (Cell attackerCell : attackerRangeAttacker) {
+            if (minDistance == Math.max(Math.abs(attackerCell.getRow() - row), Math.abs(attackerCell.getColumn() - column))) {
+                attackerRangeAtackerDistance.add(attackerCell);
+            }
+        }
+        return attackerRangeAtackerDistance;
+    }
+
     public Cell getTarget(Map map) {
         ArrayList<Cell> attackerRange = getInRange(map);
         ArrayList<Cell> attackerRangeTower = new ArrayList<>();
@@ -270,21 +301,12 @@ public class AttackForces extends MovingForces {
                 if (attackerRange.get(i).towerBlack.size() != 0 || attackerRange.get(i).towerPoison.size() != 0) {
                     attackerRangeTower.add(attackerRange.get(i));
                 }
-            }
+            }//one tower
             if (attackerRangeTower.size() == 1) {
                 return attackerRangeTower.get(0);
-            }
+            }//nearest tower
             if (attackerRangeTower.size() > 1) {
-                for (Cell towerCell : attackerRangeTower) {
-                    if (Math.max(Math.abs(towerCell.getRow() - row), Math.abs(towerCell.getColumn() - column)) < minDistance) {
-                        minDistance = Math.max(Math.abs(towerCell.getRow() - row), Math.abs(towerCell.getColumn() - column));
-                    }
-                }
-                for (Cell towerCell : attackerRangeTower) {
-                    if (minDistance == Math.max(Math.abs(towerCell.getRow() - row), Math.abs(towerCell.getColumn() - column))) {
-                        return towerCell;
-                    }
-                }
+                return minDistanceTower(attackerRangeTower);
             }
             //forces
             for (int i = 0; i < attackerRange.size(); i++) {
@@ -292,28 +314,23 @@ public class AttackForces extends MovingForces {
                         || attackerRange.get(i).venomancer.size() != 0) {
                     attackerRangeAttacker.add(attackerRange.get(i));
                 }
-            }
+            }//one forces
             if (attackerRangeAttacker.size() == 1) {
                 return attackerRangeAttacker.get(0);
             }
-            for (Cell attackerCell : attackerRangeAttacker) {
-                if (Math.max(Math.abs(attackerCell.getRow() - row), Math.abs(attackerCell.getColumn() - column)) < minDistance) {
-                    minDistance = Math.max(Math.abs(attackerCell.getRow() - row), Math.abs(attackerCell.getColumn() - column));
-                }
-            }
-            for (Cell attackerCell : attackerRangeAttacker) {
-                if (minDistance == Math.max(Math.abs(attackerCell.getRow() - row), Math.abs(attackerCell.getColumn() - column))) {
-                    attackerRangeAtackerDistance.add(attackerCell);
-                }
-            }
-            if (attackerRangeAtackerDistance.size() == 1) {//nearest
+            if (attackerRangeAttacker.size() > 1) {
+                attackerRangeAtackerDistance = minDistanceForces(attackerRangeAttacker);
+            }//nearest
+            if (attackerRangeAtackerDistance.size() == 1) {
                 return attackerRangeAtackerDistance.get(0);
             }
-            //value
-            for (int i = 0; i < attackerRangeAtackerDistance.size(); i++) {
-                if (attackerRangeAtackerDistance.get(i).attackerScourgeTank.size() != 0 ||
-                        attackerRangeAtackerDistance.get(i).attackerScourgeInfantry.size() != 0) {
-                    attackerRangeAtackerDistanceValue.add(attackerRange.get(i));
+            //most value
+            if (attackerRangeAtackerDistance.size() > 1) {
+                for (int i = 0; i < attackerRangeAtackerDistance.size(); i++) {
+                    if (attackerRangeAtackerDistance.get(i).attackerScourgeTank.size() != 0 ||
+                            attackerRangeAtackerDistance.get(i).attackerScourgeInfantry.size() != 0) {
+                        attackerRangeAtackerDistanceValue.add(attackerRangeAtackerDistance.get(i));
+                    }
                 }
             }
             maxValue = 0;
@@ -353,24 +370,15 @@ public class AttackForces extends MovingForces {
         if (teamID == 1) {
             //tower
             for (int i = 0; i < attackerRange.size(); i++) {
-                if (attackerRange.get(i).towerFire.size() != 0 || attackerRange.get(i).towerStone.size() != 0) {
+                if (attackerRange.get(i).towerStone.size() != 0 || attackerRange.get(i).towerFire.size() != 0) {
                     attackerRangeTower.add(attackerRange.get(i));
                 }
-            }
+            }//one tower
             if (attackerRangeTower.size() == 1) {
                 return attackerRangeTower.get(0);
-            }
+            }//nearest tower
             if (attackerRangeTower.size() > 1) {
-                for (Cell towerCell : attackerRangeTower) {
-                    if (Math.max(Math.abs(towerCell.getRow() - row), Math.abs(towerCell.getColumn() - column)) < minDistance) {
-                        minDistance = Math.max(Math.abs(towerCell.getRow() - row), Math.abs(towerCell.getColumn() - column));
-                    }
-                }
-                for (Cell towerCell : attackerRangeTower) {
-                    if (minDistance == Math.max(Math.abs(towerCell.getRow() - row), Math.abs(towerCell.getColumn() - column))) {
-                        return towerCell;
-                    }
-                }
+                return minDistanceTower(attackerRangeTower);
             }
             //forces
             for (int i = 0; i < attackerRange.size(); i++) {
@@ -378,28 +386,23 @@ public class AttackForces extends MovingForces {
                         || attackerRange.get(i).tiny.size() != 0) {
                     attackerRangeAttacker.add(attackerRange.get(i));
                 }
-            }
+            }//one forces
             if (attackerRangeAttacker.size() == 1) {
                 return attackerRangeAttacker.get(0);
             }
-            for (Cell attackerCell : attackerRangeAttacker) {
-                if (Math.max(Math.abs(attackerCell.getRow() - row), Math.abs(attackerCell.getColumn() - column)) < minDistance) {
-                    minDistance = Math.max(Math.abs(attackerCell.getRow() - row), Math.abs(attackerCell.getColumn() - column));
-                }
-            }
-            for (Cell attackerCell : attackerRangeAttacker) {
-                if (minDistance == Math.max(Math.abs(attackerCell.getRow() - row), Math.abs(attackerCell.getColumn() - column))) {
-                    attackerRangeAtackerDistance.add(attackerCell);
-                }
-            }
-            if (attackerRangeAtackerDistance.size() == 1) {//nearest
+            if (attackerRangeAttacker.size() > 1) {
+                attackerRangeAtackerDistance = minDistanceForces(attackerRangeAttacker);
+            }//nearest
+            if (attackerRangeAtackerDistance.size() == 1) {
                 return attackerRangeAtackerDistance.get(0);
             }
-            //value
-            for (int i = 0; i < attackerRangeAtackerDistance.size(); i++) {
-                if (attackerRangeAtackerDistance.get(i).attackerSentinelTank.size() != 0 ||
-                        attackerRangeAtackerDistance.get(i).attackerSentinelInfantry.size() != 0) {
-                    attackerRangeAtackerDistanceValue.add(attackerRange.get(i));
+            //most value
+            if (attackerRangeAtackerDistance.size() > 1) {
+                for (int i = 0; i < attackerRangeAtackerDistance.size(); i++) {
+                    if (attackerRangeAtackerDistance.get(i).attackerSentinelTank.size() != 0 ||
+                            attackerRangeAtackerDistance.get(i).attackerSentinelInfantry.size() != 0) {
+                        attackerRangeAtackerDistanceValue.add(attackerRangeAtackerDistance.get(i));
+                    }
                 }
             }
             maxValue = 0;
@@ -433,6 +436,8 @@ public class AttackForces extends MovingForces {
                     return attackerRange.get(i);
                 }
             }
+
+
         }
 
 

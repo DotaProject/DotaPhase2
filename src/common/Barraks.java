@@ -2,12 +2,12 @@ package common;
 
 public class Barraks extends GameComponents {
 
+    public Path path;
+
     {
         isAlive = true;
         health = 5000;
     }
-
-    public Path path;
 
     //constructor
     public Barraks(int teamID, Cell[][] cell, Path path, Map map) {

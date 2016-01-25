@@ -12,6 +12,8 @@ public class Map {
     private Path path3;
     private ArrayList<GoldMine> goldMines;
     private int numberOfGoldMines;
+    private Hero tiny;
+    private Hero venomancer;
 
     private Cell[][] gameBoard;
     private HashMap<Cell, ArrayList<Components>> gameBoardComponents = new HashMap<>();
@@ -60,7 +62,7 @@ public class Map {
             }
         }
 
-
+        //newing barraks
         this.barraks1[0] = new Barraks(0, barraks1.get(0), this.path1, this);
         this.barraks1[1] = new Barraks(0, barraks1.get(1), this.path2, this);
         this.barraks1[2] = new Barraks(0, barraks1.get(2), this.path3, this);
@@ -77,10 +79,18 @@ public class Map {
         initializingBarraks(this.barraks2[1]);
         initializingBarraks(this.barraks2[2]);
 
+        //newing goldmines
         for (int i = 0; i < goldMines.size(); i++) {
             this.goldMines.add(new GoldMine(goldMines.get(i),this));
             gameBoardComponents.get(goldMines.get(i)).add(this.goldMines.get(i));
         }
+
+        //newing hero
+        tiny = new Hero(0, 10,this);
+        venomancer = new Hero(1, 11,this);
+        gameBoardComponents.get(ancient1[2][2]).add(this.tiny);
+        gameBoardComponents.get(ancient2[2][2]).add(this.venomancer);
+
     }
 
 
@@ -194,5 +204,13 @@ public class Map {
 
     public void setBarraks2(Barraks[] barraks2) {
         this.barraks2 = barraks2;
+    }
+
+    public Hero getTiny() {
+        return tiny;
+    }
+
+    public Hero getVenomancer() {
+        return venomancer;
     }
 }
