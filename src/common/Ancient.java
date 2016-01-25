@@ -68,4 +68,6 @@ public class Ancient extends GameComponents {
     public void setCell(Cell[][] cell) {
         this.cell = cell;
     }
+
+
 }

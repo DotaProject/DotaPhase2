@@ -88,8 +88,8 @@ public class Map {
         //newing hero
         tiny = new Hero(0, 10,this);
         venomancer = new Hero(1, 11,this);
-        gameBoardComponents.get(ancient1[2][2]).add(this.tiny);
-        gameBoardComponents.get(ancient2[2][2]).add(this.venomancer);
+        gameBoard[ancient1[2][2].getRow()][ancient1[2][2].getColumn()].tiny.add(tiny);
+        gameBoard[ancient2[2][2].getRow()][ancient2[2][2].getColumn()].venomancer.add(venomancer);
 
     }
 
