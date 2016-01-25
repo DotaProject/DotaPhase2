@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1726638a-8aca-49ae-a33a-77950752dd17" name="Default" comment="adding judge">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/judge/JudgeTest.class" afterPath="$PROJECT_DIR$/out/production/DotaPhase2/judge/JudgeTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/judge/JudgeTest.java" afterPath="$PROJECT_DIR$/src/judge/JudgeTest.java" />
     </list>
     <ignored path="DotaPhase2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,9 +29,26 @@
       <file leaf-file-name="JudgeTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/judge/JudgeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2034632">
-              <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.8116883">
+              <caret line="77" column="8" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="8" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Judge.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/judge/Judge.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="239" column="24" selection-start-line="239" selection-start-column="24" selection-end-line="239" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#makePathHashMap#0;class#Judge#0" expanded="false" />
+                <element signature="method#getBuildingID#0;class#Judge#0" expanded="false" />
+                <element signature="method#getPathID#0;class#Judge#0" expanded="false" />
+                <element signature="method#getHeroID#0;class#Judge#0" expanded="false" />
+                <element signature="e#9348#9416#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -243,7 +259,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="FullScreen" value="true" />
   </component>
-  <component name="RunManager" selected="JUnit.JudgeTest.test1">
+  <component name="RunManager" selected="JUnit.JudgeTest.test2">
     <configuration default="false" name="JudgeTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -257,6 +273,32 @@
       <option name="PACKAGE_NAME" value="judge" />
       <option name="MAIN_CLASS_NAME" value="judge.JudgeTest" />
       <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="JudgeTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="judge.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="DotaPhase2" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="judge" />
+      <option name="MAIN_CLASS_NAME" value="judge.JudgeTest" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -680,12 +722,14 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="JUnit.JudgeTest.test1" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.JudgeTest.test2" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.JudgeTest.test1" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.JudgeTest.test2" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.JudgeTest.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -712,7 +756,7 @@
       <workItem from="1453700655479" duration="2343000" />
       <workItem from="1453707405006" duration="2013000" />
       <workItem from="1453709660090" duration="297000" />
-      <workItem from="1453710081021" duration="5634000" />
+      <workItem from="1453710081021" duration="7027000" />
     </task>
     <task id="LOCAL-00001" summary="Hi">
       <created>1451760551825</created>
@@ -760,39 +804,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="JudgeTest_test1 - 2016.01.25 at 14h 31m 30s.xml">
-      <configuration name="JudgeTest.test1" configurationId="JUnit" />
+    <history-entry file="JudgeTest_test2 - 2016.01.25 at 15h 32m 07s.xml">
+      <configuration name="JudgeTest.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JudgeTest_test1 - 2016.01.25 at 14h 32m 11s.xml">
-      <configuration name="JudgeTest.test1" configurationId="JUnit" />
+    <history-entry file="JudgeTest_test2 - 2016.01.25 at 15h 32m 35s.xml">
+      <configuration name="JudgeTest.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JudgeTest_test1 - 2016.01.25 at 14h 37m 06s.xml">
-      <configuration name="JudgeTest.test1" configurationId="JUnit" />
+    <history-entry file="JudgeTest_test2 - 2016.01.25 at 15h 32m 46s.xml">
+      <configuration name="JudgeTest.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JudgeTest_test1 - 2016.01.25 at 14h 45m 12s.xml">
-      <configuration name="JudgeTest.test1" configurationId="JUnit" />
+    <history-entry file="JudgeTest_test2 - 2016.01.25 at 15h 33m 05s.xml">
+      <configuration name="JudgeTest.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JudgeTest_test1 - 2016.01.25 at 14h 50m 29s.xml">
-      <configuration name="JudgeTest.test1" configurationId="JUnit" />
+    <history-entry file="JudgeTest_test2 - 2016.01.25 at 15h 35m 09s.xml">
+      <configuration name="JudgeTest.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JudgeTest_test1 - 2016.01.25 at 14h 51m 21s.xml">
-      <configuration name="JudgeTest.test1" configurationId="JUnit" />
+    <history-entry file="JudgeTest_test2 - 2016.01.25 at 15h 35m 30s.xml">
+      <configuration name="JudgeTest.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JudgeTest_test1 - 2016.01.25 at 14h 52m 33s.xml">
-      <configuration name="JudgeTest.test1" configurationId="JUnit" />
+    <history-entry file="JudgeTest_test2 - 2016.01.25 at 15h 36m 12s.xml">
+      <configuration name="JudgeTest.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JudgeTest_test1 - 2016.01.25 at 15h 07m 20s.xml">
-      <configuration name="JudgeTest.test1" configurationId="JUnit" />
+    <history-entry file="JudgeTest_test2 - 2016.01.25 at 15h 36m 36s.xml">
+      <configuration name="JudgeTest.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JudgeTest_test1 - 2016.01.25 at 15h 08m 28s.xml">
-      <configuration name="JudgeTest.test1" configurationId="JUnit" />
+    <history-entry file="JudgeTest_test2 - 2016.01.25 at 15h 37m 06s.xml">
+      <configuration name="JudgeTest.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JudgeTest_test1 - 2016.01.25 at 15h 11m 57s.xml">
-      <configuration name="JudgeTest.test1" configurationId="JUnit" />
+    <history-entry file="JudgeTest_test2 - 2016.01.25 at 15h 37m 23s.xml">
+      <configuration name="JudgeTest.test2" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32222000" />
+    <option name="totallyTimeSpent" value="33615000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -877,13 +921,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="553" column="13" selection-start-line="553" selection-start-column="13" selection-end-line="553" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/common/Cell.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1330,10 +1367,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/junit/framework/TestCase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.703704">
+          <caret line="193" column="0" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
+          <folding>
+            <element signature="e#5632#5633#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/judge/Judge.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29885057">
-          <caret line="525" column="59" selection-start-line="525" selection-start-column="59" selection-end-line="525" selection-end-column="59" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="239" column="24" selection-start-line="239" selection-start-column="24" selection-end-line="239" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#makePathHashMap#0;class#Judge#0" expanded="false" />
@@ -1347,8 +1394,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/judge/JudgeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2034632">
-          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.8116883">
+          <caret line="77" column="8" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="8" />
           <folding />
         </state>
       </provider>
