@@ -62,9 +62,15 @@ public class JudgeTest extends TestCase {
             j1.next50milis();
         }
 
+        //System.out.println(j1.getInfo(attacker));
+
+        //System.out.println(j1.getInfo(attacker2));
+
         HashMap<String, Integer> values = j1.getInfo(attacker);
         HashMap<String, Integer> values2 = j1.getInfo(attacker2);
-        System.out.println(j1.getInfo(attacker).get(Judge.ROW));
+        //System.out.println(values.size());
+        //System.out.println(values);
+        //System.out.println(values.size());
 
         int row2 = values2.get(Judge.ROW);
         int row1 = values.get(Judge.ROW);
@@ -72,7 +78,7 @@ public class JudgeTest extends TestCase {
         int col2 = values2.get(Judge.COLOUMN);
         int alive1 = values.get(Judge.IS_ALIVE);
         int alive2 = values2.get(Judge.IS_ALIVE);
-
+        //System.out.println(values.get(Judge.ROW));
 
         assertEquals(0, row1);
         //assertEquals(31, col1,3);

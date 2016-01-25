@@ -267,7 +267,9 @@ public class Judge extends JudgeAbstract {
 //        gameEvents event = new gameEvents(attacker, eventHandler);
 //        event.start();
         GameObjectID g10 = GameObjectID.create(AttackForces.class);
+        System.out.println(attackers);
         attackers.put(attacker, g10);
+        System.out.println(attackers);
         return attackers.get(attacker);
     }
 
@@ -529,6 +531,7 @@ public class Judge extends JudgeAbstract {
                     info.put("range", attacker.getRange());
                     info.put("time", attacker.getReloadTime());
                     info.put("row", attacker.getRow());
+                    System.out.println("this"+info.get("row"));
                     info.put("col", attacker.getColumn());
                     info.put("value", (int) attacker.getValue());
                     if (attacker.isAlive()){
@@ -966,42 +969,42 @@ public class Judge extends JudgeAbstract {
     }
 
     public void next50milis() {
-        if (engine.map.getAncient1()[0].getTreasury() == 0 || engine.map.getAncient2()[0].getTreasury() == 0) {
-            time += 50;
-
-            return;
-        } else {
-            //eventHandler.game(time, engine);
-            time += 50;
-            if (tinyTarget == false) {
-//                for (int i = 0; i < eventHandler.gameEvents.size(); i++) {
-//                    if (eventHandler.gameEvents.get(i).hero != null && eventHandler.gameEvents.get(i).hero.team_ID == 0) {
-//                        if (tinyMoveTime % eventHandler.gameEvents.get(i).hero.speed == 0) {
-//                            tinyMove = true;
-//                        } else {
-//                            tinyMove = false;
-//                        }
-//                        tinyMoveTime += 50;
-//                    }
+//        if (engine.map.getAncient1()[0].getTreasury() == 0 || engine.map.getAncient2()[0].getTreasury() == 0) {
+//            time += 50;
 //
-//                }
-
-            }
-            if (venomancerTarget == false) {
-//                for (int i = 0; i < eventHandler.gameEvents.size(); i++) {
-//                    if (eventHandler.gameEvents.get(i).hero != null && eventHandler.gameEvents.get(i).hero.team_ID == 1) {
-//                        if (venomancerMoveTime % eventHandler.gameEvents.get(i).hero.speed == 0) {
-//                            venomancerMove = true;
-//                        } else {
-//                            venomancerMove = false;
-//                        }
-//                        venomancerMoveTime += 50;
-//                    }
+//            return;
+//        } else {
+//            //eventHandler.game(time, engine);
+//            time += 50;
+//            if (tinyTarget == false) {
+////                for (int i = 0; i < eventHandler.gameEvents.size(); i++) {
+////                    if (eventHandler.gameEvents.get(i).hero != null && eventHandler.gameEvents.get(i).hero.team_ID == 0) {
+////                        if (tinyMoveTime % eventHandler.gameEvents.get(i).hero.speed == 0) {
+////                            tinyMove = true;
+////                        } else {
+////                            tinyMove = false;
+////                        }
+////                        tinyMoveTime += 50;
+////                    }
+////
+////                }
 //
-//                }
-
-            }
-        }
+//            }
+//            if (venomancerTarget == false) {
+////                for (int i = 0; i < eventHandler.gameEvents.size(); i++) {
+////                    if (eventHandler.gameEvents.get(i).hero != null && eventHandler.gameEvents.get(i).hero.team_ID == 1) {
+////                        if (venomancerMoveTime % eventHandler.gameEvents.get(i).hero.speed == 0) {
+////                            venomancerMove = true;
+////                        } else {
+////                            venomancerMove = false;
+////                        }
+////                        venomancerMoveTime += 50;
+////                    }
+////
+////                }
+//
+//            }
+//        }
     }
 
 

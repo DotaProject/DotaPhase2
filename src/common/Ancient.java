@@ -46,7 +46,6 @@ public class Ancient extends GameComponents {
 
     //getters and setters
     public int getNumberOfGoldMines() {
-        System.out.println(":|");
         return numberOfGoldMines;
     }
 
