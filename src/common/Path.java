@@ -99,6 +99,8 @@ public class Path implements Components {
         Lane1 = lane1;
     }
 
+
+
     public ArrayList<Cell> getCells() {
         return cells;
     }

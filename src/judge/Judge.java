@@ -37,30 +37,34 @@ public class Judge extends JudgeAbstract {
     }
 
     public void makeLaneHashMap() {
+        ArrayList<Lane> path1Lanes = engine.map.getPath1().getLanes();
+        ArrayList<Lane> path2Lanes = engine.map.getPath2().getLanes();
+        ArrayList<Lane> path3Lanes = engine.map.getPath3().getLanes();
+
+        Lane[] path1LaneArray = (Lane[])path1Lanes.toArray();
+        Lane[] path2LaneArray =(Lane[])path2Lanes.toArray();
+        Lane[] path3LaneArray = (Lane[])path3Lanes.toArray();
+
         //1
-        Lane[] path1Lanes = engine.map.getPath1();
-                /*get lane ha bayad bashe bepors bebin mituni berizi tu araye ya na;*/
         GameObjectID[] g13 = new GameObjectID[5];
         for (int i = 0; i < 5; i++) {
             g13[i] = GameObjectID.create(Lane.class);
         }
-        pathLanesID.put(path1Lanes, g13);
+        pathLanesID.put(path1LaneArray, g13);
 
         //2
-        Lane[] path2Lanes = engine.getPath2Lanes();
         GameObjectID[] g14 = new GameObjectID[5];
         for (int i = 0; i < 5; i++) {
             g14[i] = GameObjectID.create(Lane.class);
         }
-        pathLanesID.put(path2Lanes, g14);
+        pathLanesID.put(path2LaneArray, g14);
 
         //3
-        Lane[] path3Lanes = engine.map.getPath3Lanes();
         GameObjectID[] g15 = new GameObjectID[5];
         for (int i = 0; i < 5; i++) {
             g15[i] = GameObjectID.create(Lane.class);
         }
-        pathLanesID.put(path3Lanes, g15);
+        pathLanesID.put(path3LaneArray, g15);
     }
 
     public void makeBuildingsHashMap() {
@@ -213,14 +217,14 @@ public class Judge extends JudgeAbstract {
     @Override
     public GameObjectID[] getLaneID(int pathNumber) {
         if (pathNumber == 1) {
-            Lane[] pathLanes1 = engine.map.getPath1Lanes();
+            Lane[] pathLanes1 = (Lane[])engine.map.getPath1().getLanes().toArray();
             return pathLanesID.get(pathLanes1);
 
         } else if (pathNumber == 2) {
-            Lane[] pathLanes2 = engine.map.getPath1Lanes();
+            Lane[] pathLanes2 = (Lane[])engine.map.getPath2().getLanes().toArray();
             return pathLanesID.get(pathLanes2);
         } else {
-            Lane[] pathLanes3 = engine.map.getPath1Lanes();
+            Lane[] pathLanes3 = (Lane[])engine.map.getPath3().getLanes().toArray();
             return pathLanesID.get(pathLanes3);
         }
     }
@@ -247,14 +251,28 @@ public class Judge extends JudgeAbstract {
             throw new DotaExceptionBase();
         }
         //find path
-        Path mypath;
+        Path mypath = null;
         for (Map.Entry<Path, GameObjectID> entry : paths.entrySet()) {
-                if (Objects.equals(path, entry.getValue())) {
-                    mypath = entry.getKey();
+            if (Objects.equals(path, entry.getValue())) {
+                mypath = entry.getKey();
+            }else {
+                mypath = null;
+                throw new DotaExceptionBase();
+            }
+        }
+        Lane mylane = null;
+        for (Map.Entry<Lane[], GameObjectID[]> entry : pathLanesID.entrySet()) {
+            for (int i = 0; i < entry.getKey().length; i++) {
+                if (Objects.equals(lane, entry.getValue()[i])) {
+                    mylane = entry.getKey()[i];
+                } else {
+                    mypath = null;
+                    throw new DotaExceptionBase();
                 }
+            }
         }
 
-        AttackForces attacker = engine.createAttacker(teamID,attackerType,mypath,lane,rowNumber,colNumber,time);
+        AttackForces attacker = engine.createAttacker(teamID,attackerType,mypath,mylane,rowNumber,colNumber,time);
 //        gameEvents event = new gameEvents(attacker, eventHandler);
 //        event.start();
         GameObjectID g10 = GameObjectID.create(AttackForces.class);
@@ -265,6 +283,17 @@ public class Judge extends JudgeAbstract {
     @Override
     public GameObjectID createTower(int teamID, int towerType, GameObjectID path, GameObjectID lane, int index, int rowNumber, int colNumber) throws DotaExceptionBase {
         Lane mylane = null;
+        Path mypath = null;
+
+        for (Map.Entry<Path, GameObjectID> entry : paths.entrySet()) {
+            if (Objects.equals(path, entry.getValue())) {
+                mypath = entry.getKey();
+            }else {
+                mypath = null;
+                throw new DotaExceptionBase();
+            }
+        }
+
         if (teamID != 0 && teamID != 1) {
             throw new DotaExceptionBase();
         }
@@ -305,8 +334,10 @@ public class Judge extends JudgeAbstract {
             }
 
         }
+
+
         //az path o lane ina estefade mishe?
-        Tower tower = engine.createTower(teamID, towerType, rowNumber, colNumber, time);
+        Tower tower = engine.createTower(teamID, towerType, mypath,mylane,index,rowNumber, colNumber, time);
 //        gameEvents event = new gameEvents(tower, eventHandler);
 //        event.start();
         GameObjectID g11 = GameObjectID.create(Tower.class);
@@ -555,59 +586,45 @@ public class Judge extends JudgeAbstract {
         if (attackers.containsValue(id)) {
             for (Map.Entry<AttackForces, GameObjectID> entry : attackers.entrySet()) {
                 if (Objects.equals(id, entry.getValue())) {
-                    ArrayList<Cell> rangeCell = entry.getKey().getInRange(engine);
+                    ArrayList<Cell> rangeCell = entry.getKey().getInRange(engine.map);
                     if (entry.getKey().getTeamID() == 0) {
                         for (int i = 0; i < rangeCell.size(); i++) {
-                            if (rangeCell.get(i).AttackerScourgeInfantry.size() != 0) {
-                                for (AttackForces attacker : rangeCell.get(i).AttackerScourgeInfantry) {
+                            if (rangeCell.get(i).attackerScourgeInfantry.size() != 0) {
+                                for (AttackForces attacker : rangeCell.get(i).attackerScourgeInfantry) {
                                     objects.add(attackers.get(attacker));
                                 }
                             }
-                            if (rangeCell.get(i).Attacker_Scourge_Tank.size() != 0) {
-                                for (AttackForces attacker : rangeCell.get(i).Attacker_Scourge_Tank) {
+                            if (rangeCell.get(i).attackerScourgeTank.size() != 0) {
+                                for (AttackForces attacker : rangeCell.get(i).attackerScourgeTank) {
                                     objects.add(attackers.get(attacker));
                                 }
                             }
-                            if (rangeCell.get(i).Ancient_Scourge.size() != 0) {
-                                for (Ancient ancient : rangeCell.get(i).Ancient_Scourge) {
+                            if (rangeCell.get(i).ancientScourge.size() != 0) {
+                                for (Ancient ancient : rangeCell.get(i).ancientScourge) {
                                     Ancient[] arrayAncient = new Ancient[1];
                                     arrayAncient[0] = ancient;
                                     objects.add(ancients.get(arrayAncient)[0]);
                                 }
                             }
-                            if (rangeCell.get(i).Barraks1_Scourge.size() != 0) {
-                                for (Barraks barrak1 : rangeCell.get(i).Barraks1_Scourge) {
+                            if (rangeCell.get(i).barraksScourge.size() != 0) {
+                                for (Barraks barrak1 : rangeCell.get(i).barraksScourge) {
                                     Barraks[] arrayBarrak1 = new Barraks[1];
                                     arrayBarrak1[0] = barrak1;
                                     objects.add(ancients.get(arrayBarrak1)[0]);
                                 }
                             }
-                            if (rangeCell.get(i).Barraks2_Scourge.size() != 0) {
-                                for (Barraks barrak2 : rangeCell.get(i).Barraks2_Scourge) {
-                                    Barraks[] arrayBarrak2 = new Barraks[1];
-                                    arrayBarrak2[0] = barrak2;
-                                    objects.add(ancients.get(arrayBarrak2)[0]);
-                                }
-                            }
-                            if (rangeCell.get(i).Barraks3_Scourge.size() != 0) {
-                                for (Barraks barrak3 : rangeCell.get(i).Barraks3_Scourge) {
-                                    Barraks[] arrayBarrak3 = new Barraks[1];
-                                    arrayBarrak3[0] = barrak3;
-                                    objects.add(ancients.get(arrayBarrak3)[0]);
-                                }
-                            }
-                            if (rangeCell.get(i).Venomancer.size() != 0) {
-                                for (Hero venomancer : rangeCell.get(i).Venomancer) {
+                            if (rangeCell.get(i).venomancer.size() != 0) {
+                                for (Hero venomancer : rangeCell.get(i).venomancer) {
                                     objects.add(heroes.get(venomancer));
                                 }
                             }
-                            if (rangeCell.get(i).Tower_Black.size() != 0) {
-                                for (Tower tower : rangeCell.get(i).Tower_Black) {
+                            if (rangeCell.get(i).towerBlack.size() != 0) {
+                                for (Tower tower : rangeCell.get(i).towerBlack) {
                                     objects.add(towers.get(tower));
                                 }
                             }
-                            if (rangeCell.get(i).Tower_Poison.size() != 0) {
-                                for (Tower tower : rangeCell.get(i).Tower_Poison) {
+                            if (rangeCell.get(i).towerPoison.size() != 0) {
+                                for (Tower tower : rangeCell.get(i).towerPoison) {
                                     objects.add(towers.get(tower));
                                 }
                             }
@@ -615,56 +632,42 @@ public class Judge extends JudgeAbstract {
                     }
                     if (entry.getKey().getTeamID() == 1) {
                         for (int i = 0; i < rangeCell.size(); i++) {
-                            if (rangeCell.get(i).Attacker_Sentinel_Infantry.size() != 0) {
-                                for (AttackForces attacker : rangeCell.get(i).Attacker_Sentinel_Infantry) {
+                            if (rangeCell.get(i).attackerSentinelInfantry.size() != 0) {
+                                for (AttackForces attacker : rangeCell.get(i).attackerSentinelInfantry) {
                                     objects.add(attackers.get(attacker));
                                 }
                             }
-                            if (rangeCell.get(i).Attacker_Sentinel_Tank.size() != 0) {
-                                for (AttackForces attacker : rangeCell.get(i).Attacker_Sentinel_Tank) {
+                            if (rangeCell.get(i).attackerSentinelTank.size() != 0) {
+                                for (AttackForces attacker : rangeCell.get(i).attackerSentinelTank) {
                                     objects.add(attackers.get(attacker));
                                 }
                             }
-                            if (rangeCell.get(i).Ancient_Sentinel.size() != 0) {
-                                for (Ancient ancient : rangeCell.get(i).Ancient_Sentinel) {
+                            if (rangeCell.get(i).ancientSentinel.size() != 0) {
+                                for (Ancient ancient : rangeCell.get(i).ancientSentinel) {
                                     Ancient[] arrayAncient = new Ancient[1];
                                     arrayAncient[0] = ancient;
                                     objects.add(ancients.get(arrayAncient)[0]);
                                 }
                             }
-                            if (rangeCell.get(i).Barraks1_Sentinel.size() != 0) {
-                                for (Barraks barrak1 : rangeCell.get(i).Barraks1_Sentinel) {
+                            if (rangeCell.get(i).barraksSentinel.size() != 0) {
+                                for (Barraks barrak1 : rangeCell.get(i).barraksSentinel) {
                                     Barraks[] arrayBarrak1 = new Barraks[1];
                                     arrayBarrak1[0] = barrak1;
                                     objects.add(ancients.get(arrayBarrak1)[0]);
                                 }
                             }
-                            if (rangeCell.get(i).Barraks2_Sentinel.size() != 0) {
-                                for (Barraks barrak2 : rangeCell.get(i).Barraks2_Sentinel) {
-                                    Barraks[] arrayBarrak2 = new Barraks[1];
-                                    arrayBarrak2[0] = barrak2;
-                                    objects.add(ancients.get(arrayBarrak2)[0]);
-                                }
-                            }
-                            if (rangeCell.get(i).Barraks3_Sentinel.size() != 0) {
-                                for (Barraks barrak3 : rangeCell.get(i).Barraks3_Sentinel) {
-                                    Barraks[] arrayBarrak3 = new Barraks[1];
-                                    arrayBarrak3[0] = barrak3;
-                                    objects.add(ancients.get(arrayBarrak3)[0]);
-                                }
-                            }
-                            if (rangeCell.get(i).Tiny.size() != 0) {
-                                for (Hero tiny : rangeCell.get(i).Tiny) {
+                            if (rangeCell.get(i).tiny.size() != 0) {
+                                for (Hero tiny : rangeCell.get(i).tiny) {
                                     objects.add(heroes.get(tiny));
                                 }
                             }
-                            if (rangeCell.get(i).Tower_Stone.size() != 0) {
-                                for (Tower tower : rangeCell.get(i).Tower_Stone) {
+                            if (rangeCell.get(i).towerStone.size() != 0) {
+                                for (Tower tower : rangeCell.get(i).towerStone) {
                                     objects.add(towers.get(tower));
                                 }
                             }
-                            if (rangeCell.get(i).Tower_Fire.size() != 0) {
-                                for (Tower tower : rangeCell.get(i).Tower_Fire) {
+                            if (rangeCell.get(i).towerFire.size() != 0) {
+                                for (Tower tower : rangeCell.get(i).towerFire) {
                                     objects.add(towers.get(tower));
                                 }
                             }
@@ -676,22 +679,22 @@ public class Judge extends JudgeAbstract {
         } else if (towers.containsValue(id)) {
             for (Map.Entry<Tower, GameObjectID> entry : towers.entrySet()) {
                 if (Objects.equals(id, entry.getValue())) {
-                    ArrayList<Cell> rangeCell = entry.getKey().getInRange(engine);
+                    ArrayList<Cell> rangeCell = entry.getKey().getInRange(engine.map);
                     if (entry.getKey().getTeamID() == 0) {
                         for (int i = 0; i < rangeCell.size(); i++) {
-                            if (rangeCell.get(i).Attacker_Scourge_Infantry.size() != 0) {
-                                for (AttackForces attacker : rangeCell.get(i).Attacker_Scourge_Infantry) {
+                            if (rangeCell.get(i).attackerScourgeInfantry.size() != 0) {
+                                for (AttackForces attacker : rangeCell.get(i).attackerScourgeInfantry) {
                                     objects.add(attackers.get(attacker));
                                 }
                             }
-                            if (rangeCell.get(i).Attacker_Scourge_Tank.size() != 0) {
-                                for (AttackForces attacker : rangeCell.get(i).Attacker_Scourge_Tank) {
+                            if (rangeCell.get(i).attackerScourgeTank.size() != 0) {
+                                for (AttackForces attacker : rangeCell.get(i).attackerScourgeTank) {
                                     objects.add(attackers.get(attacker));
                                 }
                             }
 
-                            if (rangeCell.get(i).Venomancer.size() != 0) {
-                                for (Hero venomancer : rangeCell.get(i).Venomancer) {
+                            if (rangeCell.get(i).venomancer.size() != 0) {
+                                for (Hero venomancer : rangeCell.get(i).venomancer) {
                                     objects.add(heroes.get(venomancer));
                                 }
                             }
@@ -700,18 +703,18 @@ public class Judge extends JudgeAbstract {
                     }
                     if (entry.getKey().getTeamID()== 1) {
                         for (int i = 0; i < rangeCell.size(); i++) {
-                            if (rangeCell.get(i).Attacker_Sentinel_Infantry.size() != 0) {
-                                for (AttackForces attacker : rangeCell.get(i).Attacker_Sentinel_Infantry) {
+                            if (rangeCell.get(i).attackerSentinelInfantry.size() != 0) {
+                                for (AttackForces attacker : rangeCell.get(i).attackerSentinelInfantry) {
                                     objects.add(attackers.get(attacker));
                                 }
                             }
-                            if (rangeCell.get(i).Attacker_Sentinel_Tank.size() != 0) {
-                                for (AttackForces attacker : rangeCell.get(i).Attacker_Sentinel_Tank) {
+                            if (rangeCell.get(i).attackerSentinelTank.size() != 0) {
+                                for (AttackForces attacker : rangeCell.get(i).attackerSentinelTank) {
                                     objects.add(attackers.get(attacker));
                                 }
                             }
-                            if (rangeCell.get(i).Tiny.size() != 0) {
-                                for (Hero tiny : rangeCell.get(i).Tiny) {
+                            if (rangeCell.get(i).tiny.size() != 0) {
+                                for (Hero tiny : rangeCell.get(i).tiny) {
                                     objects.add(heroes.get(tiny));
                                 }
                             }
@@ -723,59 +726,45 @@ public class Judge extends JudgeAbstract {
         } else if (heroes.containsValue(id)) {
             for (Map.Entry<Hero, GameObjectID> entry : heroes.entrySet()) {
                 if (Objects.equals(id, entry.getValue())) {
-                    ArrayList<Cell> rangeCell = entry.getKey().getInRange(engine);
+                    ArrayList<Cell> rangeCell = entry.getKey().getInRange(engine.map);
                     if (entry.getKey().getTeamID() == 0) {
                         for (int i = 0; i < rangeCell.size(); i++) {
-                            if (rangeCell.get(i).Attacker_Scourge_Infantry.size() != 0) {
-                                for (AttackForces attacker : rangeCell.get(i).Attacker_Scourge_Infantry) {
+                            if (rangeCell.get(i).attackerScourgeInfantry.size() != 0) {
+                                for (AttackForces attacker : rangeCell.get(i).attackerScourgeInfantry) {
                                     objects.add(attackers.get(attacker));
                                 }
                             }
-                            if (rangeCell.get(i).Attacker_Scourge_Tank.size() != 0) {
-                                for (AttackForces attacker : rangeCell.get(i).Attacker_Scourge_Tank) {
+                            if (rangeCell.get(i).attackerScourgeTank.size() != 0) {
+                                for (AttackForces attacker : rangeCell.get(i).attackerScourgeTank) {
                                     objects.add(attackers.get(attacker));
                                 }
                             }
-                            if (rangeCell.get(i).Ancient_Scourge.size() != 0) {
-                                for (Ancient ancient : rangeCell.get(i).Ancient_Scourge) {
+                            if (rangeCell.get(i).ancientScourge.size() != 0) {
+                                for (Ancient ancient : rangeCell.get(i).ancientScourge) {
                                     Ancient[] arrayAncient = new Ancient[1];
                                     arrayAncient[0] = ancient;
                                     objects.add(ancients.get(arrayAncient)[0]);
                                 }
                             }
-                            if (rangeCell.get(i).Barraks1_Scourge.size() != 0) {
-                                for (Barraks barrak1 : rangeCell.get(i).Barraks1_Scourge) {
+                            if (rangeCell.get(i).barraksScourge.size() != 0) {
+                                for (Barraks barrak1 : rangeCell.get(i).barraksScourge) {
                                     Barraks[] arrayBarrak1 = new Barraks[1];
                                     arrayBarrak1[0] = barrak1;
                                     objects.add(ancients.get(arrayBarrak1)[0]);
                                 }
                             }
-                            if (rangeCell.get(i).Barraks2_Scourge.size() != 0) {
-                                for (Barraks barrak2 : rangeCell.get(i).Barraks2_Scourge) {
-                                    Barraks[] arrayBarrak2 = new Barraks[1];
-                                    arrayBarrak2[0] = barrak2;
-                                    objects.add(ancients.get(arrayBarrak2)[0]);
-                                }
-                            }
-                            if (rangeCell.get(i).Barraks3_Scourge.size() != 0) {
-                                for (Barraks barrak3 : rangeCell.get(i).Barraks3_Scourge) {
-                                    Barraks[] arrayBarrak3 = new Barraks[1];
-                                    arrayBarrak3[0] = barrak3;
-                                    objects.add(ancients.get(arrayBarrak3)[0]);
-                                }
-                            }
-                            if (rangeCell.get(i).Venomancer.size() != 0) {
-                                for (Hero venomancer : rangeCell.get(i).Venomancer) {
+                            if (rangeCell.get(i).venomancer.size() != 0) {
+                                for (Hero venomancer : rangeCell.get(i).venomancer) {
                                     objects.add(heroes.get(venomancer));
                                 }
                             }
-                            if (rangeCell.get(i).Tower_Black.size() != 0) {
-                                for (Tower tower : rangeCell.get(i).Tower_Black) {
+                            if (rangeCell.get(i).towerBlack.size() != 0) {
+                                for (Tower tower : rangeCell.get(i).towerBlack) {
                                     objects.add(towers.get(tower));
                                 }
                             }
-                            if (rangeCell.get(i).Tower_Poison.size() != 0) {
-                                for (Tower tower : rangeCell.get(i).Tower_Poison) {
+                            if (rangeCell.get(i).towerPoison.size() != 0) {
+                                for (Tower tower : rangeCell.get(i).towerPoison) {
                                     objects.add(towers.get(tower));
                                 }
                             }
@@ -783,56 +772,42 @@ public class Judge extends JudgeAbstract {
                     }
                     if (entry.getKey().getTeamID() == 1) {
                         for (int i = 0; i < rangeCell.size(); i++) {
-                            if (rangeCell.get(i).Attacker_Sentinel_Infantry.size() != 0) {
-                                for (AttackForces attacker : rangeCell.get(i).Attacker_Sentinel_Infantry) {
+                            if (rangeCell.get(i).attackerSentinelInfantry.size() != 0) {
+                                for (AttackForces attacker : rangeCell.get(i).attackerSentinelInfantry) {
                                     objects.add(attackers.get(attacker));
                                 }
                             }
-                            if (rangeCell.get(i).Attacker_Sentinel_Tank.size() != 0) {
-                                for (AttackForces attacker : rangeCell.get(i).Attacker_Sentinel_Tank) {
+                            if (rangeCell.get(i).attackerSentinelTank.size() != 0) {
+                                for (AttackForces attacker : rangeCell.get(i).attackerSentinelTank) {
                                     objects.add(attackers.get(attacker));
                                 }
                             }
-                            if (rangeCell.get(i).Ancient_Sentinel.size() != 0) {
-                                for (Ancient ancient : rangeCell.get(i).Ancient_Sentinel) {
+                            if (rangeCell.get(i).ancientSentinel.size() != 0) {
+                                for (Ancient ancient : rangeCell.get(i).ancientSentinel) {
                                     Ancient[] arrayAncient = new Ancient[1];
                                     arrayAncient[0] = ancient;
                                     objects.add(ancients.get(arrayAncient)[0]);
                                 }
                             }
-                            if (rangeCell.get(i).Barraks1_Sentinel.size() != 0) {
-                                for (Barraks barrak1 : rangeCell.get(i).Barraks1_Sentinel) {
+                            if (rangeCell.get(i).barraksSentinel.size() != 0) {
+                                for (Barraks barrak1 : rangeCell.get(i).barraksSentinel) {
                                     Barraks[] arrayBarrak1 = new Barraks[1];
                                     arrayBarrak1[0] = barrak1;
                                     objects.add(ancients.get(arrayBarrak1)[0]);
                                 }
                             }
-                            if (rangeCell.get(i).Barraks2_Sentinel.size() != 0) {
-                                for (Barraks barrak2 : rangeCell.get(i).Barraks2_Sentinel) {
-                                    Barraks[] arrayBarrak2 = new Barraks[1];
-                                    arrayBarrak2[0] = barrak2;
-                                    objects.add(ancients.get(arrayBarrak2)[0]);
-                                }
-                            }
-                            if (rangeCell.get(i).Barraks3_Sentinel.size() != 0) {
-                                for (Barraks barrak3 : rangeCell.get(i).Barraks3_Sentinel) {
-                                    Barraks[] arrayBarrak3 = new Barraks[1];
-                                    arrayBarrak3[0] = barrak3;
-                                    objects.add(ancients.get(arrayBarrak3)[0]);
-                                }
-                            }
-                            if (rangeCell.get(i).Tiny.size() != 0) {
-                                for (Hero tiny : rangeCell.get(i).Tiny) {
+                            if (rangeCell.get(i).tiny.size() != 0) {
+                                for (Hero tiny : rangeCell.get(i).tiny) {
                                     objects.add(heroes.get(tiny));
                                 }
                             }
-                            if (rangeCell.get(i).Tower_Stone.size() != 0) {
-                                for (Tower tower : rangeCell.get(i).Tower_Stone) {
+                            if (rangeCell.get(i).towerStone.size() != 0) {
+                                for (Tower tower : rangeCell.get(i).towerStone) {
                                     objects.add(towers.get(tower));
                                 }
                             }
-                            if (rangeCell.get(i).Tower_Fire.size() != 0) {
-                                for (Tower tower : rangeCell.get(i).Tower_Fire) {
+                            if (rangeCell.get(i).towerFire.size() != 0) {
+                                for (Tower tower : rangeCell.get(i).towerFire) {
                                     objects.add(towers.get(tower));
                                 }
                             }
@@ -852,58 +827,44 @@ public class Judge extends JudgeAbstract {
         if (attackers.containsValue(id)) {
             for (Map.Entry<AttackForces, GameObjectID> entry : attackers.entrySet()) {
                 if (Objects.equals(id, entry.getValue())) {
-                    targetCell = entry.getKey().getTarget(engine);
+                    targetCell = entry.getKey().getTarget(engine.map);
                     if (entry.getKey().getTeamID() == 0) {
-                        if (targetCell.Attacker_Scourge_Infantry.size() != 0) {
-                            for (AttackForces attacker : targetCell.Attacker_Scourge_Infantry) {
+                        if (targetCell.attackerScourgeInfantry.size() != 0) {
+                            for (AttackForces attacker : targetCell.attackerScourgeInfantry) {
                                 object = attackers.get(attacker);
                             }
                         }
-                        if (targetCell.Attacker_Scourge_Tank.size() != 0) {
-                            for (AttackForces attacker : targetCell.Attacker_Scourge_Tank) {
+                        if (targetCell.attackerScourgeTank.size() != 0) {
+                            for (AttackForces attacker : targetCell.attackerScourgeTank) {
                                 object = attackers.get(attacker);
                             }
                         }
-                        if (targetCell.Ancient_Scourge.size() != 0) {
-                            for (Ancient ancient : targetCell.Ancient_Scourge) {
+                        if (targetCell.ancientScourge.size() != 0) {
+                            for (Ancient ancient : targetCell.ancientScourge) {
                                 Ancient[] arrayAncient = new Ancient[1];
                                 arrayAncient[0] = ancient;
                                 object = ancients.get(arrayAncient)[0];
                             }
                         }
-                        if (targetCell.Barraks1_Scourge.size() != 0) {
-                            for (Barraks barrak1 : targetCell.Barraks1_Scourge) {
+                        if (targetCell.barraksScourge.size() != 0) {
+                            for (Barraks barrak1 : targetCell.barraksScourge) {
                                 Barraks[] arrayBarrak1 = new Barraks[1];
                                 arrayBarrak1[0] = barrak1;
                                 object = ancients.get(arrayBarrak1)[0];
                             }
                         }
-                        if (targetCell.Barraks2_Scourge.size() != 0) {
-                            for (Barraks barrak2 : targetCell.Barraks2_Scourge) {
-                                Barraks[] arrayBarrak2 = new Barraks[1];
-                                arrayBarrak2[0] = barrak2;
-                                object = ancients.get(arrayBarrak2)[0];
-                            }
-                        }
-                        if (targetCell.Barraks3_Scourge.size() != 0) {
-                            for (Barraks barrak3 : targetCell.Barraks3_Scourge) {
-                                Barraks[] arrayBarrak3 = new Barraks[1];
-                                arrayBarrak3[0] = barrak3;
-                                object = ancients.get(arrayBarrak3)[0];
-                            }
-                        }
-                        if (targetCell.Venomancer.size() != 0) {
-                            for (Hero venomancer : targetCell.Venomancer) {
+                        if (targetCell.venomancer.size() != 0) {
+                            for (Hero venomancer : targetCell.venomancer) {
                                 object = heroes.get(venomancer);
                             }
                         }
-                        if (targetCell.Tower_Black.size() != 0) {
-                            for (Tower tower : targetCell.Tower_Black) {
+                        if (targetCell.towerBlack.size() != 0) {
+                            for (Tower tower : targetCell.towerBlack) {
                                 object = towers.get(tower);
                             }
                         }
-                        if (targetCell.Tower_Poison.size() != 0) {
-                            for (Tower tower : targetCell.Tower_Poison) {
+                        if (targetCell.towerPoison.size() != 0) {
+                            for (Tower tower : targetCell.towerPoison) {
                                 object = towers.get(tower);
                             }
                         }
@@ -911,56 +872,42 @@ public class Judge extends JudgeAbstract {
                 }
 
                 if (entry.getKey().getTeamID() == 1) {
-                    if (targetCell.Attacker_Sentinel_Infantry.size() != 0) {
-                        for (AttackForces attacker : targetCell.Attacker_Sentinel_Infantry) {
+                    if (targetCell.attackerSentinelInfantry.size() != 0) {
+                        for (AttackForces attacker : targetCell.attackerSentinelInfantry) {
                             object = attackers.get(attacker);
                         }
                     }
-                    if (targetCell.Attacker_Sentinel_Tank.size() != 0) {
-                        for (AttackForces attacker : targetCell.Attacker_Sentinel_Tank) {
+                    if (targetCell.attackerSentinelTank.size() != 0) {
+                        for (AttackForces attacker : targetCell.attackerSentinelTank) {
                             object = attackers.get(attacker);
                         }
                     }
-                    if (targetCell.Ancient_Sentinel.size() != 0) {
-                        for (Ancient ancient : targetCell.Ancient_Sentinel) {
+                    if (targetCell.ancientSentinel.size() != 0) {
+                        for (Ancient ancient : targetCell.ancientSentinel) {
                             Ancient[] arrayAncient = new Ancient[1];
                             arrayAncient[0] = ancient;
                             object = ancients.get(arrayAncient)[0];
                         }
                     }
-                    if (targetCell.Barraks1_Sentinel.size() != 0) {
-                        for (Barraks barrak1 : targetCell.Barraks1_Sentinel) {
+                    if (targetCell.barraksSentinel.size() != 0) {
+                        for (Barraks barrak1 : targetCell.barraksSentinel) {
                             Barraks[] arrayBarrak1 = new Barraks[1];
                             arrayBarrak1[0] = barrak1;
                             object = ancients.get(arrayBarrak1)[0];
                         }
                     }
-                    if (targetCell.Barraks2_Sentinel.size() != 0) {
-                        for (Barraks barrak2 : targetCell.Barraks2_Sentinel) {
-                            Barraks[] arrayBarrak2 = new Barraks[1];
-                            arrayBarrak2[0] = barrak2;
-                            object = ancients.get(arrayBarrak2)[0];
-                        }
-                    }
-                    if (targetCell.Barraks3_Sentinel.size() != 0) {
-                        for (Barraks barrak3 : targetCell.Barraks3_Sentinel) {
-                            Barraks[] arrayBarrak3 = new Barraks[1];
-                            arrayBarrak3[0] = barrak3;
-                            object = ancients.get(arrayBarrak3)[0];
-                        }
-                    }
-                    if (targetCell.Tiny.size() != 0) {
-                        for (Hero venomancer : targetCell.Tiny) {
+                    if (targetCell.tiny.size() != 0) {
+                        for (Hero venomancer : targetCell.tiny) {
                             object = heroes.get(venomancer);
                         }
                     }
-                    if (targetCell.Tower_Stone.size() != 0) {
-                        for (Tower tower : targetCell.Tower_Stone) {
+                    if (targetCell.towerStone.size() != 0) {
+                        for (Tower tower : targetCell.towerStone) {
                             object = towers.get(tower);
                         }
                     }
-                    if (targetCell.Tower_Fire.size() != 0) {
-                        for (Tower tower : targetCell.Tower_Fire) {
+                    if (targetCell.towerFire.size() != 0) {
+                        for (Tower tower : targetCell.towerFire) {
                             object = towers.get(tower);
                         }
                     }
@@ -969,21 +916,21 @@ public class Judge extends JudgeAbstract {
         } else if (towers.containsValue(id)) {
             for (Map.Entry<Tower, GameObjectID> entry : towers.entrySet()) {
                 if (Objects.equals(id, entry.getValue())) {
-                    targetCell = entry.getKey().findTarget(engine);
+                    targetCell = entry.getKey().findTarget(engine.map);
                     if (entry.getKey().getTeamID() == 0) {
-                        if (targetCell.Attacker_Scourge_Infantry.size() != 0) {
-                            for (AttackForces attacker : targetCell.Attacker_Scourge_Infantry) {
+                        if (targetCell.attackerScourgeInfantry.size() != 0) {
+                            for (AttackForces attacker : targetCell.attackerScourgeInfantry) {
                                 object = attackers.get(attacker);
                             }
                         }
-                        if (targetCell.Attacker_Scourge_Tank.size() != 0) {
-                            for (AttackForces attacker : targetCell.Attacker_Scourge_Tank) {
+                        if (targetCell.attackerScourgeTank.size() != 0) {
+                            for (AttackForces attacker : targetCell.attackerScourgeTank) {
                                 object = attackers.get(attacker);
                             }
                         }
 
-                        if (targetCell.Venomancer.size() != 0) {
-                            for (Hero venomancer : targetCell.Venomancer) {
+                        if (targetCell.venomancer.size() != 0) {
+                            for (Hero venomancer : targetCell.venomancer) {
                                 object = heroes.get(venomancer);
                             }
                         }
@@ -991,19 +938,19 @@ public class Judge extends JudgeAbstract {
                 }
 
                 if (entry.getKey().getTeamID() == 1) {
-                    if (targetCell.Attacker_Sentinel_Infantry.size() != 0) {
-                        for (AttackForces attacker : targetCell.Attacker_Sentinel_Infantry) {
+                    if (targetCell.attackerSentinelInfantry.size() != 0) {
+                        for (AttackForces attacker : targetCell.attackerSentinelInfantry) {
                             object = attackers.get(attacker);
                         }
                     }
-                    if (targetCell.Attacker_Sentinel_Tank.size() != 0) {
-                        for (AttackForces attacker : targetCell.Attacker_Sentinel_Tank) {
+                    if (targetCell.attackerSentinelTank.size() != 0) {
+                        for (AttackForces attacker : targetCell.attackerSentinelTank) {
                             object = attackers.get(attacker);
                         }
                     }
 
-                    if (targetCell.Tiny.size() != 0) {
-                        for (Hero venomancer : targetCell.Tiny) {
+                    if (targetCell.tiny.size() != 0) {
+                        for (Hero venomancer : targetCell.tiny) {
                             object = heroes.get(venomancer);
                         }
                     }
