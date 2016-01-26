@@ -40,10 +40,6 @@ public class AttackForces extends MovingForces {
         this.column = colNumber;
         this.isAlive = true;
 
-//        for (int i = 0; i < lane.getCells().size() ; i++) {
-//            System.out.println(lane.getCells().get(i).getRow());
-//            System.out.println(lane.getCells().get(i).getColumn());
-//        }
 
         if (this.attackerType == 9) {//Tank
             speed = 500;
@@ -597,7 +593,6 @@ public class AttackForces extends MovingForces {
         for (int j = 0; j < lane.getCells().size(); j++) {
             //System.out.println(lane.getCells());
             if (lane.getCells().get(j).getColumn() == column && lane.getCells().get(j).getRow() == row) {
-                System.out.println("Hi");
                 if (teamID == 0 && !(row == lane.getCells().get(lane.getCells().size() - 1).getRow() &&
                         column == lane.getCells().get(lane.getCells().size() - 1).getColumn())) {
                     if (attackerType == 8) {

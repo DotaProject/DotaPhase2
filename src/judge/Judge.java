@@ -173,9 +173,9 @@ public class Judge extends JudgeAbstract {
         Path path1 = engine.map.getPath1();
         Path path2 = engine.map.getPath2();
         Path path3 = engine.map.getPath3();
-        if (pathNumber == 1) {
+        if (pathNumber == 0) {
             return paths.get(path1);
-        } else if (pathNumber == 2) {
+        } else if (pathNumber == 1) {
             return paths.get(path2);
         } else {
             return paths.get(path3);
@@ -184,11 +184,11 @@ public class Judge extends JudgeAbstract {
 
     @Override
     public GameObjectID[] getLaneID(int pathNumber) {
-        if (pathNumber == 1) {
+        if (pathNumber == 0) {
             Lane[] pathLanes1 = engine.map.getPath1().getLanes();
             return pathLanesID.get(pathLanes1);
 
-        } else if (pathNumber == 2) {
+        } else if (pathNumber == 1) {
             Lane[] pathLanes2 = engine.map.getPath2().getLanes();
             return pathLanesID.get(pathLanes2);
         } else {
@@ -225,6 +225,8 @@ public class Judge extends JudgeAbstract {
                 mypath = entry.getKey();
             }
         }
+
+
         Lane mylane = null;
         for (Map.Entry<Lane[], GameObjectID[]> entry : pathLanesID.entrySet()) {
             for (int i = 0; i < entry.getKey().length; i++) {
@@ -235,11 +237,7 @@ public class Judge extends JudgeAbstract {
         }
 
         AttackForces attacker = engine.createAttacker(teamID,attackerType,mypath,mylane,rowNumber,colNumber,time);
-        System.out.println("*************************");
-        for (int i = 0; i < mylane.getCells().size() ; i++) {
-            System.out.println(mylane.getCells().get(i).getRow());
-            System.out.println(mylane.getCells().get(i).getColumn());
-        }
+
         GameObjectID g10 = GameObjectID.create(AttackForces.class);
         attackers.put(attacker, g10);
         return g10;
