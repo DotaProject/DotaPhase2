@@ -10,6 +10,7 @@ import java.util.HashMap;
 
 public class JudgeTest extends TestCase {
 // mibini
+    
 
     @Test
     public void test1() throws DotaExceptionBase {
