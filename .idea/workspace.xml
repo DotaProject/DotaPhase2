@@ -2,26 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1726638a-8aca-49ae-a33a-77950752dd17" name="Default" comment="adding thread">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/common/gameEvents/AttackForceAttackEvent.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/common/gameEvents/AttackForceMoveEvent.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/common/gameEvents/TowerAttackEvent.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/common/AttackForceEvent.class" afterPath="$PROJECT_DIR$/out/production/DotaPhase2/common/AttackForceEvent.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/common/AttackForces.class" afterPath="$PROJECT_DIR$/out/production/DotaPhase2/common/AttackForces.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/common/GameEngine.class" afterPath="$PROJECT_DIR$/out/production/DotaPhase2/common/GameEngine.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/common/Hero.class" afterPath="$PROJECT_DIR$/out/production/DotaPhase2/common/Hero.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/common/Tower.class" afterPath="$PROJECT_DIR$/out/production/DotaPhase2/common/Tower.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/AncientMoneyEvent.java" afterPath="$PROJECT_DIR$/src/common/AncientMoneyEvent.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/AttackForceEvent.java" afterPath="$PROJECT_DIR$/src/common/AttackForceEvent.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/AttackForces.java" afterPath="$PROJECT_DIR$/src/common/AttackForces.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/EventHandler.java" afterPath="$PROJECT_DIR$/src/common/EventHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/Events.java" afterPath="$PROJECT_DIR$/src/common/Events.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/GameEngine.java" afterPath="$PROJECT_DIR$/src/common/GameEngine.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/Hero.java" afterPath="$PROJECT_DIR$/src/common/Hero.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/HeroAttackEvent.java" afterPath="$PROJECT_DIR$/src/common/HeroAttackEvent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/HeroLifeEvent.java" afterPath="$PROJECT_DIR$/src/common/HeroLifeEvent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/HeroMoveEvent.java" afterPath="$PROJECT_DIR$/src/common/HeroMoveEvent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/Tower.java" afterPath="$PROJECT_DIR$/src/common/Tower.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/TowerRangeAttackEvent.java" afterPath="$PROJECT_DIR$/src/common/TowerRangeAttackEvent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/judge/Judge.java" afterPath="$PROJECT_DIR$/src/judge/Judge.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/judge/JudgeTest.java" afterPath="$PROJECT_DIR$/src/judge/JudgeTest.java" />
     </list>
     <ignored path="DotaPhase2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,8 +35,8 @@
       <file leaf-file-name="JudgeTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/judge/JudgeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33189654">
-              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5258621">
+              <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -59,29 +46,22 @@
         <entry file="file://$PROJECT_DIR$/src/judge/Judge.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="356" column="33" selection-start-line="356" selection-start-column="33" selection-end-line="356" selection-end-column="33" />
+              <caret line="241" column="9" selection-start-line="241" selection-start-column="9" selection-end-line="241" selection-end-column="9" />
               <folding>
                 <element signature="method#makeGoldHashMap#0;class#Judge#0" expanded="false" />
-                <element signature="method#makeLaneHashMap#0;class#Judge#0" expanded="false" />
                 <element signature="method#makeBuildingsHashMap#0;class#Judge#0" expanded="false" />
-                <element signature="method#makePathHashMap#0;class#Judge#0" expanded="false" />
                 <element signature="method#loadMap#0;class#Judge#0" expanded="false" />
                 <element signature="method#setup#0;class#Judge#0" expanded="false" />
                 <element signature="method#getGoldMineID#0;class#Judge#0" expanded="false" />
                 <element signature="method#getBuildingID#0;class#Judge#0" expanded="false" />
                 <element signature="method#getPathID#0;class#Judge#0" expanded="false" />
-                <element signature="method#getLaneID#0;class#Judge#0" expanded="false" />
                 <element signature="method#getHeroID#0;class#Judge#0" expanded="false" />
-                <element signature="method#createAttacker#0;class#Judge#0" expanded="false" />
                 <element signature="method#createTower#0;class#Judge#0" expanded="false" />
                 <element signature="method#purchaseAttackersPowerup#0;class#Judge#0" expanded="false" />
                 <element signature="method#purchaseTowerPowerup#0;class#Judge#0" expanded="false" />
                 <element signature="method#heroAttack#0;class#Judge#0" expanded="false" />
                 <element signature="method#getMoney#0;class#Judge#0" expanded="false" />
-                <element signature="method#getAttackerPowerups#0;class#Judge#0" expanded="false" />
                 <element signature="method#getTeamGoldMines#0;class#Judge#0" expanded="false" />
-                <element signature="method#getInfo#0;class#Judge#0" expanded="false" />
-                <element signature="method#getInRange#0;class#Judge#0" expanded="false" />
                 <element signature="method#getTarget#0;class#Judge#0" expanded="false" />
                 <element signature="method#startTimer#0;class#Judge#0" expanded="false" />
                 <element signature="method#pauseTimer#0;class#Judge#0" expanded="false" />
@@ -93,40 +73,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameEngine.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/GameEngine.java">
+      <file leaf-file-name="Map.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/common/Map.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="94" column="54" selection-start-line="94" selection-start-column="54" selection-end-line="94" selection-end-column="54" />
+              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AttackForces.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/common/AttackForces.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="42" column="10" selection-start-line="42" selection-start-column="10" selection-end-line="45" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#createTower#0;class#GameEngine#0" expanded="false" />
-                <element signature="method#createAttacker#0;class#GameEngine#0" expanded="false" />
+                <element signature="method#upgradeHealth#0;class#AttackForces#0" expanded="false" />
+                <element signature="method#getInRange#0;class#AttackForces#0" expanded="false" />
+                <element signature="method#minDistanceTower#0;class#AttackForces#0" expanded="false" />
+                <element signature="method#minDistanceForces#0;class#AttackForces#0" expanded="false" />
+                <element signature="method#getTarget#0;class#AttackForces#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Hero.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/Hero.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
-              <folding>
-                <element signature="method#Hero#0;class#Hero#0" expanded="false" />
-                <element signature="method#checkGoldMine#0;class#Hero#0" expanded="false" />
-                <element signature="method#makeRandomGoldMine#0;class#Hero#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Cell.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/Cell.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -202,16 +171,16 @@
         <option value="$PROJECT_DIR$/src/common/gameEvents/EventHandler.java" />
         <option value="$PROJECT_DIR$/src/common/AncientMoneyEvent.java" />
         <option value="$PROJECT_DIR$/src/common/Events.java" />
-        <option value="$PROJECT_DIR$/src/common/AttackForceEvent.java" />
         <option value="$PROJECT_DIR$/src/common/HeroAttackEvent.java" />
         <option value="$PROJECT_DIR$/src/common/TowerRangeAttackEvent.java" />
         <option value="$PROJECT_DIR$/src/common/EventHandler.java" />
-        <option value="$PROJECT_DIR$/src/common/AttackForces.java" />
         <option value="$PROJECT_DIR$/src/common/Tower.java" />
-        <option value="$PROJECT_DIR$/src/judge/JudgeTest.java" />
-        <option value="$PROJECT_DIR$/src/judge/Judge.java" />
         <option value="$PROJECT_DIR$/src/common/Hero.java" />
         <option value="$PROJECT_DIR$/src/common/GameEngine.java" />
+        <option value="$PROJECT_DIR$/src/common/AttackForceEvent.java" />
+        <option value="$PROJECT_DIR$/src/common/AttackForces.java" />
+        <option value="$PROJECT_DIR$/src/judge/Judge.java" />
+        <option value="$PROJECT_DIR$/src/judge/JudgeTest.java" />
       </list>
     </option>
   </component>
@@ -921,7 +890,7 @@
       <workItem from="1453710081021" duration="7158000" />
       <workItem from="1453724768663" duration="13287000" />
       <workItem from="1453768911244" duration="6387000" />
-      <workItem from="1453785715239" duration="2539000" />
+      <workItem from="1453785715239" duration="5596000" />
     </task>
     <task id="LOCAL-00001" summary="Hi">
       <created>1451760551825</created>
@@ -993,39 +962,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="JudgeTest_test1 - 2016.01.26 at 09h 33m 29s.xml">
+    <history-entry file="JudgeTest_test1 - 2016.01.26 at 10h 18m 07s.xml">
       <configuration name="JudgeTest.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JudgeTest_test1 - 2016.01.26 at 09h 36m 09s.xml">
+    <history-entry file="JudgeTest_test1 - 2016.01.26 at 10h 18m 37s.xml">
       <configuration name="JudgeTest.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JudgeTest_test2 - 2016.01.26 at 09h 33m 55s.xml">
-      <configuration name="JudgeTest.test2" configurationId="JUnit" />
+    <history-entry file="JudgeTest_test1 - 2016.01.26 at 10h 19m 46s.xml">
+      <configuration name="JudgeTest.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JudgeTest_test3 - 2016.01.26 at 09h 22m 52s.xml">
-      <configuration name="JudgeTest.test3" configurationId="JUnit" />
+    <history-entry file="JudgeTest_test1 - 2016.01.26 at 10h 29m 40s.xml">
+      <configuration name="JudgeTest.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JudgeTest_test3 - 2016.01.26 at 09h 23m 43s.xml">
-      <configuration name="JudgeTest.test3" configurationId="JUnit" />
+    <history-entry file="JudgeTest_test1 - 2016.01.26 at 10h 31m 40s.xml">
+      <configuration name="JudgeTest.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JudgeTest_test3 - 2016.01.26 at 09h 24m 17s.xml">
-      <configuration name="JudgeTest.test3" configurationId="JUnit" />
+    <history-entry file="JudgeTest_test1 - 2016.01.26 at 10h 33m 33s.xml">
+      <configuration name="JudgeTest.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JudgeTest_test3 - 2016.01.26 at 09h 24m 35s.xml">
-      <configuration name="JudgeTest.test3" configurationId="JUnit" />
+    <history-entry file="JudgeTest_test1 - 2016.01.26 at 10h 39m 44s.xml">
+      <configuration name="JudgeTest.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JudgeTest_test3 - 2016.01.26 at 09h 33m 09s.xml">
-      <configuration name="JudgeTest.test3" configurationId="JUnit" />
+    <history-entry file="JudgeTest_test1 - 2016.01.26 at 10h 39m 57s.xml">
+      <configuration name="JudgeTest.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JudgeTest_test4 - 2016.01.26 at 09h 34m 13s.xml">
-      <configuration name="JudgeTest.test4" configurationId="JUnit" />
+    <history-entry file="JudgeTest_test1 - 2016.01.26 at 10h 52m 11s.xml">
+      <configuration name="JudgeTest.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JudgeTest_test5 - 2016.01.26 at 09h 34m 09s.xml">
-      <configuration name="JudgeTest.test5" configurationId="JUnit" />
+    <history-entry file="JudgeTest_test1 - 2016.01.26 at 10h 53m 22s.xml">
+      <configuration name="JudgeTest.test1" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55959000" />
+    <option name="totallyTimeSpent" value="59016000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -1033,7 +1002,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32802126" sideWeight="0.484375" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32739726" sideWeight="0.484375" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32802126" sideWeight="0.515625" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1115,6 +1084,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding>
+            <element signature="e#724#725#0" expanded="false" />
+            <element signature="e#753#754#0" expanded="false" />
+            <element signature="e#830#831#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1137,6 +1111,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#1307#1308#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1304,6 +1281,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6">
           <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+          <folding>
+            <element signature="e#724#725#0" expanded="false" />
+            <element signature="e#753#754#0" expanded="false" />
+            <element signature="e#830#831#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1322,14 +1304,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/common/Lane.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1342,13 +1316,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.703704">
           <caret line="193" column="0" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Ancient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38444924">
-          <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -1380,26 +1347,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/judge/JudgeAbstract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33261338">
-          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/common/Path.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="110" column="1" selection-start-line="110" selection-start-column="1" selection-end-line="110" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -1467,17 +1418,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/AncientMoneyEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25862068">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-          <folding>
-            <element signature="method#AncientMoneyEvent#0;class#AncientMoneyEvent#0" expanded="false" />
-            <element signature="method#eventAction#0;class#AncientMoneyEvent#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/common/MovingForces.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1510,47 +1450,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Cell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/common/EventHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33189654">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="method#checkQueue#0;class#EventHandler#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/AttackForceEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33189654">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="e#114#125#0" expanded="false" />
-            <element signature="method#AttackForceEvent#0;class#AttackForceEvent#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/AttackForces.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.0409484">
-          <caret line="583" column="9" selection-start-line="583" selection-start-column="9" selection-end-line="583" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#upgradeHealth#0;class#AttackForces#0" expanded="false" />
-            <element signature="method#getInRange#0;class#AttackForces#0" expanded="false" />
-            <element signature="method#minDistanceTower#0;class#AttackForces#0" expanded="false" />
-            <element signature="method#minDistanceForces#0;class#AttackForces#0" expanded="false" />
-            <element signature="method#getTarget#0;class#AttackForces#0" expanded="false" />
-            <element signature="method#moveAttacker#0;class#AttackForces#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1573,32 +1478,129 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.021367522">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Hero.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42735043">
+          <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
+          <folding>
+            <element signature="method#Hero#0;class#Hero#0" expanded="false" />
+            <element signature="method#checkGoldMine#0;class#Hero#0" expanded="false" />
+            <element signature="method#makeRandomGoldMine#0;class#Hero#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Cell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0683761">
+          <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/AncientMoneyEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <folding>
+            <element signature="method#AncientMoneyEvent#0;class#AncientMoneyEvent#0" expanded="false" />
+            <element signature="method#eventAction#0;class#AncientMoneyEvent#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/GameEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.08974359">
+          <caret line="68" column="120" selection-start-line="68" selection-start-column="120" selection-end-line="68" selection-end-column="120" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#createTower#0;class#GameEngine#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Ancient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
+          <folding>
+            <element signature="e#1307#1308#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/judge/JudgeAbstract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/AttackForceEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.58189654">
+          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+          <folding>
+            <element signature="e#114#125#0" expanded="false" />
+            <element signature="method#AttackForceEvent#0;class#AttackForceEvent#0" expanded="false" />
+            <element signature="e#1275#1276#0" expanded="true" />
+            <element signature="e#1306#1307#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/AttackForces.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="10" selection-start-line="42" selection-start-column="10" selection-end-line="45" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#upgradeHealth#0;class#AttackForces#0" expanded="false" />
+            <element signature="method#getInRange#0;class#AttackForces#0" expanded="false" />
+            <element signature="method#minDistanceTower#0;class#AttackForces#0" expanded="false" />
+            <element signature="method#minDistanceForces#0;class#AttackForces#0" expanded="false" />
+            <element signature="method#getTarget#0;class#AttackForces#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/judge/Judge.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="356" column="33" selection-start-line="356" selection-start-column="33" selection-end-line="356" selection-end-column="33" />
+          <caret line="241" column="9" selection-start-line="241" selection-start-column="9" selection-end-line="241" selection-end-column="9" />
           <folding>
             <element signature="method#makeGoldHashMap#0;class#Judge#0" expanded="false" />
-            <element signature="method#makeLaneHashMap#0;class#Judge#0" expanded="false" />
             <element signature="method#makeBuildingsHashMap#0;class#Judge#0" expanded="false" />
-            <element signature="method#makePathHashMap#0;class#Judge#0" expanded="false" />
             <element signature="method#loadMap#0;class#Judge#0" expanded="false" />
             <element signature="method#setup#0;class#Judge#0" expanded="false" />
             <element signature="method#getGoldMineID#0;class#Judge#0" expanded="false" />
             <element signature="method#getBuildingID#0;class#Judge#0" expanded="false" />
             <element signature="method#getPathID#0;class#Judge#0" expanded="false" />
-            <element signature="method#getLaneID#0;class#Judge#0" expanded="false" />
             <element signature="method#getHeroID#0;class#Judge#0" expanded="false" />
-            <element signature="method#createAttacker#0;class#Judge#0" expanded="false" />
             <element signature="method#createTower#0;class#Judge#0" expanded="false" />
             <element signature="method#purchaseAttackersPowerup#0;class#Judge#0" expanded="false" />
             <element signature="method#purchaseTowerPowerup#0;class#Judge#0" expanded="false" />
             <element signature="method#heroAttack#0;class#Judge#0" expanded="false" />
             <element signature="method#getMoney#0;class#Judge#0" expanded="false" />
-            <element signature="method#getAttackerPowerups#0;class#Judge#0" expanded="false" />
             <element signature="method#getTeamGoldMines#0;class#Judge#0" expanded="false" />
-            <element signature="method#getInfo#0;class#Judge#0" expanded="false" />
-            <element signature="method#getInRange#0;class#Judge#0" expanded="false" />
             <element signature="method#getTarget#0;class#Judge#0" expanded="false" />
             <element signature="method#startTimer#0;class#Judge#0" expanded="false" />
             <element signature="method#pauseTimer#0;class#Judge#0" expanded="false" />
@@ -1609,34 +1611,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Hero.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
-          <folding>
-            <element signature="method#Hero#0;class#Hero#0" expanded="false" />
-            <element signature="method#checkGoldMine#0;class#Hero#0" expanded="false" />
-            <element signature="method#makeRandomGoldMine#0;class#Hero#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/GameEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="94" column="54" selection-start-line="94" selection-start-column="54" selection-end-line="94" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#createTower#0;class#GameEngine#0" expanded="false" />
-            <element signature="method#createAttacker#0;class#GameEngine#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/judge/JudgeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33189654">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5258621">
+          <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
           <folding />
         </state>
       </provider>

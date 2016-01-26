@@ -235,6 +235,11 @@ public class Judge extends JudgeAbstract {
         }
 
         AttackForces attacker = engine.createAttacker(teamID,attackerType,mypath,mylane,rowNumber,colNumber,time);
+        System.out.println("*************************");
+        for (int i = 0; i < mylane.getCells().size() ; i++) {
+            System.out.println(mylane.getCells().get(i).getRow());
+            System.out.println(mylane.getCells().get(i).getColumn());
+        }
         GameObjectID g10 = GameObjectID.create(AttackForces.class);
         attackers.put(attacker, g10);
         return g10;

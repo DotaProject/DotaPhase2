@@ -19,6 +19,11 @@ public class JudgeTest extends TestCase {
         j1.loadMap(m1.getColumns(), m1.getRows(), m1.getPath1(), m1.getPath2(),
                 m1.getPath3(), m1.getAncient1(), m1.getAncient2(),
                 m1.getBarracks1(), m1.getBarracks2(), m1.getGoldMines());
+        for (int i = 0; i < m1.getPath1().get(0).size() ; i++) {
+            System.out.println(m1.getPath1().get(0).get(i).getRow());
+            System.out.println(m1.getPath1().get(0).get(i).getColumn());
+        }
+
         GameObjectID path1 = j1.getPathID(0);
         GameObjectID[] path1Lanes = j1.getLaneID(0);
         j1.setup();
