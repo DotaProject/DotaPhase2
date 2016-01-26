@@ -173,6 +173,8 @@ public class Tower extends Forces {
                                 }
                                 if (map.getGameBoard()[row + i][column + j].tiny.size() != 0) {
                                     towerRange.add(map.getGameBoard()[row + i][column + j]);
+//                                    System.out.println(i);
+//                                    System.out.println(j);
                                 }
                             }
                         }
@@ -586,7 +588,7 @@ public class Tower extends Forces {
                     }
                     if (target.tiny.size() != 0) {
                         for (int i = 0; i < target.tiny.size(); i++) {
-                            target.tiny.get(i).health -= tankAttackPower;
+                            target.tiny.get(i).health -= infantryAttackPower;
                             if (target.tiny.get(i).health <= 0) {
                                 target.tiny.get(i).isAlive = false;
                                 map.getGameBoard()[target.getRow()][target.getColumn()].tiny.remove(i);

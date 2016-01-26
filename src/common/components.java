@@ -1,4 +1,4 @@
 package common;
 
-public interface components {
+public interface Components {
 }
