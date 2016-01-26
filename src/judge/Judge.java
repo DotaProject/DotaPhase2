@@ -283,13 +283,13 @@ public class Judge extends JudgeAbstract {
             }
         }
         if (teamID == 0) {
-            if (tempNumber < mylane.getCells().size() / 2) {
+            if (tempNumber > mylane.getCells().size() / 2) {
                 throw new DotaExceptionBase();
             }
         }
         if (teamID == 1) {
 
-            if (tempNumber > mylane.getCells().size() / 2) {
+            if (tempNumber < mylane.getCells().size() / 2) {
                 throw new DotaExceptionBase();
             }
 

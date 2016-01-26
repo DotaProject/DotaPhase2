@@ -17,9 +17,10 @@ public class AncientMoneyEvent extends Events {
         }else {
             ancient.addGoldMineMoney();
             ancient.addTimeMoney();
-            this.remainingTime = 1000;
+            this.remainingTime = 950;
             this.passedTime = 0;
         }
+        //System.out.println(ancient.getTreasury());
     }
 
     public Ancient getAncient() {
