@@ -23,10 +23,6 @@ public class Judge extends JudgeAbstract {
     GameEngine engine = new GameEngine();
     boolean tinyTarget;
     boolean venomancerTarget;
-    boolean tinyMove;
-    boolean venomancerMove;
-    int tinyMoveTime;
-    int venomancerMoveTime;
 
     public void makeGoldHashMap() {
         for (int i = 0; i < engine.map.getGoldMines().size(); i++) {
@@ -99,17 +95,6 @@ public class Judge extends JudgeAbstract {
         paths.put(path3, g7);
     }
 
-    public void makeHeroHashmap() {
-        Hero tiny = engine.map.getTiny();
-        GameObjectID g8 = GameObjectID.create(Hero.class);
-        heroes.put(tiny, g8);
-
-        Hero venomancer = engine.map.getVenomancer();
-        GameObjectID g9 = GameObjectID.create(Hero.class);
-        heroes.put(venomancer, g9);
-
-    }
-
     @Override
     public void loadMap(int columns, int rows, ArrayList<ArrayList<Cell>> path1, ArrayList<ArrayList<Cell>> path2, ArrayList<ArrayList<Cell>> path3,
                         Cell[][] ancient1, Cell[][] ancient2, ArrayList<Cell[][]> barraks1, ArrayList<Cell[][]> barraks2, ArrayList<Cell> goldMines) {
@@ -131,22 +116,8 @@ public class Judge extends JudgeAbstract {
     public void setup() {
 
         time = 0;
-        tinyMoveTime = 0;
-        venomancerMoveTime = 0;
         tinyTarget = false;
         venomancerTarget = false;
-        tinyMove = false;
-        venomancerMove = false;
-
-//        gameEvents event1 = new gameEvents(engine.ancient1[0], eventHandler);
-//        gameEvents event2 = new gameEvents(engine.ancient2[0], eventHandler);
-//        gameEvents event3 = new gameEvents(engine.getTiny(), eventHandler);
-//        gameEvents event4 = new gameEvents(engine.getVenomancer(), eventHandler);
-//
-//        event1.start();
-//        event2.start();
-//        event3.start();
-//        event4.start();
     }
     @Override
     public int getMapHeight() {
@@ -214,14 +185,14 @@ public class Judge extends JudgeAbstract {
     @Override
     public GameObjectID[] getLaneID(int pathNumber) {
         if (pathNumber == 1) {
-            Lane[] pathLanes1 = (Lane[])engine.map.getPath1().getLanes();
+            Lane[] pathLanes1 = engine.map.getPath1().getLanes();
             return pathLanesID.get(pathLanes1);
 
         } else if (pathNumber == 2) {
-            Lane[] pathLanes2 = (Lane[])engine.map.getPath2().getLanes();
+            Lane[] pathLanes2 = engine.map.getPath2().getLanes();
             return pathLanesID.get(pathLanes2);
         } else {
-            Lane[] pathLanes3 = (Lane[])engine.map.getPath3().getLanes();
+            Lane[] pathLanes3 = engine.map.getPath3().getLanes();
             return pathLanesID.get(pathLanes3);
         }
     }
@@ -264,8 +235,6 @@ public class Judge extends JudgeAbstract {
         }
 
         AttackForces attacker = engine.createAttacker(teamID,attackerType,mypath,mylane,rowNumber,colNumber,time);
-//        gameEvents event = new gameEvents(attacker, eventHandler);
-//        event.start();
         GameObjectID g10 = GameObjectID.create(AttackForces.class);
         attackers.put(attacker, g10);
         return g10;
@@ -323,11 +292,7 @@ public class Judge extends JudgeAbstract {
 
         }
 
-
-        //az path o lane ina estefade mishe?
         Tower tower = engine.createTower(teamID, towerType, mypath,mylane,index,rowNumber, colNumber, time);
-//        gameEvents event = new gameEvents(tower, eventHandler);
-//        event.start();
         GameObjectID g11 = GameObjectID.create(Tower.class);
         towers.put(tower, g11);
         return g11;
@@ -389,19 +354,12 @@ public class Judge extends JudgeAbstract {
         for (Map.Entry<Hero, GameObjectID> entry : heroes.entrySet()) {
             if (Objects.equals(hero, entry.getValue())) {
                 if ((entry.getKey().getTeamID() == 0 || (entry.getKey().getTeamID() == 1 ))) {
-                    entry.getKey().heroMove(dest, direction, engine.map);
-//                    for (int i = 0; i < eventHandler.gameEvents.size(); i++) {
-//                        if (eventHandler.gameEvents.get(i).getFlag() == 1) {
-//                            if (eventHandler.gameEvents.get(i).hero.team_ID == entry.getKey().team_ID) {
-//                                eventHandler.gameEvents.get(i).hero.heroMove(dest, direction, engine);
-//                            }
-//                        }
-//                    }
-                    return heroes.get(entry.getKey());
+                    engine.callHeroMove( entry.getKey() , dest , direction , engine.map);
+                    return hero;
                 }
             }
         }
-        return null;
+        return hero;
     }
 
     @Override
@@ -414,18 +372,11 @@ public class Judge extends JudgeAbstract {
                 if (entry.getKey().getTeamID() == 1) {
                     venomancerTarget = true;
                 }
-                entry.getKey().attack(target, engine.map);
-//                for (int i = 0; i < eventHandler.gameEvents.size(); i++) {
-//                    if (eventHandler.gameEvents.get(i).getFlag() == 1) {
-//                        if (eventHandler.gameEvents.get(i).hero.team_ID == entry.getKey().team_ID) {
-//                            eventHandler.gameEvents.get(i).hero.attack(target, engine);
-//                        }
-//                    }
-//                }
-                return heroes.get(entry.getKey());
+                engine.callHeroAttack(entry.getKey() , target , engine.map);
+                return hero;
             }
         }
-        return null;
+        return hero;
     }
 
     @Override
@@ -433,10 +384,9 @@ public class Judge extends JudgeAbstract {
         if (teamID == 0) {
             return engine.map.getAncient1()[0].getTreasury();
         }
-        if (teamID == 1) {
+        else{
             return engine.map.getAncient2()[0].getTreasury();
         }
-        return 0;
     }
 
     @Override
@@ -949,7 +899,6 @@ public class Judge extends JudgeAbstract {
 
                 }
             }
-            //TODO HERO
         }
         return object;
     }
@@ -970,42 +919,8 @@ public class Judge extends JudgeAbstract {
     }
 
     public void next50milis() {
-//        if (engine.map.getAncient1()[0].getTreasury() == 0 || engine.map.getAncient2()[0].getTreasury() == 0) {
-//            time += 50;
-//
-//            return;
-//        } else {
-//            //eventHandler.game(time, engine);
-//            time += 50;
-//            if (tinyTarget == false) {
-////                for (int i = 0; i < eventHandler.gameEvents.size(); i++) {
-////                    if (eventHandler.gameEvents.get(i).hero != null && eventHandler.gameEvents.get(i).hero.team_ID == 0) {
-////                        if (tinyMoveTime % eventHandler.gameEvents.get(i).hero.speed == 0) {
-////                            tinyMove = true;
-////                        } else {
-////                            tinyMove = false;
-////                        }
-////                        tinyMoveTime += 50;
-////                    }
-////
-////                }
-//
-//            }
-//            if (venomancerTarget == false) {
-////                for (int i = 0; i < eventHandler.gameEvents.size(); i++) {
-////                    if (eventHandler.gameEvents.get(i).hero != null && eventHandler.gameEvents.get(i).hero.team_ID == 1) {
-////                        if (venomancerMoveTime % eventHandler.gameEvents.get(i).hero.speed == 0) {
-////                            venomancerMove = true;
-////                        } else {
-////                            venomancerMove = false;
-////                        }
-////                        venomancerMoveTime += 50;
-////                    }
-////
-////                }
-//
-//            }
-//        }
+        //todo inja thread run mishe??
+        engine.getHandler().run();
     }
 
 

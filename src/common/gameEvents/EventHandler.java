@@ -56,6 +56,16 @@ public class EventHandler extends Thread {
                     //TODO end of game
                 }
             }
+            if (item instanceof HeroMoveEvent){
+                if (((HeroMoveEvent) item).getHero().getFlag() == 1){
+                    eventsqueue.remove(item);
+                }
+            }
+            if (item instanceof HeroAttackEvent){
+                if (((HeroAttackEvent) item).getHero().getFlag() == 1){
+                    eventsqueue.remove(item);
+                }
+            }
         }
     }
     public ArrayList<Events> getEventsqueue() {

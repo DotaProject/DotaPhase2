@@ -1,5 +1,6 @@
 package common;
 
+import common.exception.DotaExceptionBase;
 import common.gameEvents.*;
 
 import java.util.ArrayList;
@@ -86,8 +87,29 @@ public class GameEngine {
         return attackForce;
     }
 
-    public void callHeroMove(Hero hero , Cell dest , int direction , Map map){
 
+    //hero morde = 0
+    //hero zende = 1
+    //hero zendeo dargire move = 2
+    //hero zende o dargire hamle = 3
+    public void callHeroMove(Hero hero , Cell dest , int direction , Map map) throws DotaExceptionBase{
+        if (hero.getFlag() == 1) {
+            hero.heroMove(dest, direction, map);
+            HeroMoveEvent moveEvent = new HeroMoveEvent(hero);
+            handler.getEventsqueue().add(moveEvent);
+        }//yaani faghat zamani ke hero faghat zendas ye bar seda mizane tabe ro va baadesh oun etefagh flag ro 2 mikone o dg ejazeye
+        //seda zadane tabe ro nemide be ma ta zamani ke vaghtesh bere
     }
 
+    public void callHeroAttack(Hero hero , Cell target , Map map) throws DotaExceptionBase{
+        if (hero.getFlag() == 1){
+            hero.attack(target,map);
+            HeroAttackEvent attackEvent = new HeroAttackEvent(hero);
+            handler.getEventsqueue().add(attackEvent);
+        }//mese manteghe bala
+    }
+
+    public EventHandler getHandler() {
+        return handler;
+    }
 }

@@ -34,6 +34,7 @@ public class Hero extends MovingForces {
         }
         this.heroType = heroType;
         this.isAlive = true;
+        this.setFlag(1);
     }
 
     public void heroMove(Cell dest, int direction, Map map) throws DotaExceptionBase {
