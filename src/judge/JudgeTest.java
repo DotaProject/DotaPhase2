@@ -9,6 +9,7 @@ import org.junit.Test;
 import java.util.HashMap;
 
 public class JudgeTest extends TestCase {
+// mibini
 
     @Test
     public void test1() throws DotaExceptionBase {
@@ -115,8 +116,6 @@ public class JudgeTest extends TestCase {
         assertEquals(10, col1);
         assertEquals(1, alive1);
     }
-
-
 
     @Test
     public void test4() throws DotaExceptionBase {
