@@ -1,7 +1,6 @@
 package common;
 
-import common.gameEvents.EventHandler;
-import common.gameEvents.TowerRangeAttackEvent;
+import common.gameEvents.*;
 
 import java.util.ArrayList;
 
@@ -24,13 +23,33 @@ public class GameEngine {
                          ArrayList<Cell[][]> barraks2, ArrayList<Cell> goldMines){
         map = new Map(row, column, path1, path2, path3, ancient1, ancient2, barraks1, barraks2, goldMines);
         this.handler.setMap(map);
+
+        //ancient sentinel money event
+        Ancient ancientSentinel = map.getAncient1()[0];
+        AncientMoneyEvent sentinelEvent = new AncientMoneyEvent(ancientSentinel);
+        handler.getEventsqueue().add(sentinelEvent);
+
+        //ancinet scourge money event
+        Ancient ancientScourge = map.getAncient2()[1];
+        AncientMoneyEvent scourgeEvent = new AncientMoneyEvent(ancientScourge);
+        handler.getEventsqueue().add(scourgeEvent);
+
+        //heroes life event for checking death
+        Hero tiny = map.getTiny();
+        HeroLifeEvent tinyEvent = new HeroLifeEvent(tiny);
+        handler.getEventsqueue().add(tinyEvent);
+
+        Hero venomancer = map.getVenomancer();
+        HeroLifeEvent venomEvent = new HeroLifeEvent(venomancer);
+        handler.getEventsqueue().add(venomEvent);
+
     }
 
     public Tower createTower(int teamID, int towerType, Path path,Lane lane,int index, int row, int column, int time) {
 
         Tower tower = new Tower(teamID,towerType,path,lane,index,row,column,time,map);
-        TowerRangeAttackEvent event = new TowerRangeAttackEvent(tower);
-        handler.getEventsqueue().add(event);
+        TowerRangeAttackEvent towerEvent = new TowerRangeAttackEvent(tower);
+        handler.getEventsqueue().add(towerEvent);
 
         if (towerType == 0)
             map.getGameBoard()[row][column].towerFire.add(tower);
@@ -49,6 +68,8 @@ public class GameEngine {
 
     public AttackForces createAttacker(int teamID, int attackerType,Path path,Lane lane, int row, int column, int time) {
         AttackForces attackForce = new AttackForces(teamID, attackerType,path,lane, row, column,time,map);
+        AttackForceEvent attackEvent = new AttackForceEvent(attackForce);
+        handler.getEventsqueue().add(attackEvent);
 
         if (attackerType == 9 && teamID == 0) {
             map.getGameBoard()[row][column].attackerSentinelTank.add(attackForce);
@@ -64,4 +85,9 @@ public class GameEngine {
         }
         return attackForce;
     }
+
+    public void callHeroMove(Hero hero , Cell dest , int direction , Map map){
+
+    }
+
 }

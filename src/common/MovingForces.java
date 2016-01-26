@@ -8,18 +8,19 @@ public class MovingForces extends Forces {
     protected int speed;
     private int flag = 0;
     //0 = morde
-    //1 = zende o move
-    //2 = zende o attack
+    //1 = zende
+    //2 = zende o move
+    //3 = zende o attack
 
     public double getValue() {
         return value;
     }
 
-    public void setValue(double value) {
+    public void setValue(int value) {
         this.value = value;
     }
 
-    public void setValue(int value) {
+    public void setValue(double value) {
         this.value = value;
     }
 
@@ -57,5 +58,9 @@ public class MovingForces extends Forces {
 
     public int getFlag() {
         return flag;
+    }
+
+    public void setFlag(int flag) {
+        this.flag = flag;
     }
 }

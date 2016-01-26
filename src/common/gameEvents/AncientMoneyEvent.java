@@ -26,4 +26,12 @@ public class AncientMoneyEvent extends Events {
             this.passedTime = 0;
         }
     }
+
+    public Ancient getAncient() {
+        return ancient;
+    }
+
+    public void setAncient(Ancient ancient) {
+        this.ancient = ancient;
+    }
 }

@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1726638a-8aca-49ae-a33a-77950752dd17" name="Default" comment="adding judge">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/gameEvents/HeroDeathEvent.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/common/gameEvents/AttackForceAttackEvent.java" afterPath="$PROJECT_DIR$/src/common/gameEvents/AttackForceEvent.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/common/gameEvents/TowerAttackEvent.java" afterPath="$PROJECT_DIR$/src/common/gameEvents/TowerRangeAttackEvent.java" />
+    <list default="true" id="1726638a-8aca-49ae-a33a-77950752dd17" name="Default" comment="adding thread">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/gameEvents/HeroLifeEvent.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/common/gameEvents/AttackForceMoveEvent.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/common/gameEvents/HeroDeathEvent.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/GameEngine.java" afterPath="$PROJECT_DIR$/src/common/GameEngine.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/Tower.java" afterPath="$PROJECT_DIR$/src/common/Tower.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/MovingForces.java" afterPath="$PROJECT_DIR$/src/common/MovingForces.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/gameEvents/AncientMoneyEvent.java" afterPath="$PROJECT_DIR$/src/common/gameEvents/AncientMoneyEvent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/gameEvents/AttackForceEvent.java" afterPath="$PROJECT_DIR$/src/common/gameEvents/AttackForceEvent.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/gameEvents/EventHandler.java" afterPath="$PROJECT_DIR$/src/common/gameEvents/EventHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/gameEvents/Events.java" afterPath="$PROJECT_DIR$/src/common/gameEvents/Events.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/gameEvents/TowerRangeAttackEvent.java" afterPath="$PROJECT_DIR$/src/common/gameEvents/TowerRangeAttackEvent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/gameEvents/heroAttackEvent.java" afterPath="$PROJECT_DIR$/src/common/gameEvents/heroAttackEvent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/gameEvents/heroMoveEvent.java" afterPath="$PROJECT_DIR$/src/common/gameEvents/heroMoveEvent.java" />
     </list>
     <ignored path="DotaPhase2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,28 +41,48 @@
         <entry file="file://$PROJECT_DIR$/src/common/gameEvents/EventHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+              <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#717#718#0" expanded="true" />
-                <element signature="e#751#752#0" expanded="true" />
-                <element signature="e#778#779#0" expanded="true" />
-                <element signature="e#804#805#0" expanded="true" />
-                <element signature="e#839#840#0" expanded="true" />
-                <element signature="e#869#870#0" expanded="true" />
+                <element signature="method#checkQueue#0;class#EventHandler#0" expanded="false" />
+                <element signature="e#2009#2010#0" expanded="true" />
+                <element signature="e#2043#2044#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameEngine.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GameEngine.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/common/GameEngine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41379312">
-              <caret line="23" column="81" selection-start-line="23" selection-start-column="81" selection-end-line="23" selection-end-column="81" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
               <folding>
                 <element signature="method#makeMap#0;class#GameEngine#0" expanded="false" />
                 <element signature="method#createTower#0;class#GameEngine#0" expanded="false" />
+                <element signature="method#createAttacker#0;class#GameEngine#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HeroMoveEvent.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/common/gameEvents/HeroMoveEvent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.31034482">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HeroAttackEvent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/common/gameEvents/HeroAttackEvent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -95,9 +118,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/MovingForces.java" />
-        <option value="$PROJECT_DIR$/src/ScourgeAttackForces.java" />
-        <option value="$PROJECT_DIR$/src/ScourgeBarraks.java" />
         <option value="$PROJECT_DIR$/src/ScourgeAncient.java" />
         <option value="$PROJECT_DIR$/src/ScourgeTower.java" />
         <option value="$PROJECT_DIR$/src/SentinelAttackForce.java" />
@@ -137,13 +157,16 @@
         <option value="$PROJECT_DIR$/src/judge/JudgeTest.java" />
         <option value="$PROJECT_DIR$/src/judge/Judge.java" />
         <option value="$PROJECT_DIR$/src/common/Hero.java" />
-        <option value="$PROJECT_DIR$/src/common/MovingForces.java" />
-        <option value="$PROJECT_DIR$/src/common/gameEvents/AncientMoneyEvent.java" />
-        <option value="$PROJECT_DIR$/src/common/gameEvents/AttackForceEvent.java" />
-        <option value="$PROJECT_DIR$/src/common/gameEvents/TowerRangeAttackEvent.java" />
-        <option value="$PROJECT_DIR$/src/common/gameEvents/HeroDeathEvent.java" />
         <option value="$PROJECT_DIR$/src/common/gameEvents/Events.java" />
         <option value="$PROJECT_DIR$/src/common/Tower.java" />
+        <option value="$PROJECT_DIR$/src/common/gameEvents/heroAttackEvent.java" />
+        <option value="$PROJECT_DIR$/src/common/gameEvents/HeroMoveEvent.java" />
+        <option value="$PROJECT_DIR$/src/common/MovingForces.java" />
+        <option value="$PROJECT_DIR$/src/common/gameEvents/HeroLifeEvent.java" />
+        <option value="$PROJECT_DIR$/src/common/gameEvents/HeroDeathEvent.java" />
+        <option value="$PROJECT_DIR$/src/common/gameEvents/TowerRangeAttackEvent.java" />
+        <option value="$PROJECT_DIR$/src/common/gameEvents/AttackForceEvent.java" />
+        <option value="$PROJECT_DIR$/src/common/gameEvents/AncientMoneyEvent.java" />
         <option value="$PROJECT_DIR$/src/common/gameEvents/EventHandler.java" />
         <option value="$PROJECT_DIR$/src/common/GameEngine.java" />
       </list>
@@ -876,7 +899,7 @@
       <workItem from="1453709660090" duration="297000" />
       <workItem from="1453710081021" duration="7158000" />
       <workItem from="1453724768663" duration="13287000" />
-      <workItem from="1453768911244" duration="392000" />
+      <workItem from="1453768911244" duration="3556000" />
     </task>
     <task id="LOCAL-00001" summary="Hi">
       <created>1451760551825</created>
@@ -926,7 +949,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453731642464</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="adding thread">
+      <created>1453769345753</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1453769345753</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -962,7 +991,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47425000" />
+    <option name="totallyTimeSpent" value="50589000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -970,6 +999,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -985,7 +1015,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1032,13 +1061,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Hi" />
     <MESSAGE value="adding judge" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding judge" />
+    <MESSAGE value="adding thread" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding thread" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1192,6 +1222,7 @@
           <folding>
             <element signature="method#makeMap#0;class#GameEngine#0" expanded="false" />
             <element signature="method#createTower#0;class#GameEngine#0" expanded="false" />
+            <element signature="method#createAttacker#0;class#GameEngine#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1389,17 +1420,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/gameEvents/AttackForceMoveEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16233766">
-          <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/judge/MapReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6837607">
           <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1474,6 +1499,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.712743">
           <caret line="225" column="0" selection-start-line="225" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
+          <folding>
+            <element signature="method#test1#0;class#JudgeTest#0" expanded="false" />
+            <element signature="method#test2#0;class#JudgeTest#0" expanded="false" />
+            <element signature="method#test3#0;class#JudgeTest#0" expanded="false" />
+            <element signature="method#test4#0;class#JudgeTest#0" expanded="false" />
+            <element signature="method#test5#0;class#JudgeTest#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1523,54 +1555,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Hero.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#heroMove#0;class#Hero#0" expanded="false" />
-            <element signature="method#checkGoldMine#0;class#Hero#0" expanded="false" />
-            <element signature="method#makeRandomGoldMine#0;class#Hero#0" expanded="false" />
-            <element signature="method#attack#0;class#Hero#0" expanded="false" />
-            <element signature="method#getInRange#0;class#Hero#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/MovingForces.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="24" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
-          <folding>
-            <element signature="e#308#309#0" expanded="false" />
-            <element signature="e#336#337#0" expanded="false" />
-            <element signature="e#378#379#0" expanded="false" />
-            <element signature="e#412#413#0" expanded="false" />
-            <element signature="e#451#452#0" expanded="false" />
-            <element signature="e#485#486#0" expanded="false" />
-            <element signature="e#512#513#0" expanded="false" />
-            <element signature="e#538#539#0" expanded="false" />
-            <element signature="e#573#574#0" expanded="false" />
-            <element signature="e#603#604#0" expanded="false" />
-            <element signature="e#633#634#0" expanded="false" />
-            <element signature="e#662#663#0" expanded="false" />
-            <element signature="e#703#704#0" expanded="false" />
-            <element signature="e#739#740#0" expanded="false" />
-            <element signature="e#769#770#0" expanded="false" />
-            <element signature="e#798#799#0" expanded="false" />
-            <element signature="e#839#840#0" expanded="false" />
-            <element signature="e#875#876#0" expanded="false" />
-            <element signature="e#904#905#0" expanded="false" />
-            <element signature="e#932#933#0" expanded="false" />
-            <element signature="e#971#972#0" expanded="false" />
-            <element signature="e#1005#1006#0" expanded="false" />
-            <element signature="e#1033#1034#0" expanded="false" />
-            <element signature="e#1060#1061#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/common/Path.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1583,38 +1567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/gameEvents/AncientMoneyEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/gameEvents/AttackForceEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/gameEvents/heroMoveEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/gameEvents/HeroDeathEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47586206">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1646,20 +1598,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/gameEvents/TowerRangeAttackEvent.java">
+    <entry file="file://$PROJECT_DIR$/src/common/MovingForces.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18620689">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.24827586">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1049#1050#0" expanded="true" />
+            <element signature="e#1076#1077#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/gameEvents/heroAttackEvent.java">
+    <entry file="file://$PROJECT_DIR$/src/common/Hero.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.12413793">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding>
+            <element signature="method#heroMove#0;class#Hero#0" expanded="false" />
+            <element signature="method#checkGoldMine#0;class#Hero#0" expanded="false" />
+            <element signature="method#makeRandomGoldMine#0;class#Hero#0" expanded="false" />
+            <element signature="method#attack#0;class#Hero#0" expanded="false" />
+            <element signature="method#getInRange#0;class#Hero#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/gameEvents/HeroLifeEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.62068963">
+          <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/gameEvents/TowerRangeAttackEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35172415">
+          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+          <folding>
+            <element signature="e#764#765#0" expanded="true" />
+            <element signature="e#792#793#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/gameEvents/AttackForceEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9517241">
+          <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1359#1360#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/gameEvents/AncientMoneyEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6413793">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1667,27 +1664,43 @@
     <entry file="file://$PROJECT_DIR$/src/common/gameEvents/EventHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#717#718#0" expanded="true" />
-            <element signature="e#751#752#0" expanded="true" />
-            <element signature="e#778#779#0" expanded="true" />
-            <element signature="e#804#805#0" expanded="true" />
-            <element signature="e#839#840#0" expanded="true" />
-            <element signature="e#869#870#0" expanded="true" />
+            <element signature="method#checkQueue#0;class#EventHandler#0" expanded="false" />
+            <element signature="e#2009#2010#0" expanded="true" />
+            <element signature="e#2043#2044#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/common/GameEngine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41379312">
-          <caret line="23" column="81" selection-start-line="23" selection-start-column="81" selection-end-line="23" selection-end-column="81" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
           <folding>
             <element signature="method#makeMap#0;class#GameEngine#0" expanded="false" />
             <element signature="method#createTower#0;class#GameEngine#0" expanded="false" />
+            <element signature="method#createAttacker#0;class#GameEngine#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/gameEvents/HeroAttackEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/gameEvents/HeroMoveEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31034482">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

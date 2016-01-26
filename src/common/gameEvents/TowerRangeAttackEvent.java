@@ -7,7 +7,7 @@ import common.Tower;
  * Created by Minam on 1/25/16.
  */
 public class TowerRangeAttackEvent extends Events {
-    Tower tower;
+    private Tower tower;
 
     public TowerRangeAttackEvent(Tower tower) {
         this.tower = tower;
@@ -26,6 +26,10 @@ public class TowerRangeAttackEvent extends Events {
                 this.passedTime = 0;
             }
         }
+    }
+
+    public Tower getTower() {
+        return tower;
     }
 
     //rangesh ro flag 1 bezare ke hamle nakone
