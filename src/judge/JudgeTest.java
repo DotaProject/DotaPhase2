@@ -70,14 +70,13 @@ public class JudgeTest extends TestCase {
         HashMap<String, Integer> values = j1.getInfo(attacker);
         HashMap<String, Integer> values2 = j1.getInfo(attacker2);
 
+
         int row2 = values2.get(Judge.ROW);
         int row1 = values.get(Judge.ROW);
         int col1 = values.get(Judge.COLOUMN);
         int col2 = values2.get(Judge.COLOUMN);
         int alive1 = values.get(Judge.IS_ALIVE);
         int alive2 = values2.get(Judge.IS_ALIVE);
-
-
 
         assertEquals(0, row1);
         assertEquals(31, col1,3);

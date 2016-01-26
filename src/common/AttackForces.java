@@ -447,7 +447,7 @@ public class AttackForces extends MovingForces {
 
     public void attack(Map map) {
         Cell target = getTarget(map);
-        if(target != null) {
+        if (target != null) {
             if (teamID == 0) {
                 if (target.attackerScourgeInfantry != null && target.attackerScourgeInfantry.size() != 0) {
                     for (int i = 0; i < target.attackerScourgeInfantry.size(); i++) {
@@ -586,12 +586,8 @@ public class AttackForces extends MovingForces {
     }
 
     public void moveAttacker(Map map) {
-        //System.out.println(row + "+" + column);
-        //System.out.println(lane.getCells().get(0).getRow());
-        //System.out.println(lane.getCells().get(0).getColumn());
 
         for (int j = 0; j < lane.getCells().size(); j++) {
-            //System.out.println(lane.getCells());
             if (lane.getCells().get(j).getColumn() == column && lane.getCells().get(j).getRow() == row) {
                 if (teamID == 0 && !(row == lane.getCells().get(lane.getCells().size() - 1).getRow() &&
                         column == lane.getCells().get(lane.getCells().size() - 1).getColumn())) {
@@ -600,27 +596,31 @@ public class AttackForces extends MovingForces {
                         column = lane.getCells().get(j + 1).getColumn();
                         row = lane.getCells().get(j + 1).getRow();
                         map.getGameBoard()[row][column].attackerSentinelInfantry.add(this);
+                        return;
                     }
                     if (attackerType == 9) {
                         map.getGameBoard()[row][column].attackerSentinelTank.remove(this);
                         column = lane.getCells().get(j + 1).getColumn();
                         row = lane.getCells().get(j + 1).getRow();
                         map.getGameBoard()[row][column].attackerSentinelTank.add(this);
+                        return;
                     }
                 }
-                if (teamID == 1 && !(row == lane.getCells().get(lane.getCells().size() - 1).getRow() &&
-                        column == lane.getCells().get(lane.getCells().size() - 1).getColumn())) {
+                if (teamID == 1 && !(row == lane.getCells().get(0).getRow() &&
+                        column == lane.getCells().get(0).getColumn())) {
                     if (attackerType == 8) {
-                        map.getGameBoard()[row][column].attackerSentinelInfantry.remove(this);
+                        map.getGameBoard()[row][column].attackerScourgeInfantry.remove(this);
                         column = lane.getCells().get(j - 1).getColumn();
                         row = lane.getCells().get(j - 1).getRow();
-                        map.getGameBoard()[row][column].attackerSentinelInfantry.add(this);
+                        map.getGameBoard()[row][column].attackerScourgeInfantry.add(this);
+                        return;
                     }
                     if (attackerType == 9) {
-                        map.getGameBoard()[row][column].attackerSentinelTank.remove(this);
+                        map.getGameBoard()[row][column].attackerScourgeTank.remove(this);
                         column = lane.getCells().get(j - 1).getColumn();
                         row = lane.getCells().get(j - 1).getRow();
-                        map.getGameBoard()[row][column].attackerSentinelTank.add(this);
+                        map.getGameBoard()[row][column].attackerScourgeTank.add(this);
+                        return;
                     }
                 }
             }

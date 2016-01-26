@@ -35,7 +35,13 @@ public class AttackForceEvent extends Events {
                 this.remainingTime = -50;
                 this.passedTime += 50;
             } else {
+//                System.out.println(attacker.getRow());
+//                System.out.println(attacker.getColumn());
+//                System.out.println("***");
                 attacker.moveAttacker(map);
+//                System.out.println(attacker.getRow());
+//                System.out.println(attacker.getColumn());
+//                System.out.println("***");
                 this.passedTime = 0;
                 flag = 0;
             }
