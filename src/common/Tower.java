@@ -137,7 +137,7 @@ public class Tower extends Forces {
     }
 
 
-    public ArrayList<Cell> getInRange(Map map) throws DotaExceptionBase {
+    public ArrayList<Cell> getInRange(Map map) {
 
         ArrayList<Cell> towerRange = new ArrayList<>();
         for (int i = -range; i < range + 1; i++) {
@@ -487,7 +487,7 @@ public class Tower extends Forces {
     }
 
 
-    public Cell findTarget(Map map) throws DotaExceptionBase {
+    public Cell findTarget(Map map) {
 
         ArrayList<Cell> targets = getInRange(map);
 
@@ -527,7 +527,7 @@ public class Tower extends Forces {
     }
 
     //getters and setters
-    public void attack (Map map) throws DotaExceptionBase {
+    public void attack (Map map) {
 
         Cell target = findTarget(map);
 
