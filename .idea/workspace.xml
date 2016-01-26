@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1726638a-8aca-49ae-a33a-77950752dd17" name="Default" comment="تست">
+    <list default="true" id="1726638a-8aca-49ae-a33a-77950752dd17" name="Default" comment="نسیم تست 1&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/common/Components.class" afterPath="$PROJECT_DIR$/out/production/DotaPhase2/common/Components.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/common/Tower.class" afterPath="$PROJECT_DIR$/out/production/DotaPhase2/common/Tower.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/judge/JudgeTest.class" afterPath="$PROJECT_DIR$/out/production/DotaPhase2/judge/JudgeTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/components.java" afterPath="$PROJECT_DIR$/src/common/components.java" />
     </list>
     <ignored path="DotaPhase2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -837,7 +836,7 @@
       <workItem from="1453794671913" duration="1096000" />
       <workItem from="1453796077944" duration="419000" />
       <workItem from="1453798201406" duration="3787000" />
-      <workItem from="1453803098500" duration="2975000" />
+      <workItem from="1453803098500" duration="3004000" />
     </task>
     <task id="LOCAL-00001" summary="Hi">
       <created>1451760551825</created>
@@ -917,7 +916,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453803605696</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="نسیم تست 1&#10;">
+      <created>1453806118032</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1453806118032</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -953,7 +958,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67293000" />
+    <option name="totallyTimeSpent" value="67322000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -1000,7 +1005,8 @@
     <MESSAGE value="adding judge" />
     <MESSAGE value="adding thread" />
     <MESSAGE value="تست" />
-    <option name="LAST_COMMIT_MESSAGE" value="تست" />
+    <MESSAGE value="نسیم تست 1&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="نسیم تست 1&#10;" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
