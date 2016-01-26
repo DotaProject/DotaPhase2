@@ -18,8 +18,8 @@ public class TowerRangeAttackEvent extends Events {
                 this.passedTime += 50;
             } else {
                 tower.attack(map);
-                this.remainingTime = tower.getReloadTime();
-                this.passedTime = 0;
+                this.remainingTime = tower.getReloadTime() - 50;
+                this.passedTime = 50;
             }
         }
     }
