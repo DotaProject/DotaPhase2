@@ -23,6 +23,7 @@ public class HeroLifeEvent extends Events {
                 this.passedTime += 50;
             }else {
                 hero.setAlive(true);
+                hero.setHealth(5000);
                 hero.setFlag(1);
                 this.passedTime = 0;
             }
