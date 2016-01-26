@@ -116,6 +116,8 @@ public class JudgeTest extends TestCase {
         assertEquals(1, alive1);
     }
 
+
+
     @Test
     public void test4() throws DotaExceptionBase {
         // TESTING GOLD MINES AND MONEY
