@@ -1,8 +1,5 @@
-package common.gameEvents;
+package common;
 
-import common.Cell;
-import common.Hero;
-import common.Map;
 import common.exception.DotaExceptionBase;
 
 public class HeroAttackEvent extends Events {
@@ -12,6 +9,7 @@ public class HeroAttackEvent extends Events {
         this.hero = hero;
         this.remainingTime = hero.getReloadTime();
         this.passedTime = 0;
+        hero.setFlag(3);
     }
 
     public void eventaction(Cell dest ,int direction, Map map) throws DotaExceptionBase{
@@ -19,9 +17,11 @@ public class HeroAttackEvent extends Events {
             this.remainingTime -= 50;
             this.passedTime += 50;
         }else{
-            hero.heroMove(dest,direction,map);
-            this.remainingTime = hero.getReloadTime();
-            this.passedTime = 0;
+            hero.setFlag(1);
         }
+    }
+
+    public Hero getHero() {
+        return hero;
     }
 }

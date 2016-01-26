@@ -1,6 +1,4 @@
-package common.gameEvents;
-
-import common.Ancient;
+package common;
 
 /**
  * Created by Minam on 1/25/16.

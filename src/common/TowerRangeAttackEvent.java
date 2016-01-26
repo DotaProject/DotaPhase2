@@ -1,7 +1,4 @@
-package common.gameEvents;
-
-import common.Map;
-import common.Tower;
+package common;
 
 /**
  * Created by Minam on 1/25/16.

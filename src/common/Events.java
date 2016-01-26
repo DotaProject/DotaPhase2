@@ -1,4 +1,4 @@
-package common.gameEvents;
+package common;
 
 /**
  * Created by Minam on 1/25/16.

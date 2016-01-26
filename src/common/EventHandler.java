@@ -1,9 +1,6 @@
-package common.gameEvents;
-
-import common.Map;
+package common;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 /**
  * Created by Minam on 1/25/16.
@@ -21,7 +18,7 @@ public class EventHandler extends Thread {
                 if (eventsqueue.get(i) instanceof TowerRangeAttackEvent){
                     ((TowerRangeAttackEvent) eventsqueue.get(i)).eventaction(map);
                 }
-                if (eventsqueue.get(i) instanceof  AttackForceEvent){
+                if (eventsqueue.get(i) instanceof AttackForceEvent){
                     ((AttackForceEvent) eventsqueue.get(i)).eventaction(map);
                 }
                 if (eventsqueue.get(i) instanceof AncientMoneyEvent){
@@ -38,7 +35,12 @@ public class EventHandler extends Thread {
     //mordeha az saf kharej shan
     public void checkQueue(){
         ArrayList<Events> tempqueue = new ArrayList<>();
-        Collections.copy(tempqueue, eventsqueue);
+        if (eventsqueue != null && eventsqueue.size() != 0){
+            for (int i = 0; i < eventsqueue.size(); i++) {
+                tempqueue.add(eventsqueue.get(i));
+            }
+        }
+
 
         for (Events item : tempqueue){
             if (item instanceof TowerRangeAttackEvent){

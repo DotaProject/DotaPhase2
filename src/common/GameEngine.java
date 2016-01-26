@@ -1,7 +1,6 @@
 package common;
 
 import common.exception.DotaExceptionBase;
-import common.gameEvents.*;
 
 import java.util.ArrayList;
 
@@ -31,7 +30,7 @@ public class GameEngine {
         handler.getEventsqueue().add(sentinelEvent);
 
         //ancinet scourge money event
-        Ancient ancientScourge = map.getAncient2()[1];
+        Ancient ancientScourge = map.getAncient2()[0];
         AncientMoneyEvent scourgeEvent = new AncientMoneyEvent(ancientScourge);
         handler.getEventsqueue().add(scourgeEvent);
 
@@ -97,7 +96,8 @@ public class GameEngine {
             hero.heroMove(dest, direction, map);
             HeroMoveEvent moveEvent = new HeroMoveEvent(hero);
             handler.getEventsqueue().add(moveEvent);
-        }//yaani faghat zamani ke hero faghat zendas ye bar seda mizane tabe ro va baadesh oun etefagh flag ro 2 mikone o dg ejazeye
+        }
+        //yaani faghat zamani ke hero faghat zendas ye bar seda mizane tabe ro va baadesh oun etefagh flag ro 2 mikone o dg ejazeye
         //seda zadane tabe ro nemide be ma ta zamani ke vaghtesh bere
     }
 

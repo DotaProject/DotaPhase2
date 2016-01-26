@@ -1,6 +1,4 @@
-package common.gameEvents;
-
-import common.Hero;
+package common;
 
 public class HeroLifeEvent extends Events {
     private Hero hero;
