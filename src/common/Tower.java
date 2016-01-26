@@ -530,70 +530,71 @@ public class Tower extends Forces {
     public void attack (Map map) {
 
         Cell target = findTarget(map);
+        if(target != null) {
+            if (Math.abs(target.getColumn() - column) < range && Math.abs(target.getRow() - row) < range) {
+                if (teamID == 0) {
+                    if (target.attackerScourgeInfantry.size() != 0) {
+                        for (int i = 0; i < target.attackerScourgeInfantry.size(); i++) {
+                            target.attackerScourgeInfantry.get(i).health -= infantryAttackPower;
+                            if (target.attackerScourgeInfantry.get(i).health <= 0) {
+                                target.attackerScourgeInfantry.get(i).isAlive = false;
+                                map.getAncient1()[0].setTreasury(map.getAncient1()[0].getTreasury() + (int) target.attackerScourgeInfantry.get(i).getValue());
+                                map.getGameBoard()[target.getRow()][target.getColumn()].attackerScourgeInfantry.remove(i);
+                            }
+                        }
+                    }
+                    if (target.attackerScourgeTank.size() != 0) {
+                        for (int i = 0; i < target.attackerScourgeTank.size(); i++) {
+                            target.attackerScourgeTank.get(i).health -= tankAttackPower;
+                            if (target.attackerScourgeTank.get(i).health <= 0) {
+                                target.attackerScourgeTank.get(i).isAlive = false;
+                                map.getAncient1()[0].setTreasury(map.getAncient1()[0].getTreasury() + (int) target.attackerScourgeTank.get(i).getValue());
+                                map.getGameBoard()[target.getRow()][target.getColumn()].attackerScourgeTank.remove(i);
+                            }
+                        }
+                    }
+                    if (target.venomancer.size() != 0) {
+                        for (int i = 0; i < target.venomancer.size(); i++) {
+                            target.venomancer.get(i).health -= infantryAttackPower;
+                            if (target.venomancer.get(i).health <= 0) {
+                                target.venomancer.get(i).isAlive = false;
+                                map.getGameBoard()[target.getRow()][target.getColumn()].venomancer.remove(i);
+                            }
+                        }
+                    }
+                }
+                if (teamID == 1) {
+                    if (target.attackerSentinelInfantry.size() != 0) {
+                        for (int i = 0; i < target.attackerSentinelInfantry.size(); i++) {
+                            target.attackerSentinelInfantry.get(i).health -= infantryAttackPower;
+                            if (target.attackerSentinelInfantry.get(i).health <= 0) {
+                                target.attackerSentinelInfantry.get(i).isAlive = false;
+                                map.getAncient1()[0].setTreasury(map.getAncient1()[0].getTreasury() + (int) target.attackerSentinelInfantry.get(i).getValue());
+                                map.getGameBoard()[target.getRow()][target.getColumn()].attackerSentinelInfantry.remove(i);
+                            }
+                        }
+                    }
+                    if (target.attackerSentinelTank.size() != 0) {
+                        for (int i = 0; i < target.attackerSentinelTank.size(); i++) {
+                            target.attackerSentinelTank.get(i).health -= tankAttackPower;
+                            if (target.attackerSentinelTank.get(i).health <= 0) {
+                                target.attackerSentinelTank.get(i).isAlive = false;
+                                map.getAncient1()[0].setTreasury(map.getAncient1()[0].getTreasury() + (int) target.attackerSentinelTank.get(i).getValue());
+                                map.getGameBoard()[target.getRow()][target.getColumn()].attackerSentinelTank.remove(i);
+                            }
+                        }
+                    }
+                    if (target.tiny.size() != 0) {
+                        for (int i = 0; i < target.tiny.size(); i++) {
+                            target.tiny.get(i).health -= tankAttackPower;
+                            if (target.tiny.get(i).health <= 0) {
+                                target.tiny.get(i).isAlive = false;
+                                map.getGameBoard()[target.getRow()][target.getColumn()].tiny.remove(i);
+                            }
+                        }
+                    }
 
-        if (Math.abs(target.getColumn() - column) < range && Math.abs(target.getRow() - row) < range) {
-            if (teamID == 0) {
-                if (target.attackerScourgeInfantry.size() != 0) {
-                    for (int i = 0; i < target.attackerScourgeInfantry.size(); i++) {
-                        target.attackerScourgeInfantry.get(i).health -= infantryAttackPower;
-                        if (target.attackerScourgeInfantry.get(i).health <= 0) {
-                            target.attackerScourgeInfantry.get(i).isAlive = false;
-                            map.getAncient1()[0].setTreasury(map.getAncient1()[0].getTreasury() + (int) target.attackerScourgeInfantry.get(i).getValue());
-                            map.getGameBoard()[target.getRow()][target.getColumn()].attackerScourgeInfantry.remove(i);
-                        }
-                    }
                 }
-                if (target.attackerScourgeTank.size() != 0) {
-                    for (int i = 0; i < target.attackerScourgeTank.size(); i++) {
-                        target.attackerScourgeTank.get(i).health -= tankAttackPower;
-                        if (target.attackerScourgeTank.get(i).health <= 0) {
-                            target.attackerScourgeTank.get(i).isAlive = false;
-                            map.getAncient1()[0].setTreasury(map.getAncient1()[0].getTreasury() + (int) target.attackerScourgeTank.get(i).getValue());
-                            map.getGameBoard()[target.getRow()][target.getColumn()].attackerScourgeTank.remove(i);
-                        }
-                    }
-                }
-                if (target.venomancer.size() != 0) {
-                    for (int i = 0; i < target.venomancer.size(); i++) {
-                        target.venomancer.get(i).health -= infantryAttackPower;
-                        if (target.venomancer.get(i).health <= 0) {
-                            target.venomancer.get(i).isAlive = false;
-                            map.getGameBoard()[target.getRow()][target.getColumn()].venomancer.remove(i);
-                        }
-                    }
-                }
-            }
-            if (teamID == 1) {
-                if (target.attackerSentinelInfantry.size() != 0) {
-                    for (int i = 0; i < target.attackerSentinelInfantry.size(); i++) {
-                        target.attackerSentinelInfantry.get(i).health -= infantryAttackPower;
-                        if (target.attackerSentinelInfantry.get(i).health <= 0) {
-                            target.attackerSentinelInfantry.get(i).isAlive = false;
-                            map.getAncient1()[0].setTreasury(map.getAncient1()[0].getTreasury() + (int) target.attackerSentinelInfantry.get(i).getValue());
-                            map.getGameBoard()[target.getRow()][target.getColumn()].attackerSentinelInfantry.remove(i);
-                        }
-                    }
-                }
-                if (target.attackerSentinelTank.size() != 0) {
-                    for (int i = 0; i < target.attackerSentinelTank.size(); i++) {
-                        target.attackerSentinelTank.get(i).health -= tankAttackPower;
-                        if (target.attackerSentinelTank.get(i).health <= 0) {
-                            target.attackerSentinelTank.get(i).isAlive = false;
-                            map.getAncient1()[0].setTreasury(map.getAncient1()[0].getTreasury() + (int) target.attackerSentinelTank.get(i).getValue());
-                            map.getGameBoard()[target.getRow()][target.getColumn()].attackerSentinelTank.remove(i);
-                        }
-                    }
-                }
-                if (target.tiny.size() != 0) {
-                    for (int i = 0; i < target.tiny.size(); i++) {
-                        target.tiny.get(i).health -= tankAttackPower;
-                        if (target.tiny.get(i).health <= 0) {
-                            target.tiny.get(i).isAlive = false;
-                            map.getGameBoard()[target.getRow()][target.getColumn()].tiny.remove(i);
-                        }
-                    }
-                }
-
             }
         }
     }

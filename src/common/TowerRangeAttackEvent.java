@@ -1,9 +1,8 @@
 package common;
 
-/**
- * Created by Minam on 1/25/16.
- */
+
 public class TowerRangeAttackEvent extends Events {
+
     private Tower tower;
 
     public TowerRangeAttackEvent(Tower tower) {
@@ -12,7 +11,7 @@ public class TowerRangeAttackEvent extends Events {
         this.passedTime = 0;
     }
 
-    public void eventaction(Map map){
+    public void eventAction(Map map){
         if (tower.getInRange(map) != null) {
             if (remainingTime > 0) {
                 this.remainingTime -= 50;

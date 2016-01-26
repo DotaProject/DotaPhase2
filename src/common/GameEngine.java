@@ -27,21 +27,21 @@ public class GameEngine {
         //ancient sentinel money event
         Ancient ancientSentinel = map.getAncient1()[0];
         AncientMoneyEvent sentinelEvent = new AncientMoneyEvent(ancientSentinel);
-        handler.getEventsqueue().add(sentinelEvent);
+        handler.getEventsQueue().add(sentinelEvent);
 
         //ancinet scourge money event
         Ancient ancientScourge = map.getAncient2()[0];
         AncientMoneyEvent scourgeEvent = new AncientMoneyEvent(ancientScourge);
-        handler.getEventsqueue().add(scourgeEvent);
+        handler.getEventsQueue().add(scourgeEvent);
 
         //heroes life event for checking death
         Hero tiny = map.getTiny();
         HeroLifeEvent tinyEvent = new HeroLifeEvent(tiny);
-        handler.getEventsqueue().add(tinyEvent);
+        handler.getEventsQueue().add(tinyEvent);
 
         Hero venomancer = map.getVenomancer();
         HeroLifeEvent venomEvent = new HeroLifeEvent(venomancer);
-        handler.getEventsqueue().add(venomEvent);
+        handler.getEventsQueue().add(venomEvent);
 
     }
 
@@ -49,7 +49,7 @@ public class GameEngine {
 
         Tower tower = new Tower(teamID,towerType,path,lane,index,row,column,time,map);
         TowerRangeAttackEvent towerEvent = new TowerRangeAttackEvent(tower);
-        handler.getEventsqueue().add(towerEvent);
+        handler.getEventsQueue().add(towerEvent);
 
         if (towerType == 0)
             map.getGameBoard()[row][column].towerFire.add(tower);
@@ -69,7 +69,7 @@ public class GameEngine {
     public AttackForces createAttacker(int teamID, int attackerType,Path path,Lane lane, int row, int column, int time) {
         AttackForces attackForce = new AttackForces(teamID, attackerType,path,lane, row, column,time,map);
         AttackForceEvent attackEvent = new AttackForceEvent(attackForce);
-        handler.getEventsqueue().add(attackEvent);
+        handler.getEventsQueue().add(attackEvent);
 
         if (attackerType == 9 && teamID == 0) {
             map.getGameBoard()[row][column].attackerSentinelTank.add(attackForce);
@@ -92,10 +92,10 @@ public class GameEngine {
     //hero zendeo dargire move = 2
     //hero zende o dargire hamle = 3
     public void callHeroMove(Hero hero , Cell dest , int direction , Map map) throws DotaExceptionBase{
-        if (hero.getFlag() == 1) {
+        if (hero.getFlag() == 1 || hero.getFlag() == 2) {
             hero.heroMove(dest, direction, map);
             HeroMoveEvent moveEvent = new HeroMoveEvent(hero);
-            handler.getEventsqueue().add(moveEvent);
+            handler.getEventsQueue().add(moveEvent);
         }
         //yaani faghat zamani ke hero faghat zendas ye bar seda mizane tabe ro va baadesh oun etefagh flag ro 2 mikone o dg ejazeye
         //seda zadane tabe ro nemide be ma ta zamani ke vaghtesh bere
@@ -105,7 +105,7 @@ public class GameEngine {
         if (hero.getFlag() == 1){
             hero.attack(target,map);
             HeroAttackEvent attackEvent = new HeroAttackEvent(hero);
-            handler.getEventsqueue().add(attackEvent);
+            handler.getEventsQueue().add(attackEvent);
         }//mese manteghe bala
     }
 

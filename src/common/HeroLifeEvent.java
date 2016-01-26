@@ -10,7 +10,7 @@ public class HeroLifeEvent extends Events {
 
 
     @Override
-    public void eventaction() {
+    public void eventAction() {
         if (!hero.isAlive()){
             if (hero.getFlag() != 0){
                 hero.setFlag(0);

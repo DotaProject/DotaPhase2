@@ -12,7 +12,7 @@ public class HeroAttackEvent extends Events {
         hero.setFlag(3);
     }
 
-    public void eventaction(Cell dest ,int direction, Map map) throws DotaExceptionBase{
+    public void eventAction(Cell dest , int direction, Map map) throws DotaExceptionBase{
         if (remainingTime > 0){
             this.remainingTime -= 50;
             this.passedTime += 50;

@@ -11,7 +11,7 @@ public class HeroMoveEvent extends Events {
     }
 
     @Override
-    public void eventaction() {
+    public void eventAction() {
         if (remainingTime > 0){
             this.remainingTime -= 50;
             this.passedTime += 50;

@@ -1,8 +1,5 @@
 package common;
 
-/**
- * Created by Minam on 1/25/16.
- */
 public class AncientMoneyEvent extends Events {
     Ancient ancient;
 
@@ -13,7 +10,7 @@ public class AncientMoneyEvent extends Events {
     }
 
     @Override
-    public void eventaction() {
+    public void eventAction() {
         if (remainingTime > 0){
             remainingTime -= 50;
             passedTime += 50;

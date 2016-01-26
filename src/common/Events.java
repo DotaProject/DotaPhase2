@@ -1,9 +1,7 @@
 package common;
 
-/**
- * Created by Minam on 1/25/16.
- */
 public class Events {
+
     protected int passedTime;
     protected int remainingTime;
 
@@ -23,7 +21,7 @@ public class Events {
         this.remainingTime = remainingTime;
     }
 
-    public void eventaction(){
+    public void eventAction() {
 
     }
 }

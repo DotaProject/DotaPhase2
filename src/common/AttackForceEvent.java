@@ -1,6 +1,7 @@
 package common;
 
 public class AttackForceEvent extends Events {
+
     AttackForces attacker;
     int flag = 0;
     //hamle = 2
@@ -13,7 +14,7 @@ public class AttackForceEvent extends Events {
 //flag hamleye move
 
     //gameengine run tabeha null male gameengine
-    public void eventaction(Map map) {
+    public void eventAction(Map map) {
         if (flag == 0 && attacker.getInRange(map) != null){
             this.remainingTime = attacker.getReloadTime();
             flag = 2;
