@@ -1,4 +1,6 @@
-package common;
+package common.event;
+
+import common.Map;
 
 import java.util.ArrayList;
 

@@ -1,5 +1,8 @@
-package common;
+package common.event;
 
+
+import common.Map;
+import common.Tower;
 
 public class TowerRangeAttackEvent extends Events {
 

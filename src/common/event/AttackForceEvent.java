@@ -1,4 +1,7 @@
-package common;
+package common.event;
+
+import common.AttackForces;
+import common.Map;
 
 public class AttackForceEvent extends Events {
 

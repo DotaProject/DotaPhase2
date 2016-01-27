@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="graphic.MenuController">
+   <children>
+      <ImageView fitHeight="372.0" fitWidth="607.0">
+         <image>
+            <Image url="@../../homeMenu.jpg" />
+         </image>
+      </ImageView>
+      <CheckBox layoutX="162.0" layoutY="114.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="133.0" text=" Sentinel" textAlignment="CENTER" textFill="#03ebff" wrapText="true">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="162.0" layoutY="101.0" mnemonicParsing="false" text=" Scourge" textFill="#ff5757">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <HBox alignment="CENTER" layoutX="162.0" layoutY="195.0" spacing="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button layoutX="162.0" layoutY="195.0" mnemonicParsing="false" prefHeight="108.0" prefWidth="133.0" text="Button" AnchorPane.leftAnchor="162.0" />
+            <Button layoutX="329.0" layoutY="195.0" mnemonicParsing="false" prefHeight="108.0" prefWidth="133.0" text="Button" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

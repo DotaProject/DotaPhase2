@@ -1,4 +1,6 @@
-package common;
+package common.event;
+
+import common.Ancient;
 
 public class AncientMoneyEvent extends Events {
     Ancient ancient;

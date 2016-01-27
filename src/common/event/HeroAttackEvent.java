@@ -1,5 +1,8 @@
-package common;
+package common.event;
 
+import common.Cell;
+import common.Hero;
+import common.Map;
 import common.exception.DotaExceptionBase;
 
 public class HeroAttackEvent extends Events {
