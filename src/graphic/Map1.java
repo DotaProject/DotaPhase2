@@ -1,5 +1,6 @@
 package graphic;
 
+import graphic.controller.Map1Controller;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;

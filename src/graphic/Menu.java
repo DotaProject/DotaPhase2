@@ -1,7 +1,6 @@
-package graphic;/**
- * Created by Fatemeh on 1/27/16.
- */
+package graphic;
 
+import graphic.controller.MenuController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -22,10 +21,10 @@ public class Menu extends Application {
 
     }
 
-    public void menuWindow(){
+    public void menuWindow() {
 
         try {
-            FXMLLoader loader = new FXMLLoader(Menu.class.getResource("/view/MenuWindowController.fxml"));
+            FXMLLoader loader = new FXMLLoader(Menu.class.getResource("view/MenuWindowController.fxml"));
             AnchorPane pane = loader.load();
 
 
