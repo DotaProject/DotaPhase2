@@ -1,48 +1,29 @@
 package graphic;
 
-import graphic.controller.MenuController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-
-import java.io.IOException;
 
 public class Menu extends Application {
 
-    Stage primaryStage;
+    public static void main(String[] args) {
+        launch(args);
+    }
 
     @Override
     public void start(Stage primaryStage) {
-
-        this.primaryStage = primaryStage;
-        menuWindow();
-
-    }
-
-    public void menuWindow() {
-
-        try {
-            FXMLLoader loader = new FXMLLoader(Menu.class.getResource("view/MenuWindowController.fxml"));
-            AnchorPane pane = loader.load();
-
-
-            MenuController menuController = loader.getController();
-
-            Scene scene = new Scene(pane);
-
+        try{
+            Parent root = FXMLLoader.load(getClass().getResource("view/MenuWindow.fxml"));
+            Scene scene = new Scene(root);
+            primaryStage.setTitle("DOTA ALLSTARS");
             primaryStage.setScene(scene);
             primaryStage.show();
-
-        } catch (IOException e) {
+        }catch (Exception e){
             e.printStackTrace();
         }
 
-    }
-
-    public static void main(String[] args) {
-        launch(args);
     }
 
 }
