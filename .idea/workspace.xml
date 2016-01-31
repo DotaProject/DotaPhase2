@@ -4,9 +4,102 @@
     <bookmark url="file://$PROJECT_DIR$/src/logic/judge/Judge.java" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="1726638a-8aca-49ae-a33a-77950752dd17" name="Default" comment="graphic">
+<<<<<<< Updated upstream
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/graphic/Map1.class" afterPath="$PROJECT_DIR$/out/production/DotaPhase2/graphic/Map1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/graphic/Menu.class" afterPath="$PROJECT_DIR$/out/production/DotaPhase2/graphic/Menu.class" />
+=======
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/graphic/Map2.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/graphic/controller/Map1Controller.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/graphic/controller/Map2Controller.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/background.jpg" afterPath="" />
+=======
+    <list default="true" id="1726638a-8aca-49ae-a33a-77950752dd17" name="Default" comment="تست">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/graphic/images/background.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/graphic/view/StackPaneSentinel.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/logic/common/Components.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/logic/judge/MapReader2.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/common/Ancient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/common/AttackForces.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/common/Barraks.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/common/Cell.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/common/Components.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/common/Forces.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/common/GameComponents.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/common/GameEngine.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/common/GameObjectID.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/common/GoldMine.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/common/Hero.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/common/Lane.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/common/Map.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/common/MovingForces.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/common/Path.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/common/Tower.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/common/event/AncientMoneyEvent.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/common/event/AttackForceEvent.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/common/event/EventHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/common/event/Events.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/common/event/HeroAttackEvent.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/common/event/HeroLifeEvent.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/common/event/HeroMoveEvent.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/common/event/TowerRangeAttackEvent.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/common/exception/DotaExceptionBase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/graphic/view/Map1WindowController.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/graphic/view/Map2WindowController.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/graphic/view/MenuWindowController.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/images/background.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/images/homeMenu.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/judge/Judge.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/judge/JudgeAbstract.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/judge/JudgeTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/judge/MapReader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/common/components.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/engine/Map2.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/engine/asset/img/bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/engine/controller/Map1Controller.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/engine/controller/Map2Controller.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/graphic/Map1.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/graphic/Menu.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/graphic/controller/MenuController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/graphic/view/Map1WindowController.fxml" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/common/Ancient.java" afterPath="$PROJECT_DIR$/src/logic/common/Ancient.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/common/AttackForces.java" afterPath="$PROJECT_DIR$/src/logic/common/AttackForces.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/common/Barraks.java" afterPath="$PROJECT_DIR$/src/logic/common/Barraks.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/common/Cell.java" afterPath="$PROJECT_DIR$/src/logic/common/Cell.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/common/Forces.java" afterPath="$PROJECT_DIR$/src/logic/common/Forces.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/common/GameComponents.java" afterPath="$PROJECT_DIR$/src/logic/common/GameComponents.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/common/GameEngine.java" afterPath="$PROJECT_DIR$/src/logic/common/GameEngine.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/common/GameObjectID.java" afterPath="$PROJECT_DIR$/src/logic/common/GameObjectID.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/common/GoldMine.java" afterPath="$PROJECT_DIR$/src/logic/common/GoldMine.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/common/Hero.java" afterPath="$PROJECT_DIR$/src/logic/common/Hero.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/common/Lane.java" afterPath="$PROJECT_DIR$/src/logic/common/Lane.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/common/Map.java" afterPath="$PROJECT_DIR$/src/logic/common/Map.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/common/MovingForces.java" afterPath="$PROJECT_DIR$/src/logic/common/MovingForces.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/common/Path.java" afterPath="$PROJECT_DIR$/src/logic/common/Path.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/common/Tower.java" afterPath="$PROJECT_DIR$/src/logic/common/Tower.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/common/event/AncientMoneyEvent.java" afterPath="$PROJECT_DIR$/src/logic/common/event/AncientMoneyEvent.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/common/event/AttackForceEvent.java" afterPath="$PROJECT_DIR$/src/logic/common/event/AttackForceEvent.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/common/event/EventHandler.java" afterPath="$PROJECT_DIR$/src/logic/common/event/EventHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/common/event/Events.java" afterPath="$PROJECT_DIR$/src/logic/common/event/Events.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/common/event/HeroAttackEvent.java" afterPath="$PROJECT_DIR$/src/logic/common/event/HeroAttackEvent.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/common/event/HeroLifeEvent.java" afterPath="$PROJECT_DIR$/src/logic/common/event/HeroLifeEvent.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/common/event/HeroMoveEvent.java" afterPath="$PROJECT_DIR$/src/logic/common/event/HeroMoveEvent.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/common/event/TowerRangeAttackEvent.java" afterPath="$PROJECT_DIR$/src/logic/common/event/TowerRangeAttackEvent.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/common/exception/DotaExceptionBase.java" afterPath="$PROJECT_DIR$/src/logic/common/exception/DotaExceptionBase.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/graphic/view/Map2WindowController.fxml" afterPath="$PROJECT_DIR$/src/graphic/view/StackPaneScourge.fxml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/images/homeMenu.jpg" afterPath="$PROJECT_DIR$/src/graphic/images/homeMenu.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/judge/Judge.java" afterPath="$PROJECT_DIR$/src/logic/judge/Judge.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/judge/JudgeAbstract.java" afterPath="$PROJECT_DIR$/src/logic/judge/JudgeAbstract.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/judge/JudgeTest.java" afterPath="$PROJECT_DIR$/src/logic/judge/JudgeTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/judge/MapReader.java" afterPath="$PROJECT_DIR$/src/logic/judge/MapReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/graphic/Map1.class" afterPath="$PROJECT_DIR$/out/production/DotaPhase2/graphic/Map1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/graphic/Menu.class" afterPath="$PROJECT_DIR$/out/production/DotaPhase2/graphic/Menu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DotaPhase2/graphic/controller/MenuController.class" afterPath="$PROJECT_DIR$/out/production/DotaPhase2/graphic/controller/MenuController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Fatemeh.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Fatemeh.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/graphic/Map1.java" afterPath="$PROJECT_DIR$/src/graphic/Map1.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/graphic/controller/Map1Controller.java" afterPath="$PROJECT_DIR$/src/graphic/controller/Map1Controller.java" />
@@ -37,6 +130,7 @@
       <file leaf-file-name="Map1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/graphic/Map1.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state vertical-scroll-proportion="0.0">
               <caret line="211" column="29" selection-start-line="211" selection-start-column="29" selection-end-line="211" selection-end-column="29" />
               <folding />
@@ -49,6 +143,11 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.8265802">
               <caret line="78" column="37" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="37" />
+=======
+<<<<<<< Updated upstream
+            <state vertical-scroll-proportion="0.37878788">
+              <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+>>>>>>> Stashed changes
               <folding>
                 <element signature="e#2457#2458#0" expanded="true" />
                 <element signature="e#2517#2518#0" expanded="true" />
@@ -66,7 +165,101 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
               <folding />
+=======
+            <state vertical-scroll-proportion="0.973913">
+              <caret line="208" column="9" selection-start-line="208" selection-start-column="9" selection-end-line="208" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#10343#10344#0" expanded="true" />
+                <element signature="e#10371#10372#0" expanded="true" />
+              </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/javafx-src.zip!/javafx/scene/Node.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1092" column="32" selection-start-line="1092" selection-start-column="32" selection-end-line="1092" selection-end-column="32" />
+              <folding>
+                <element signature="e#45776#45777#0" expanded="true" />
+                <element signature="e#45818#45819#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Map2Controller.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/graphic/controller/Map2Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/graphic/controller/MenuController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuWindow.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/graphic/view/MenuWindow.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StackPaneScourge.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/graphic/view/StackPaneScourge.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.735849">
+              <caret line="87" column="72" selection-start-line="87" selection-start-column="72" selection-end-line="87" selection-end-column="72" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Judge.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/logic/judge/Judge.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.6666666">
+              <caret line="3" column="44" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="44" />
+              <folding>
+                <element signature="e#60496#60497#0" expanded="true" />
+                <element signature="e#60525#60526#0" expanded="true" />
+              </folding>
+>>>>>>> Stashed changes
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StackPaneSentinel.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/graphic/view/StackPaneSentinel.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.09434">
+              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
           </provider>
         </entry>
       </file>
@@ -307,6 +500,83 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< Updated upstream
+=======
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DotaPhase2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DotaPhase2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graphic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sentinel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DotaPhase2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DotaPhase2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graphic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Scourge" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DotaPhase2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DotaPhase2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graphic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+>>>>>>> Stashed changes
               <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -338,7 +608,11 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="900" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+<<<<<<< Updated upstream
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../stupidwarriors-master" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FX" />
+>>>>>>> Stashed changes
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -931,8 +1205,16 @@
       <workItem from="1453995784687" duration="305000" />
       <workItem from="1454004920541" duration="3404000" />
       <workItem from="1454055985896" duration="2467000" />
+<<<<<<< Updated upstream
       <workItem from="1454065612201" duration="12163000" />
+<<<<<<< Updated upstream
       <workItem from="1454143515184" duration="9383000" />
+=======
+      <workItem from="1454143515184" duration="568000" />
+=======
+      <workItem from="1454065612201" duration="12166000" />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
     </task>
     <task id="LOCAL-00001" summary="Hi">
       <created>1451760551825</created>
@@ -1066,7 +1348,15 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="127072000" />
+=======
+<<<<<<< Updated upstream
+    <option name="totallyTimeSpent" value="118257000" />
+=======
+    <option name="totallyTimeSpent" value="117692000" />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1088,11 +1378,24 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32802126" sideWeight="0.515625" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36464646" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+<<<<<<< Updated upstream
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17397079" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+=======
+<<<<<<< Updated upstream
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17397079" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+>>>>>>> Stashed changes
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2328125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1739726" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23344104" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+>>>>>>> Stashed changes
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1429,12 +1732,33 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/logic/judge/MapReader.java">
+<<<<<<< Updated upstream
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.6059958">
           <caret line="38" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="502" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/logic/judge/JudgeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+=======
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.6059958">
+          <caret line="38" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="502" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< Updated upstream
+=======
+    <entry file="file://$PROJECT_DIR$/src/logic/judge/JudgeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+>>>>>>> Stashed changes
+        <state vertical-scroll-proportion="6.9700212">
+          <caret line="223" column="32" selection-start-line="223" selection-start-column="32" selection-end-line="223" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> Stashed changes
     <entry file="file://$PROJECT_DIR$/src/graphic/Map2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1443,12 +1767,27 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/graphic/images/Sentinel/Ancient.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/javafx-src.zip!/javafx/scene/Node.java">
+=======
+<<<<<<< Updated upstream
+=======
+    <entry file="file://$PROJECT_DIR$/src/graphic/controller/Map1Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> Stashed changes
+    <entry file="file://$PROJECT_DIR$/src/graphic/Menu.java">
+>>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.025252525">
           <caret line="1092" column="32" selection-start-line="1092" selection-start-column="32" selection-end-line="1092" selection-end-column="32" />
@@ -1461,6 +1800,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/graphic/controller/Map2Controller.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
+        <state vertical-scroll-proportion="0.0">
+<<<<<<< Updated upstream
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+=======
+          <caret line="3" column="44" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="44" />
+          <folding>
+            <element signature="e#4405#4406#0" expanded="false" />
+            <element signature="e#4450#4451#0" expanded="false" />
+            <element signature="e#4496#4497#0" expanded="false" />
+            <element signature="e#4538#4539#0" expanded="false" />
+            <element signature="e#40526#40527#0" expanded="false" />
+            <element signature="e#40553#40554#0" expanded="false" />
+=======
+        <state vertical-scroll-proportion="-1.6666666">
+          <caret line="3" column="44" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="44" />
+          <folding>
+            <element signature="e#60496#60497#0" expanded="true" />
+            <element signature="e#60525#60526#0" expanded="true" />
+>>>>>>> Stashed changes
+          </folding>
+>>>>>>> Stashed changes
+        </state>
+      </provider>
+    </entry>
+<<<<<<< Updated upstream
+    <entry file="file://$PROJECT_DIR$/src/graphic/view/StackPaneSentinel.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
+        <state vertical-scroll-proportion="-2.5767097">
+          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+=======
+        <state vertical-scroll-proportion="0.0">
+=======
+    <entry file="file://$PROJECT_DIR$/src/graphic/controller/Map2Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
@@ -1469,8 +1845,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/graphic/view/StackPaneSentinel.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5767097">
-          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+        <state vertical-scroll-proportion="-5.09434">
+>>>>>>> Stashed changes
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="53" />
+>>>>>>> Stashed changes
           <folding />
         </state>
       </provider>
@@ -1478,6 +1856,7 @@
         <state />
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/logic/judge/JudgeTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="5.479798">
@@ -1489,6 +1868,36 @@
     <entry file="file://$PROJECT_DIR$/src/graphic/view/StackPaneScourge.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.027726432">
+=======
+<<<<<<< Updated upstream
+    <entry file="file://$PROJECT_DIR$/src/graphic/view/StackPaneScourge.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+=======
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/javafx-src.zip!/javafx/scene/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1092" column="32" selection-start-line="1092" selection-start-column="32" selection-end-line="1092" selection-end-column="32" />
+          <folding>
+            <element signature="e#45776#45777#0" expanded="true" />
+            <element signature="e#45818#45819#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphic/controller/MenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphic/view/StackPaneScourge.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.735849">
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
           <caret line="87" column="72" selection-start-line="87" selection-start-column="72" selection-end-line="87" selection-end-column="72" />
           <folding />
         </state>
@@ -1516,7 +1925,12 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/graphic/Menu.java">
+=======
+<<<<<<< Updated upstream
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/javafx-src.zip!/javafx/scene/Node.java">
+>>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
@@ -1558,11 +1972,25 @@
         <state vertical-scroll-proportion="0.8265802">
           <caret line="78" column="37" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="37" />
           <folding>
+<<<<<<< Updated upstream
             <element signature="e#2457#2458#0" expanded="true" />
             <element signature="e#2517#2518#0" expanded="true" />
             <element signature="e#2673#2674#0" expanded="true" />
             <element signature="e#2733#2734#0" expanded="true" />
             <element signature="method#setCoins#0;class#Map1Controller#0" expanded="false" />
+=======
+            <element signature="imports" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/graphic/Map1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.973913">
+          <caret line="208" column="9" selection-start-line="208" selection-start-column="9" selection-end-line="208" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#10343#10344#0" expanded="true" />
+            <element signature="e#10371#10372#0" expanded="true" />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
           </folding>
         </state>
       </provider>

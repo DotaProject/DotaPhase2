@@ -8,10 +8,13 @@ import javafx.stage.Stage;
 
 public class Menu extends Application {
 
+<<<<<<< Updated upstream
     public static void main(String[] args) {
         launch(args);
     }
 
+=======
+>>>>>>> Stashed changes
     @Override
     public void start(Stage primaryStage) {
         try{
@@ -26,4 +29,12 @@ public class Menu extends Application {
 
     }
 
+<<<<<<< Updated upstream
+=======
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+
+>>>>>>> Stashed changes
 }

@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< Updated upstream
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
-<Pane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-      prefHeight="650.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.65">
-=======
 <?import javafx.geometry.Insets?>
 <?import javafx.geometry.Rectangle2D?>
 <?import javafx.scene.control.Button?>
@@ -22,32 +12,29 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0"
-      prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
->>>>>>> Stashed changes
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
     <children>
-        <ImageView fitHeight="656.0" fitWidth="1201.0" layoutX="-1.0">
+        <ImageView fitHeight="670.0" fitWidth="1201.0" layoutX="-1.0">
             <image>
-                <Image url="@../images/background.jpg"/>
+                <Image url="@../images/background.jpg" />
             </image>
         </ImageView>
-        <TextField layoutX="21.0" layoutY="20.0" prefHeight="73.0" prefWidth="135.0" promptText="ChatBox"/>
+        <TextField layoutX="21.0" layoutY="20.0" prefHeight="73.0" prefWidth="135.0" promptText="ChatBox" />
         <HBox layoutX="8.0" layoutY="585.0" spacing="480.0">
             <children>
-                <HBox spacing="30.0"/>
-                <HBox spacing="30.0"/>
+                <HBox spacing="30.0" />
+                <HBox spacing="30.0" />
             </children>
         </HBox>
         <HBox layoutX="1014.0" layoutY="15.0" spacing="30.0">
             <children>
-                <Button mnemonicParsing="false" prefHeight="52.0" prefWidth="65.0" text="Pause"/>
-                <Button mnemonicParsing="false" prefHeight="52.0" prefWidth="65.0" text="Start"/>
+                <Button mnemonicParsing="false" prefHeight="52.0" prefWidth="65.0" text="Pause" />
+                <Button mnemonicParsing="false" prefHeight="52.0" prefWidth="65.0" text="Start" />
             </children>
         </HBox>
-        <Text fill="#54c617" layoutX="52.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time :"
-              wrappingWidth="100.86768350572868">
+        <Text fill="#54c617" layoutX="52.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time :" wrappingWidth="100.86768350572868">
             <font>
-                <Font size="18.0"/>
+                <Font size="18.0" />
             </font>
         </Text>
         <HBox layoutX="32.0" layoutY="215.0" spacing="1010.0">
@@ -58,54 +45,54 @@
                             <graphic>
                                 <ImageView fitHeight="64.0" fitWidth="64.0">
                                     <image>
-                                        <Image url="@../images/Scourge/AttackForceInfantry.png"/>
+                                        <Image url="@../images/Sentinel/AttackForceInfantry.png" />
                                     </image>
                                 </ImageView>
                             </graphic>
                             <padding>
-                                <Insets bottom="0.1" left="0.1" right="0.1" top="0.1"/>
+                                <Insets bottom="0.1" left="0.1" right="0.1" top="0.1" />
                             </padding>
                         </Button>
                         <Button mnemonicParsing="false" prefHeight="68.0" prefWidth="65.0">
                             <graphic>
                                 <ImageView fitHeight="66.0" fitWidth="65.0">
                                     <image>
-                                        <Image url="@../images/Scourge/AttackForceTank.png"/>
+                                        <Image url="@../images/Sentinel/AttackForceTank.png" />
                                     </image>
                                 </ImageView>
                             </graphic>
                             <padding>
-                                <Insets bottom="0.1" left="0.1" right="0.1" top="0.1"/>
+                                <Insets bottom="0.1" left="0.1" right="0.1" top="0.1" />
                             </padding>
                         </Button>
                         <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="69.0">
                             <graphic>
                                 <ImageView accessibleRole="LIST_VIEW" cache="true" fitHeight="65.0" fitWidth="65.0">
                                     <image>
-                                        <Image url="@../images/poison.jpg"/>
+                                        <Image url="@../images/fire.jpg" />
                                     </image>
                                     <viewport>
-                                        <Rectangle2D/>
+                                        <Rectangle2D />
                                     </viewport>
                                 </ImageView>
                             </graphic>
                             <padding>
-                                <Insets bottom="0.1" left="0.1" right="0.1" top="0.1"/>
+                                <Insets bottom="0.1" left="0.1" right="0.1" top="0.1" />
                             </padding>
                         </Button>
                         <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="64.0">
                             <graphic>
                                 <ImageView fitHeight="65.0" fitWidth="65.0">
                                     <image>
-                                        <Image url="@../images/black.jpg"/>
+                                        <Image url="@../images/stone.jpeg" />
                                     </image>
                                 </ImageView>
                             </graphic>
                             <VBox.margin>
-                                <Insets bottom="0.1" left="0.1" right="0.1" top="0.1"/>
+                                <Insets bottom="0.1" left="0.1" right="0.1" top="0.1" />
                             </VBox.margin>
                             <padding>
-                                <Insets bottom="0.1" left="0.1" right="0.1" top="0.1"/>
+                                <Insets bottom="0.1" left="0.1" right="0.1" top="0.1" />
                             </padding>
                         </Button>
                     </children>
@@ -114,12 +101,12 @@
                     <children>
                         <Button mnemonicParsing="false" prefHeight="52.0" prefWidth="65.0">
                             <padding>
-                                <Insets bottom="0.1" left="0.1" right="0.1" top="0.1"/>
+                                <Insets bottom="0.1" left="0.1" right="0.1" top="0.1" />
                             </padding>
                             <graphic>
                                 <ImageView fitHeight="66.0" fitWidth="70.0">
                                     <image>
-                                        <Image url="@../images/UpgradePowerAttacker.png"/>
+                                        <Image url="@../images/UpgradePowerAttacker.png" />
                                     </image>
                                 </ImageView>
                             </graphic>
@@ -128,36 +115,36 @@
                             <graphic>
                                 <ImageView fitHeight="64.0" fitWidth="64.0">
                                     <image>
-                                        <Image url="@../images/UpgradeRangeAttacker.png"/>
+                                        <Image url="@../images/UpgradeRangeAttacker.png" />
                                     </image>
                                 </ImageView>
                             </graphic>
                             <padding>
-                                <Insets bottom="0.1" left="0.1" right="0.1" top="0.1"/>
+                                <Insets bottom="0.1" left="0.1" right="0.1" top="0.1" />
                             </padding>
                         </Button>
                         <Button mnemonicParsing="false" prefHeight="52.0" prefWidth="65.0">
                             <graphic>
                                 <ImageView fitHeight="66.0" fitWidth="65.0">
                                     <image>
-                                        <Image url="@../images/UpgradePowerTower.png"/>
+                                        <Image url="@../images/UpgradePowerTower.png" />
                                     </image>
                                 </ImageView>
                             </graphic>
                             <padding>
-                                <Insets bottom="0.1" left="0.1" right="0.1" top="0.1"/>
+                                <Insets bottom="0.1" left="0.1" right="0.1" top="0.1" />
                             </padding>
                         </Button>
                         <Button mnemonicParsing="false" prefHeight="64.0" prefWidth="70.0">
                             <graphic>
                                 <ImageView fitHeight="68.0" fitWidth="68.0">
                                     <image>
-                                        <Image url="@../images/UpgradeRangeTower.png"/>
+                                        <Image url="@../images/UpgradeRangeTower.png" />
                                     </image>
                                 </ImageView>
                             </graphic>
                             <padding>
-                                <Insets bottom="0.1" left="0.1" right="0.1" top="0.1"/>
+                                <Insets bottom="0.1" left="0.1" right="0.1" top="0.1" />
                             </padding>
                         </Button>
                     </children>
@@ -166,13 +153,12 @@
         </HBox>
         <Text layoutX="1117.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="56.87449910063299">
             <font>
-                <Font size="24.0"/>
+                <Font size="24.0" />
             </font>
         </Text>
-        <ImageView fitHeight="62.0" fitWidth="57.0" layoutX="1059.0" layoutY="105.0" pickOnBounds="true"
-                   preserveRatio="true">
+        <ImageView fitHeight="62.0" fitWidth="57.0" layoutX="1059.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../images/money.png"/>
+                <Image url="@../images/money.png" />
             </image>
         </ImageView>
     </children>

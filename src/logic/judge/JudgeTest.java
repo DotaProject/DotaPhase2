@@ -5,7 +5,6 @@ import logic.common.Cell;
 import logic.common.GameObjectID;
 import logic.common.exception.DotaExceptionBase;
 import org.junit.Test;
-
 import java.util.HashMap;
 
 public class JudgeTest extends TestCase {

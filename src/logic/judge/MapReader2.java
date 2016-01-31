@@ -18,8 +18,8 @@ public class MapReader2 {
 
 
     public void init1() {
-        columns = 26;
-        rows = 26;
+        columns = 23;
+        rows = 23;
         init1_path1();
         init1_path2();
         init1_path3();
@@ -31,65 +31,65 @@ public class MapReader2 {
 
     private void init1_path1() {
         ArrayList<Cell> lane11 = new ArrayList<>();
-        for (int i = 14; i >= 0; i--) {
+        for (int i = 11; i >= 0; i--) {
             Cell c1 = new Cell();
             c1.setColumn(0);
             c1.setRow(i);
             lane11.add(c1);
         }
-        for (int i = 1; i < 17; i++) {
+        for (int i = 1; i < 14; i++) {
             Cell c1 = new Cell();
             c1.setColumn(i);
             c1.setRow(0);
             lane11.add(c1);
         }
         ArrayList<Cell> lane12 = new ArrayList<>();
-        for (int i = 14; i >= 1; i--) {
+        for (int i = 11; i >= 1; i--) {
             Cell c1 = new Cell();
             c1.setColumn(1);
             c1.setRow(i);
             lane12.add(c1);
         }
-        for (int i = 2; i < 17; i++) {
+        for (int i = 2; i < 14; i++) {
             Cell c1 = new Cell();
             c1.setColumn(i);
             c1.setRow(1);
             lane12.add(c1);
         }
         ArrayList<Cell> lane13 = new ArrayList<>();
-        for (int i = 14; i >= 2; i--) {
+        for (int i = 11; i >= 2; i--) {
             Cell c1 = new Cell();
             c1.setColumn(2);
             c1.setRow(i);
             lane13.add(c1);
         }
-        for (int i = 3; i < 17; i++) {
+        for (int i = 3; i < 14; i++) {
             Cell c1 = new Cell();
             c1.setColumn(i);
             c1.setRow(2);
             lane13.add(c1);
         }
         ArrayList<Cell> lane14 = new ArrayList<>();
-        for (int i = 14; i >= 3; i--) {
+        for (int i = 11; i >= 3; i--) {
             Cell c1 = new Cell();
             c1.setColumn(3);
             c1.setRow(i);
             lane14.add(c1);
         }
-        for (int i = 4; i < 17; i++) {
+        for (int i = 4; i < 14; i++) {
             Cell c1 = new Cell();
             c1.setColumn(i);
             c1.setRow(3);
             lane14.add(c1);
         }
         ArrayList<Cell> lane15 = new ArrayList<>();
-        for (int i = 14; i >= 4; i--) {
+        for (int i = 11; i >= 4; i--) {
             Cell c1 = new Cell();
             c1.setColumn(4);
             c1.setRow(i);
             lane15.add(c1);
         }
-        for (int i = 5; i < 17; i++) {
+        for (int i = 5; i < 14; i++) {
             Cell c1 = new Cell();
             c1.setColumn(i);
             c1.setRow(4);
@@ -111,97 +111,85 @@ public class MapReader2 {
         ArrayList<Cell> lane4 = new ArrayList<>();
         ArrayList<Cell> lane5 = new ArrayList<>();
 
-        for (int i = 9; i <= 18; i++) {
+        for (int i = 9; i <= 10; i++) {
             Cell c1 = new Cell();
-            c1.setRow(30);
-            c1.setColumn(i);
-            lane1.add(c1);
-        }
-        for (int i = 9; i <= 19; i++) {
-            Cell c1 = new Cell();
-            c1.setRow(31);
+            c1.setRow(13);
             c1.setColumn(i);
             lane2.add(c1);
         }
-        for (int i = 9; i <= 20; i++) {
+        for (int i = 9; i <= 11; i++) {
             Cell c1 = new Cell();
             c1.setRow(32);
             c1.setColumn(i);
             lane3.add(c1);
         }
-        for (int i = 9; i <= 21; i++) {
+        for (int i = 9; i <= 12; i++) {
             Cell c1 = new Cell();
             c1.setRow(33);
             c1.setColumn(i);
             lane4.add(c1);
         }
-        for (int i = 9; i <= 22; i++) {
+        for (int i = 9; i <= 13; i++) {
             Cell c1 = new Cell();
             c1.setRow(34);
             c1.setColumn(i);
             lane5.add(c1);
         }
         //
-        for (int i = 29; i >= 6; i--) {
+        for (int i = 12; i >= 6; i--) {
             Cell c1 = new Cell();
             c1.setRow(i);
-            c1.setColumn(18);
+            c1.setColumn(9);
             lane1.add(c1);
         }
-        for (int i = 30; i >= 7; i--) {
+        for (int i = 12; i >= 6; i--) {
             Cell c1 = new Cell();
             c1.setRow(i);
-            c1.setColumn(19);
+            c1.setColumn(10);
             lane2.add(c1);
         }
-        for (int i = 31; i >= 8; i--) {
+        for (int i = 13; i >= 6; i--) {
             Cell c1 = new Cell();
             c1.setRow(i);
-            c1.setColumn(20);
+            c1.setColumn(11);
             lane3.add(c1);
         }
-        for (int i = 32; i >= 9; i--) {
+        for (int i = 14; i >= 6; i--) {
             Cell c1 = new Cell();
             c1.setRow(i);
-            c1.setColumn(21);
+            c1.setColumn(12);
             lane4.add(c1);
         }
-        for (int i = 33; i >= 10; i--) {
+        for (int i = 15; i >= 6; i--) {
             Cell c1 = new Cell();
             c1.setRow(i);
-            c1.setColumn(22);
+            c1.setColumn(13);
             lane5.add(c1);
         }
         //
-        for (int i = 19; i <= 31; i++) {
+        for (int i = 10; i <= 13; i++) {
             Cell c1 = new Cell();
             c1.setRow(6);
             c1.setColumn(i);
             lane1.add(c1);
         }
-        for (int i = 20; i <= 31; i++) {
+        for (int i = 11; i <= 13; i++) {
             Cell c1 = new Cell();
             c1.setRow(7);
             c1.setColumn(i);
             lane2.add(c1);
         }
-        for (int i = 21; i <= 31; i++) {
+        for (int i = 12; i <= 13; i++) {
             Cell c1 = new Cell();
             c1.setRow(8);
             c1.setColumn(i);
             lane3.add(c1);
         }
-        for (int i = 22; i <= 31; i++) {
+        for (int i = 13; i <= 13; i++) {
             Cell c1 = new Cell();
             c1.setRow(9);
             c1.setColumn(i);
             lane4.add(c1);
-        }
-        for (int i = 23; i <= 31; i++) {
-            Cell c1 = new Cell();
-            c1.setRow(10);
-            c1.setColumn(i);
-            lane5.add(c1);
         }
         ArrayList<ArrayList<Cell>> path2Cells = new ArrayList<>();
         path2Cells.add(lane1);
@@ -218,65 +206,66 @@ public class MapReader2 {
         ArrayList<Cell> lane3 = new ArrayList<>();
         ArrayList<Cell> lane4 = new ArrayList<>();
         ArrayList<Cell> lane5 = new ArrayList<>();
-        for (int i = 9; i <= 36; i++) {
+
+        for (int i = 9; i <= 18; i++) {
             Cell c1 = new Cell();
-            c1.setRow(36);
+            c1.setRow(18);
             c1.setColumn(i);
             lane1.add(c1);
         }
-        for (int i = 9; i <= 37; i++) {
+        for (int i = 9; i <= 19; i++) {
             Cell c1 = new Cell();
-            c1.setRow(37);
+            c1.setRow(19);
             c1.setColumn(i);
             lane2.add(c1);
         }
-        for (int i = 9; i <= 38; i++) {
+        for (int i = 9; i <= 20; i++) {
             Cell c1 = new Cell();
-            c1.setRow(38);
+            c1.setRow(20);
             c1.setColumn(i);
             lane3.add(c1);
         }
-        for (int i = 9; i <= 39; i++) {
+        for (int i = 9; i <= 21; i++) {
             Cell c1 = new Cell();
-            c1.setRow(39);
+            c1.setRow(21);
             c1.setColumn(i);
             lane4.add(c1);
         }
-        for (int i = 9; i <= 40; i++) {
+        for (int i = 9; i <= 22; i++) {
             Cell c1 = new Cell();
-            c1.setRow(40);
+            c1.setRow(22);
             c1.setColumn(i);
             lane5.add(c1);
         }
         //
-        for (int i = 35; i >= 11; i--) {
+        for (int i = 17; i >= 11; i--) {
             Cell c1 = new Cell();
             c1.setRow(i);
-            c1.setColumn(36);
+            c1.setColumn(18);
             lane1.add(c1);
         }
-        for (int i = 36; i >= 11; i--) {
+        for (int i = 18; i >= 11; i--) {
             Cell c1 = new Cell();
             c1.setRow(i);
-            c1.setColumn(37);
+            c1.setColumn(19);
             lane2.add(c1);
         }
-        for (int i = 37; i >= 11; i--) {
+        for (int i = 19; i >= 11; i--) {
             Cell c1 = new Cell();
             c1.setRow(i);
-            c1.setColumn(38);
+            c1.setColumn(20);
             lane3.add(c1);
         }
-        for (int i = 38; i >= 11; i--) {
+        for (int i = 20; i >= 11; i--) {
             Cell c1 = new Cell();
             c1.setRow(i);
-            c1.setColumn(39);
+            c1.setColumn(21);
             lane4.add(c1);
         }
-        for (int i = 39; i >= 11; i--) {
+        for (int i = 21; i >= 11; i--) {
             Cell c1 = new Cell();
             c1.setRow(i);
-            c1.setColumn(40);
+            c1.setColumn(22);
             lane5.add(c1);
         }
         ArrayList<ArrayList<Cell>> path3Cells = new ArrayList<>();
@@ -288,30 +277,33 @@ public class MapReader2 {
         path3 = path3Cells;
     }
 
-
-
     private void init1_goldmines() {
         Cell c1 = new Cell();
         Cell c2 = new Cell();
         Cell c3 = new Cell();
         Cell c4 = new Cell();
+        Cell c5 = new Cell();
         ArrayList<Cell> golds = new ArrayList<>();
-        c1.setRow(10);
-        c1.setColumn(10);
-        c2.setRow(21);
-        c2.setColumn(10);
-        c3.setRow(19);
-        c3.setColumn(30);
-        c4.setRow(30);
-        c4.setColumn(30);
+        c1.setRow(5);
+        c1.setColumn(5);
+        c2.setRow(11);
+        c2.setColumn(5);
+        c3.setRow(9);
+        c3.setColumn(7);
+        c4.setRow(13);
+        c4.setColumn(15);
+        c5.setRow(12);
+        c5.setColumn(16);
         golds.add(c1);
         golds.add(c2);
         golds.add(c3);
         golds.add(c4);
+        golds.add(c5);
         goldMines = golds;
     }
 
     private void init1_barracks() {
+
         Cell[][] barracks11 = new Cell[3][5];
         Cell[][] barracks23 = new Cell[3][5];
         Cell[][] barracks12 = new Cell[5][3];
@@ -326,8 +318,8 @@ public class MapReader2 {
                 Cell c1 = new Cell();
                 Cell c2 = new Cell();
                 c2.setRow(8 + i);
-                c2.setColumn(36 + j);
-                c1.setRow(30 + i);
+                c2.setColumn(18 + j);
+                c1.setRow(12 + i);
                 c1.setColumn(j);
                 barracks11[i][j] = c1;
                 barracks23[i][j] = c2;
@@ -339,14 +331,14 @@ public class MapReader2 {
                 Cell c13 = new Cell();
                 Cell c21 = new Cell();
                 Cell c22 = new Cell();
-                c12.setRow(i + 30);
-                c13.setRow(i + 36);
+                c12.setRow(i + 12);
+                c13.setRow(i + 18);
                 c12.setColumn(6 + j);
                 c13.setColumn(6 + j);
                 c21.setRow(i);
                 c22.setRow(6 + i);
-                c21.setColumn(32 + j);
-                c22.setColumn(32 + j);
+                c21.setColumn(14 + j);
+                c22.setColumn(14 + j);
                 barracks12[i][j] = c12;
                 barracks13[i][j] = c13;
                 barracks21[i][j] = c21;
@@ -368,7 +360,7 @@ public class MapReader2 {
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
                 Cell c1 = new Cell();
-                c1.setRow(33 + i);
+                c1.setRow(15 + i);
                 c1.setColumn(1 + j);
                 ancient1Cells[i][j] = c1;
             }
@@ -382,13 +374,12 @@ public class MapReader2 {
             for (int j = 0; j < 5; j++) {
                 Cell c1 = new Cell();
                 c1.setRow(3 + i);
-                c1.setColumn(35 + j);
+                c1.setColumn(17 + j);
                 ancient2Cells[i][j] = c1;
             }
         }
         ancient2 = ancient2Cells;
     }
-
 
 
     public int getRows() {
@@ -463,38 +454,12 @@ public class MapReader2 {
         this.goldMines = goldMines;
     }
 
-    public void log() {
-        System.out.println("rows: " + rows);
-        System.out.println("cols: " + columns);
-        System.out.println("path1:");
-        for (int i = 0; i < 5; i++) {
-            System.out.println("\tlane" + i);
-            System.out.print("\t\t");
-            for (Cell cell : path1.get(i)) {
-                System.out.print("(" + cell.getRow() + "," + cell.getColumn()
-                        + ") ");
-            }
-            System.out.println();
-        }
-        System.out.println("path2:");
-        for (int i = 0; i < 5; i++) {
-            System.out.println("\tlane" + i);
-            System.out.print("\t\t");
-            for (Cell cell : path2.get(i)) {
-                System.out.print("(" + cell.getRow() + "," + cell.getColumn()
-                        + ") ");
-            }
-            System.out.println();
-        }
-        System.out.println("path3:");
-        for (int i = 0; i < 5; i++) {
-            System.out.println("\tlane" + i);
-            System.out.print("\t\t");
-            for (Cell cell : path3.get(i)) {
-                System.out.print("(" + cell.getRow() + "," + cell.getColumn()
-                        + ") ");
-            }
-            System.out.println();
-        }
+    public int getColumns() {
+        return columns;
     }
+
+    public void setColumns(int columns) {
+        this.columns = columns;
+    }
+
 }
