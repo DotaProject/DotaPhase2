@@ -15,9 +15,9 @@ import java.io.IOException;
 
 public class Map1 {
 
-    MapReader map;
-    Judge judge;
-    Button[][] buttons;
+    private MapReader map;
+    private Judge judge;
+    private Button[][] buttons;
     private Scene scene;
 
 
@@ -35,7 +35,7 @@ public class Map1 {
         judge.loadMap(map.getColumns(), map.getRows(), map.getPath1(), map.getPath2(), map.getPath3(),
                 map.getAncient1(), map.getAncient2(), map.getBarracks1(), map.getBarracks2(), map.getGoldMines());
 
-        buttons = new Button[map.getRows()][map.getColumns()];
+        this.buttons = new Button[map.getRows()][map.getColumns()];
 
         for (int i = 0; i < map.getColumns(); i++) {
             gridPane.getRowConstraints().add(new RowConstraints(15.5));
@@ -50,7 +50,6 @@ public class Map1 {
                 buttons[i][j].setMaxHeight(Integer.MAX_VALUE);
                 buttons[i][j].setMaxWidth(Integer.MAX_VALUE);
                 gridPane.add(buttons[i][j], i, j);
-
             }
         }
         setPicture();
@@ -191,16 +190,12 @@ public class Map1 {
                     buttons[i][j].setStyle("-fx-background-image: url('" + image + "'); " +
                             "-fx-background-position: center center; " +
                             "-fx-background-repeat: stretch;" + "-fx-background-size: 16 16");
-                    continue;
 
                 } else {
                     String image = getClass().getResource("images/grass.png").toExternalForm();
                     buttons[i][j].setStyle("-fx-background-image: url('" + image + "'); " +
                             "-fx-background-position: center center; " +
                             "-fx-background-repeat: stretch;" + "-fx-background-size: 16 16");
-
-                    continue;
-
                 }
             }
         }
@@ -208,5 +203,18 @@ public class Map1 {
 
     public Scene getScene() {
         return scene;
+    }
+
+
+    public Button[][] getButtons() {
+        return buttons;
+    }
+
+    public MapReader getMap() {
+        return map;
+    }
+
+    public Judge getJudge() {
+        return judge;
     }
 }
